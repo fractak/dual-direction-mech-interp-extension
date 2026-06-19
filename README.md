@@ -4,6 +4,13 @@
 
 Do LLMs refuse harmful requests and abstain on unknown factual questions using the *same* internal mechanism — or are these mechanistically independent behaviors?
 
+## Paper
+
+This work was accepted as an in-person poster at the ICML 2026 Mechanistic Interpretability Workshop.
+
+- OpenReview: https://openreview.net/forum?id=dQJuu7jlZJ
+- Preprint: https://zenodo.org/records/20009857
+
 This repository provides a reproducible pipeline to:
 
 1. **Extract** both safety-refusal and epistemic-abstention directions via difference-in-means on residual stream activations
@@ -175,11 +182,12 @@ If you find this work useful, please cite:
     title={Two Refusals or One? Disentangling Safety and Epistemic Abstention Directions in Language Model Activations},
     author={Muhammad Aaliyan},
     year={2026},
-    howpublished={Zenodo preprint, \url{https://zenodo.org/records/20009857}},
+    howpublished={ICML 2026 Mechanistic Interpretability Workshop Poster, \url{https://openreview.net/forum?id=dQJuu7jlZJ}},
     doi={10.5281/zenodo.20009857}
 }
 ```
 
+**OpenReview:** https://openreview.net/forum?id=dQJuu7jlZJ  
 **Preprint:** https://zenodo.org/records/20009857  
 **DOI:** `10.5281/zenodo.20009857`
 
