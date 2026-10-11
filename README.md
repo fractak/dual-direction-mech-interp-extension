@@ -435,3 +435,28 @@ Capability refusal is:
 - and robust to the tested quantization settings.
 
 The results do **not** establish that safety refusal and capability refusal are the same mechanism. Instead, they suggest partial alignment alongside meaningful causal and representational separation.
+
+## Safety Fine-Tuning Extension
+
+This fork also tests whether targeted safety fine-tuning merely strengthens an existing refusal direction or reorganizes refusal-related representations.
+
+We compare **B**, `meta-llama/Llama-3.1-8B-Instruct`, with **C**, the same checkpoint after controlled safety QLoRA fine-tuning.
+
+### Main results
+
+| Measure | B | C |
+|---|---:|---:|
+| Harmful-request refusal | 0.950 | 0.995 |
+| Benign refusal | 0.000 | 0.045 |
+| Unanswerable abstention | 0.780 | 0.560 |
+| Capability refusal, blind human eval | 0.950 | 0.967 |
+
+Representation similarity across fine-tuning was **0.788 for safety**, **0.819 for epistemic abstention**, and **0.695 for capability refusal**, with within-checkpoint resampling stability near 0.98–1.00.
+
+Causal transfer was strongly asymmetric. In the tuned checkpoint, ablating the original B safety direction had essentially no effect on safety refusal, while ablating the new C safety direction reduced refusal by 72.5 percentage points. Capability showed an even stronger effect: its behavior remained nearly unchanged, but ablating the C capability direction reduced capability refusal from 0.967 to 0.000.
+
+These results support **representational and causal reorganization**, rather than simple amplification of one fixed refusal/abstention direction.
+
+- [Final results table](artifacts/safety_finetuning/safety_finetuning_final_table.md)
+- [Final figure](artifacts/safety_finetuning/safety_finetuning_final_figure.png)
+- [Machine-readable results](artifacts/safety_finetuning/safety_finetuning_final_results.json)
