@@ -20,8 +20,8 @@ class PromptSample:
 
     id: str
     prompt: str
-    group: str           # 'harmful', 'benign', 'unanswerable', 'answerable'
-    direction_type: str  # 'safety' | 'epistemic'
+    group: str           # 'harmful', 'benign', 'unanswerable', 'answerable', 'incapable', 'capable'
+    direction_type: str  # 'safety' | 'epistemic' | 'capability'
     source: str          # dataset name
     metadata: Dict[str, Any] = field(default_factory=dict)
 
@@ -154,24 +154,111 @@ def _format_qa_prompt_nocontext(question: str) -> str:
     return f"Answer the following question concisely: {question}"
 
 
+
+def load_capability_prompts(
+    limit: int = 200,
+    seed: int = 42,
+    split: str = "all",
+) -> Dict[str, List[PromptSample]]:
+    """Load matched capability-impossible and capability-possible prompts.
+
+    split:
+        'train' -> 16 held-in task families / 80 pairs
+        'eval'  -> 4 held-out task families / 20 pairs
+        'all'   -> original full 100-pair dataset
+
+    Returns: {'incapable': [...], 'capable': [...]}
+    """
+    import json
+    from pathlib import Path
+
+    filenames = {
+        "all": "capability_pairs.json",
+        "train": "capability_train_pairs.json",
+        "eval": "capability_eval_pairs.json",
+        "expanded_eval": "capability_eval_expanded.json",
+    }
+
+    if split not in filenames:
+        raise ValueError(
+            f"Unknown capability split {split!r}; "
+            f"expected one of {sorted(filenames)}"
+        )
+
+    data_path = (
+        Path(__file__).resolve().parents[3]
+        / "data"
+        / filenames[split]
+    )
+
+    if not data_path.exists():
+        raise FileNotFoundError(f"Capability dataset not found: {data_path}")
+
+    pairs = json.loads(data_path.read_text())
+
+    rng = random.Random(seed)
+    num_pairs = min(limit // 2, len(pairs))
+
+    if num_pairs < len(pairs):
+        pairs = rng.sample(pairs, num_pairs)
+
+    incapable_prompts = []
+    capable_prompts = []
+
+    for i, pair in enumerate(pairs):
+        pair_id = pair.get("id", str(i))
+
+        incapable_prompts.append(
+            PromptSample(
+                id=f"capability_incapable_{pair_id}",
+                prompt=pair["incapable"],
+                group="incapable",
+                direction_type="capability",
+                source=f"matched_capability_pairs_{split}",
+                metadata={"pair_id": pair_id, "split": split},
+            )
+        )
+
+        capable_prompts.append(
+            PromptSample(
+                id=f"capability_capable_{pair_id}",
+                prompt=pair["capable"],
+                group="capable",
+                direction_type="capability",
+                source=f"matched_capability_pairs_{split}",
+                metadata={"pair_id": pair_id, "split": split},
+            )
+        )
+
+    logger.info(
+        "Loaded capability split=%s: %d matched pairs (%d prompts)",
+        split,
+        len(pairs),
+        len(incapable_prompts) + len(capable_prompts),
+    )
+
+    return {
+        "incapable": incapable_prompts,
+        "capable": capable_prompts,
+    }
+
+
 def load_all_prompts(
     safety_limit: int = 200,
     epistemic_limit: int = 200,
+    capability_limit: int = 50,
     seed: int = 42,
 ) -> Dict[str, List[PromptSample]]:
-    """Load all prompt groups for both direction types.
-
-    Returns: {
-        'harmful': [...],
-        'benign': [...],
-        'unanswerable': [...],
-        'answerable': [...],
-    }
-    """
+    """Load all prompt groups for all direction types."""
     safety = load_safety_prompts(limit=safety_limit, seed=seed)
     epistemic = load_epistemic_prompts(limit=epistemic_limit, seed=seed)
-    return {**safety, **epistemic}
+    capability = load_capability_prompts(limit=capability_limit, seed=seed)
 
+    return {
+        **safety,
+        **epistemic,
+        **capability,
+    }
 
 def prompts_to_text_list(samples: Sequence[PromptSample]) -> List[str]:
     """Extract plain text prompts from PromptSample list."""

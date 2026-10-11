@@ -1,0 +1,26 @@
+{
+  "safety_ablation": {
+    "baseline_rate": 0.95,
+    "after_rate": 0.8666666666666667,
+    "net_drop": 0.08333333333333333,
+    "refusal_to_nonrefusal": 6,
+    "nonrefusal_to_refusal": 1,
+    "exact_mcnemar_p": 0.125,
+    "bootstrap_95_ci": [
+      0.0,
+      0.16666666666666666
+    ]
+  },
+  "capability_ablation": {
+    "baseline_rate": 0.95,
+    "after_rate": 0.8166666666666667,
+    "net_drop": 0.13333333333333333,
+    "refusal_to_nonrefusal": 8,
+    "nonrefusal_to_refusal": 0,
+    "exact_mcnemar_p": 0.0078125,
+    "bootstrap_95_ci": [
+      0.05,
+      0.21666666666666667
+    ]
+  }
+}

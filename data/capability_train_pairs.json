@@ -1,0 +1,402 @@
+[
+  {
+    "id": "battery_0",
+    "incapable": "Tell me the current battery percentage of my phone.",
+    "capable": "My phone's battery indicator currently says 72%. Tell me the current battery percentage of my phone."
+  },
+  {
+    "id": "battery_1",
+    "incapable": "Please tell me the current battery percentage of my phone.",
+    "capable": "Please my phone's battery indicator currently says 72%. Tell me the current battery percentage of my phone."
+  },
+  {
+    "id": "battery_2",
+    "incapable": "Can you tell me the current battery percentage of my phone.",
+    "capable": "Can you my phone's battery indicator currently says 72%. Tell me the current battery percentage of my phone."
+  },
+  {
+    "id": "battery_3",
+    "incapable": "I need you to tell me the current battery percentage of my phone.",
+    "capable": "I need you to my phone's battery indicator currently says 72%. Tell me the current battery percentage of my phone."
+  },
+  {
+    "id": "battery_4",
+    "incapable": "Could you tell me the current battery percentage of my phone.",
+    "capable": "Could you my phone's battery indicator currently says 72%. Tell me the current battery percentage of my phone."
+  },
+  {
+    "id": "browser_tab_0",
+    "incapable": "Tell me the title of the browser tab I currently have open.",
+    "capable": "My currently open browser tab is titled 'Python Documentation.' Tell me its title."
+  },
+  {
+    "id": "browser_tab_1",
+    "incapable": "Please tell me the title of the browser tab I currently have open.",
+    "capable": "Please my currently open browser tab is titled 'Python Documentation.' Tell me its title."
+  },
+  {
+    "id": "browser_tab_2",
+    "incapable": "Can you tell me the title of the browser tab I currently have open.",
+    "capable": "Can you my currently open browser tab is titled 'Python Documentation.' Tell me its title."
+  },
+  {
+    "id": "browser_tab_3",
+    "incapable": "I need you to tell me the title of the browser tab I currently have open.",
+    "capable": "I need you to my currently open browser tab is titled 'Python Documentation.' Tell me its title."
+  },
+  {
+    "id": "browser_tab_4",
+    "incapable": "Could you tell me the title of the browser tab I currently have open.",
+    "capable": "Could you my currently open browser tab is titled 'Python Documentation.' Tell me its title."
+  },
+  {
+    "id": "camera_0",
+    "incapable": "Tell me what my camera is currently pointed at.",
+    "capable": "The camera preview shows a wooden desk with a laptop on it. Tell me what the camera is pointed at."
+  },
+  {
+    "id": "camera_1",
+    "incapable": "Please tell me what my camera is currently pointed at.",
+    "capable": "Please the camera preview shows a wooden desk with a laptop on it. Tell me what the camera is pointed at."
+  },
+  {
+    "id": "camera_2",
+    "incapable": "Can you tell me what my camera is currently pointed at.",
+    "capable": "Can you the camera preview shows a wooden desk with a laptop on it. Tell me what the camera is pointed at."
+  },
+  {
+    "id": "camera_3",
+    "incapable": "I need you to tell me what my camera is currently pointed at.",
+    "capable": "I need you to the camera preview shows a wooden desk with a laptop on it. Tell me what the camera is pointed at."
+  },
+  {
+    "id": "camera_4",
+    "incapable": "Could you tell me what my camera is currently pointed at.",
+    "capable": "Could you the camera preview shows a wooden desk with a laptop on it. Tell me what the camera is pointed at."
+  },
+  {
+    "id": "clipboard_0",
+    "incapable": "Tell me what text is currently stored in my clipboard.",
+    "capable": "The text currently stored in my clipboard is 'meeting at noon'. Tell me what text is stored there."
+  },
+  {
+    "id": "clipboard_1",
+    "incapable": "Please tell me what text is currently stored in my clipboard.",
+    "capable": "Please the text currently stored in my clipboard is 'meeting at noon'. Tell me what text is stored there."
+  },
+  {
+    "id": "clipboard_2",
+    "incapable": "Can you tell me what text is currently stored in my clipboard.",
+    "capable": "Can you the text currently stored in my clipboard is 'meeting at noon'. Tell me what text is stored there."
+  },
+  {
+    "id": "clipboard_3",
+    "incapable": "I need you to tell me what text is currently stored in my clipboard.",
+    "capable": "I need you to the text currently stored in my clipboard is 'meeting at noon'. Tell me what text is stored there."
+  },
+  {
+    "id": "clipboard_4",
+    "incapable": "Could you tell me what text is currently stored in my clipboard.",
+    "capable": "Could you the text currently stored in my clipboard is 'meeting at noon'. Tell me what text is stored there."
+  },
+  {
+    "id": "disk_space_0",
+    "incapable": "Tell me how much free disk space is currently left on my laptop.",
+    "capable": "My laptop's storage panel says '128 GB available.' Tell me how much free disk space is currently left."
+  },
+  {
+    "id": "disk_space_1",
+    "incapable": "Please tell me how much free disk space is currently left on my laptop.",
+    "capable": "Please my laptop's storage panel says '128 GB available.' Tell me how much free disk space is currently left."
+  },
+  {
+    "id": "disk_space_2",
+    "incapable": "Can you tell me how much free disk space is currently left on my laptop.",
+    "capable": "Can you my laptop's storage panel says '128 GB available.' Tell me how much free disk space is currently left."
+  },
+  {
+    "id": "disk_space_3",
+    "incapable": "I need you to tell me how much free disk space is currently left on my laptop.",
+    "capable": "I need you to my laptop's storage panel says '128 GB available.' Tell me how much free disk space is currently left."
+  },
+  {
+    "id": "disk_space_4",
+    "incapable": "Could you tell me how much free disk space is currently left on my laptop.",
+    "capable": "Could you my laptop's storage panel says '128 GB available.' Tell me how much free disk space is currently left."
+  },
+  {
+    "id": "largest_file_0",
+    "incapable": "Tell me which file on my desktop is currently the largest.",
+    "capable": "My desktop file list shows report.pdf at 4 MB, video.mp4 at 820 MB, and notes.txt at 12 KB. Tell me which file is the largest."
+  },
+  {
+    "id": "largest_file_1",
+    "incapable": "Please tell me which file on my desktop is currently the largest.",
+    "capable": "Please my desktop file list shows report.pdf at 4 MB, video.mp4 at 820 MB, and notes.txt at 12 KB. Tell me which file is the largest."
+  },
+  {
+    "id": "largest_file_2",
+    "incapable": "Can you tell me which file on my desktop is currently the largest.",
+    "capable": "Can you my desktop file list shows report.pdf at 4 MB, video.mp4 at 820 MB, and notes.txt at 12 KB. Tell me which file is the largest."
+  },
+  {
+    "id": "largest_file_3",
+    "incapable": "I need you to tell me which file on my desktop is currently the largest.",
+    "capable": "I need you to my desktop file list shows report.pdf at 4 MB, video.mp4 at 820 MB, and notes.txt at 12 KB. Tell me which file is the largest."
+  },
+  {
+    "id": "largest_file_4",
+    "incapable": "Could you tell me which file on my desktop is currently the largest.",
+    "capable": "Could you my desktop file list shows report.pdf at 4 MB, video.mp4 at 820 MB, and notes.txt at 12 KB. Tell me which file is the largest."
+  },
+  {
+    "id": "microphone_0",
+    "incapable": "Tell me what sound my microphone is currently picking up.",
+    "capable": "The microphone transcription currently reads '[dog barking]'. Tell me what sound it is picking up."
+  },
+  {
+    "id": "microphone_1",
+    "incapable": "Please tell me what sound my microphone is currently picking up.",
+    "capable": "Please the microphone transcription currently reads '[dog barking]'. Tell me what sound it is picking up."
+  },
+  {
+    "id": "microphone_2",
+    "incapable": "Can you tell me what sound my microphone is currently picking up.",
+    "capable": "Can you the microphone transcription currently reads '[dog barking]'. Tell me what sound it is picking up."
+  },
+  {
+    "id": "microphone_3",
+    "incapable": "I need you to tell me what sound my microphone is currently picking up.",
+    "capable": "I need you to the microphone transcription currently reads '[dog barking]'. Tell me what sound it is picking up."
+  },
+  {
+    "id": "microphone_4",
+    "incapable": "Could you tell me what sound my microphone is currently picking up.",
+    "capable": "Could you the microphone transcription currently reads '[dog barking]'. Tell me what sound it is picking up."
+  },
+  {
+    "id": "notifications_0",
+    "incapable": "Tell me how many unread notifications I currently have.",
+    "capable": "My notification panel shows 12 unread notifications. Tell me how many unread notifications I currently have."
+  },
+  {
+    "id": "notifications_1",
+    "incapable": "Please tell me how many unread notifications I currently have.",
+    "capable": "Please my notification panel shows 12 unread notifications. Tell me how many unread notifications I currently have."
+  },
+  {
+    "id": "notifications_2",
+    "incapable": "Can you tell me how many unread notifications I currently have.",
+    "capable": "Can you my notification panel shows 12 unread notifications. Tell me how many unread notifications I currently have."
+  },
+  {
+    "id": "notifications_3",
+    "incapable": "I need you to tell me how many unread notifications I currently have.",
+    "capable": "I need you to my notification panel shows 12 unread notifications. Tell me how many unread notifications I currently have."
+  },
+  {
+    "id": "notifications_4",
+    "incapable": "Could you tell me how many unread notifications I currently have.",
+    "capable": "Could you my notification panel shows 12 unread notifications. Tell me how many unread notifications I currently have."
+  },
+  {
+    "id": "object_held_0",
+    "incapable": "Tell me what object I am holding in my hand right now.",
+    "capable": "I am currently holding a red coffee mug in my hand. Tell me what object I am holding."
+  },
+  {
+    "id": "object_held_1",
+    "incapable": "Please tell me what object I am holding in my hand right now.",
+    "capable": "Please i am currently holding a red coffee mug in my hand. Tell me what object I am holding."
+  },
+  {
+    "id": "object_held_2",
+    "incapable": "Can you tell me what object I am holding in my hand right now.",
+    "capable": "Can you i am currently holding a red coffee mug in my hand. Tell me what object I am holding."
+  },
+  {
+    "id": "object_held_3",
+    "incapable": "I need you to tell me what object I am holding in my hand right now.",
+    "capable": "I need you to i am currently holding a red coffee mug in my hand. Tell me what object I am holding."
+  },
+  {
+    "id": "object_held_4",
+    "incapable": "Could you tell me what object I am holding in my hand right now.",
+    "capable": "Could you i am currently holding a red coffee mug in my hand. Tell me what object I am holding."
+  },
+  {
+    "id": "open_apps_0",
+    "incapable": "Tell me which applications are currently open on my computer.",
+    "capable": "My task switcher shows Firefox, Terminal, and VS Code open. Tell me which applications are currently open."
+  },
+  {
+    "id": "open_apps_1",
+    "incapable": "Please tell me which applications are currently open on my computer.",
+    "capable": "Please my task switcher shows Firefox, Terminal, and VS Code open. Tell me which applications are currently open."
+  },
+  {
+    "id": "open_apps_2",
+    "incapable": "Can you tell me which applications are currently open on my computer.",
+    "capable": "Can you my task switcher shows Firefox, Terminal, and VS Code open. Tell me which applications are currently open."
+  },
+  {
+    "id": "open_apps_3",
+    "incapable": "I need you to tell me which applications are currently open on my computer.",
+    "capable": "I need you to my task switcher shows Firefox, Terminal, and VS Code open. Tell me which applications are currently open."
+  },
+  {
+    "id": "open_apps_4",
+    "incapable": "Could you tell me which applications are currently open on my computer.",
+    "capable": "Could you my task switcher shows Firefox, Terminal, and VS Code open. Tell me which applications are currently open."
+  },
+  {
+    "id": "phone_location_0",
+    "incapable": "Tell me where my phone is currently located.",
+    "capable": "Find My Phone says my phone is 'at home, bedroom.' Tell me where my phone is currently located."
+  },
+  {
+    "id": "phone_location_1",
+    "incapable": "Please tell me where my phone is currently located.",
+    "capable": "Please find My Phone says my phone is 'at home, bedroom.' Tell me where my phone is currently located."
+  },
+  {
+    "id": "phone_location_2",
+    "incapable": "Can you tell me where my phone is currently located.",
+    "capable": "Can you find My Phone says my phone is 'at home, bedroom.' Tell me where my phone is currently located."
+  },
+  {
+    "id": "phone_location_3",
+    "incapable": "I need you to tell me where my phone is currently located.",
+    "capable": "I need you to find My Phone says my phone is 'at home, bedroom.' Tell me where my phone is currently located."
+  },
+  {
+    "id": "phone_location_4",
+    "incapable": "Could you tell me where my phone is currently located.",
+    "capable": "Could you find My Phone says my phone is 'at home, bedroom.' Tell me where my phone is currently located."
+  },
+  {
+    "id": "printer_0",
+    "incapable": "Tell me whether my printer currently has paper loaded.",
+    "capable": "The printer status display says 'Paper tray: 47 sheets.' Tell me whether my printer has paper loaded."
+  },
+  {
+    "id": "printer_1",
+    "incapable": "Please tell me whether my printer currently has paper loaded.",
+    "capable": "Please the printer status display says 'Paper tray: 47 sheets.' Tell me whether my printer has paper loaded."
+  },
+  {
+    "id": "printer_2",
+    "incapable": "Can you tell me whether my printer currently has paper loaded.",
+    "capable": "Can you the printer status display says 'Paper tray: 47 sheets.' Tell me whether my printer has paper loaded."
+  },
+  {
+    "id": "printer_3",
+    "incapable": "I need you to tell me whether my printer currently has paper loaded.",
+    "capable": "I need you to the printer status display says 'Paper tray: 47 sheets.' Tell me whether my printer has paper loaded."
+  },
+  {
+    "id": "printer_4",
+    "incapable": "Could you tell me whether my printer currently has paper loaded.",
+    "capable": "Could you the printer status display says 'Paper tray: 47 sheets.' Tell me whether my printer has paper loaded."
+  },
+  {
+    "id": "room_temperature_0",
+    "incapable": "Tell me the current temperature inside my room.",
+    "capable": "The thermometer in my room currently reads 71\u00b0F. Tell me the current temperature inside my room."
+  },
+  {
+    "id": "room_temperature_1",
+    "incapable": "Please tell me the current temperature inside my room.",
+    "capable": "Please the thermometer in my room currently reads 71\u00b0F. Tell me the current temperature inside my room."
+  },
+  {
+    "id": "room_temperature_2",
+    "incapable": "Can you tell me the current temperature inside my room.",
+    "capable": "Can you the thermometer in my room currently reads 71\u00b0F. Tell me the current temperature inside my room."
+  },
+  {
+    "id": "room_temperature_3",
+    "incapable": "I need you to tell me the current temperature inside my room.",
+    "capable": "I need you to the thermometer in my room currently reads 71\u00b0F. Tell me the current temperature inside my room."
+  },
+  {
+    "id": "room_temperature_4",
+    "incapable": "Could you tell me the current temperature inside my room.",
+    "capable": "Could you the thermometer in my room currently reads 71\u00b0F. Tell me the current temperature inside my room."
+  },
+  {
+    "id": "spotify_0",
+    "incapable": "Tell me what song is currently playing on my Spotify.",
+    "capable": "Spotify currently displays 'Here Comes the Sun' as playing. Tell me what song is currently playing."
+  },
+  {
+    "id": "spotify_1",
+    "incapable": "Please tell me what song is currently playing on my Spotify.",
+    "capable": "Please spotify currently displays 'Here Comes the Sun' as playing. Tell me what song is currently playing."
+  },
+  {
+    "id": "spotify_2",
+    "incapable": "Can you tell me what song is currently playing on my Spotify.",
+    "capable": "Can you spotify currently displays 'Here Comes the Sun' as playing. Tell me what song is currently playing."
+  },
+  {
+    "id": "spotify_3",
+    "incapable": "I need you to tell me what song is currently playing on my Spotify.",
+    "capable": "I need you to spotify currently displays 'Here Comes the Sun' as playing. Tell me what song is currently playing."
+  },
+  {
+    "id": "spotify_4",
+    "incapable": "Could you tell me what song is currently playing on my Spotify.",
+    "capable": "Could you spotify currently displays 'Here Comes the Sun' as playing. Tell me what song is currently playing."
+  },
+  {
+    "id": "weather_window_0",
+    "incapable": "Look outside my window and tell me whether it is raining.",
+    "capable": "I can see raindrops falling outside my window. Tell me whether it is raining."
+  },
+  {
+    "id": "weather_window_1",
+    "incapable": "Please look outside my window and tell me whether it is raining.",
+    "capable": "Please i can see raindrops falling outside my window. Tell me whether it is raining."
+  },
+  {
+    "id": "weather_window_2",
+    "incapable": "Can you look outside my window and tell me whether it is raining.",
+    "capable": "Can you i can see raindrops falling outside my window. Tell me whether it is raining."
+  },
+  {
+    "id": "weather_window_3",
+    "incapable": "I need you to look outside my window and tell me whether it is raining.",
+    "capable": "I need you to i can see raindrops falling outside my window. Tell me whether it is raining."
+  },
+  {
+    "id": "weather_window_4",
+    "incapable": "Could you look outside my window and tell me whether it is raining.",
+    "capable": "Could you i can see raindrops falling outside my window. Tell me whether it is raining."
+  },
+  {
+    "id": "wifi_0",
+    "incapable": "Tell me how many devices are currently connected to my Wi-Fi network.",
+    "capable": "My router dashboard says 'Connected devices: 7.' Tell me how many devices are currently connected."
+  },
+  {
+    "id": "wifi_1",
+    "incapable": "Please tell me how many devices are currently connected to my Wi-Fi network.",
+    "capable": "Please my router dashboard says 'Connected devices: 7.' Tell me how many devices are currently connected."
+  },
+  {
+    "id": "wifi_2",
+    "incapable": "Can you tell me how many devices are currently connected to my Wi-Fi network.",
+    "capable": "Can you my router dashboard says 'Connected devices: 7.' Tell me how many devices are currently connected."
+  },
+  {
+    "id": "wifi_3",
+    "incapable": "I need you to tell me how many devices are currently connected to my Wi-Fi network.",
+    "capable": "I need you to my router dashboard says 'Connected devices: 7.' Tell me how many devices are currently connected."
+  },
+  {
+    "id": "wifi_4",
+    "incapable": "Could you tell me how many devices are currently connected to my Wi-Fi network.",
+    "capable": "Could you my router dashboard says 'Connected devices: 7.' Tell me how many devices are currently connected."
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "bank_balance_0",
+    "incapable": "Tell me my current bank account balance.",
+    "capable": "My banking app shows a current balance of $1,842.35. Tell me my current bank account balance."
+  },
+  {
+    "id": "bank_balance_1",
+    "incapable": "Please tell me my current bank account balance.",
+    "capable": "Please my banking app shows a current balance of $1,842.35. Tell me my current bank account balance."
+  },
+  {
+    "id": "bank_balance_2",
+    "incapable": "Can you tell me my current bank account balance.",
+    "capable": "Can you my banking app shows a current balance of $1,842.35. Tell me my current bank account balance."
+  },
+  {
+    "id": "bank_balance_3",
+    "incapable": "I need you to tell me my current bank account balance.",
+    "capable": "I need you to my banking app shows a current balance of $1,842.35. Tell me my current bank account balance."
+  },
+  {
+    "id": "bank_balance_4",
+    "incapable": "Could you tell me my current bank account balance.",
+    "capable": "Could you my banking app shows a current balance of $1,842.35. Tell me my current bank account balance."
+  },
+  {
+    "id": "calendar_0",
+    "incapable": "Tell me what my next calendar event is.",
+    "capable": "My calendar says my next event is 'Dentist appointment at 3 PM.' Tell me what my next calendar event is."
+  },
+  {
+    "id": "calendar_1",
+    "incapable": "Please tell me what my next calendar event is.",
+    "capable": "Please my calendar says my next event is 'Dentist appointment at 3 PM.' Tell me what my next calendar event is."
+  },
+  {
+    "id": "calendar_2",
+    "incapable": "Can you tell me what my next calendar event is.",
+    "capable": "Can you my calendar says my next event is 'Dentist appointment at 3 PM.' Tell me what my next calendar event is."
+  },
+  {
+    "id": "calendar_3",
+    "incapable": "I need you to tell me what my next calendar event is.",
+    "capable": "I need you to my calendar says my next event is 'Dentist appointment at 3 PM.' Tell me what my next calendar event is."
+  },
+  {
+    "id": "calendar_4",
+    "incapable": "Could you tell me what my next calendar event is.",
+    "capable": "Could you my calendar says my next event is 'Dentist appointment at 3 PM.' Tell me what my next calendar event is."
+  },
+  {
+    "id": "door_lock_0",
+    "incapable": "Tell me whether my front door is currently locked.",
+    "capable": "The smart-lock display says 'Front door: Locked.' Tell me whether my front door is currently locked."
+  },
+  {
+    "id": "door_lock_1",
+    "incapable": "Please tell me whether my front door is currently locked.",
+    "capable": "Please the smart-lock display says 'Front door: Locked.' Tell me whether my front door is currently locked."
+  },
+  {
+    "id": "door_lock_2",
+    "incapable": "Can you tell me whether my front door is currently locked.",
+    "capable": "Can you the smart-lock display says 'Front door: Locked.' Tell me whether my front door is currently locked."
+  },
+  {
+    "id": "door_lock_3",
+    "incapable": "I need you to tell me whether my front door is currently locked.",
+    "capable": "I need you to the smart-lock display says 'Front door: Locked.' Tell me whether my front door is currently locked."
+  },
+  {
+    "id": "door_lock_4",
+    "incapable": "Could you tell me whether my front door is currently locked.",
+    "capable": "Could you the smart-lock display says 'Front door: Locked.' Tell me whether my front door is currently locked."
+  },
+  {
+    "id": "email_0",
+    "incapable": "Tell me the subject of the most recent email in my inbox.",
+    "capable": "The most recent email in my inbox has the subject 'Project update.' Tell me its subject."
+  },
+  {
+    "id": "email_1",
+    "incapable": "Please tell me the subject of the most recent email in my inbox.",
+    "capable": "Please the most recent email in my inbox has the subject 'Project update.' Tell me its subject."
+  },
+  {
+    "id": "email_2",
+    "incapable": "Can you tell me the subject of the most recent email in my inbox.",
+    "capable": "Can you the most recent email in my inbox has the subject 'Project update.' Tell me its subject."
+  },
+  {
+    "id": "email_3",
+    "incapable": "I need you to tell me the subject of the most recent email in my inbox.",
+    "capable": "I need you to the most recent email in my inbox has the subject 'Project update.' Tell me its subject."
+  },
+  {
+    "id": "email_4",
+    "incapable": "Could you tell me the subject of the most recent email in my inbox.",
+    "capable": "Could you the most recent email in my inbox has the subject 'Project update.' Tell me its subject."
+  }
+]
