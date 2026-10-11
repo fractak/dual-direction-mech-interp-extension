@@ -1,0 +1,58 @@
+{
+  "B_instruct": {
+    "ablate_B_capability": {
+      "before": 0.9166666666666666,
+      "after": 0.8166666666666667,
+      "change": -0.09999999999999998,
+      "lost": 8,
+      "gained": 2,
+      "discordant": 10,
+      "p_exact": 0.109375,
+      "bootstrap_ci_95": [
+        -0.20000000000000007,
+        0.0
+      ]
+    },
+    "ablate_C_capability": {
+      "before": 0.9166666666666666,
+      "after": 0.4,
+      "change": -0.5166666666666666,
+      "lost": 32,
+      "gained": 1,
+      "discordant": 33,
+      "p_exact": 7.916241884231567e-09,
+      "bootstrap_ci_95": [
+        -0.65,
+        -0.3833333333333333
+      ]
+    }
+  },
+  "C_safety_lora": {
+    "ablate_B_capability": {
+      "before": 0.9666666666666667,
+      "after": 0.95,
+      "change": -0.01666666666666672,
+      "lost": 1,
+      "gained": 0,
+      "discordant": 1,
+      "p_exact": 1.0,
+      "bootstrap_ci_95": [
+        -0.050000000000000044,
+        0.0
+      ]
+    },
+    "ablate_C_capability": {
+      "before": 0.9666666666666667,
+      "after": 0.0,
+      "change": -0.9666666666666667,
+      "lost": 58,
+      "gained": 0,
+      "discordant": 58,
+      "p_exact": 6.938893903907228e-18,
+      "bootstrap_ci_95": [
+        -1.0,
+        -0.9166666666666666
+      ]
+    }
+  }
+}

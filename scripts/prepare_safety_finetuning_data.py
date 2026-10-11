@@ -20,9 +20,7 @@ def sha(s):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--n-safety", type=int, default=2000)
-    p.add_argument("--n-benign", type=int, default=2000)
-    p.add_argument("--seed", type=int, default=42)
+    p.add_argument("--seed", type=int, default=67)
     p.add_argument(
         "--output",
         default="data/safety_finetuning/train_sft.json",
@@ -31,7 +29,6 @@ def main():
 
     rng = random.Random(args.seed)
 
-    print("Loading AdvBench exclusion set...")
     adv = load_dataset(
         "ivnle/advbench_harmful_behaviors",
         split="train",
@@ -43,72 +40,40 @@ def main():
         if text:
             adv_prompts.add(norm(text))
 
-    print("Loading PKU-SafeRLHF...")
-    pku = load_dataset(
-        "PKU-Alignment/PKU-SafeRLHF",
-        "default",
+    safety_ds = load_dataset(
+        "iNLP-Lab/multilingual-safety",
+        "en",
         split="train",
     )
 
     safety = []
-    seen_safety = set()
+    seen = set()
 
-    for idx, row in enumerate(pku):
-        prompt = row["prompt"]
+    for idx, row in enumerate(safety_ds):
+        prompt = row["prompt"].strip()
+        response = row["output"].strip()
+        key = norm(prompt)
 
-        prompt_key = norm(prompt) if prompt else ""
-        if not prompt_key or prompt_key in adv_prompts:
+        if not prompt or not response:
             continue
-        if prompt_key in seen_safety:
-            continue
-
-        safe0 = bool(row["is_response_0_safe"])
-        safe1 = bool(row["is_response_1_safe"])
-
-        # Keep only clean safety-preference pairs:
-        # exactly one response safe and one unsafe.
-        if safe0 == safe1:
+        if key in adv_prompts or key in seen:
             continue
 
-        safer = int(row["safer_response_id"])
-
-        if safer == 0 and safe0:
-            response = row["response_0"]
-            response_hash = row.get("response_0_sha256") or sha(response)
-        elif safer == 1 and safe1:
-            response = row["response_1"]
-            response_hash = row.get("response_1_sha256") or sha(response)
-        else:
-            continue
-
-        seen_safety.add(prompt_key)
+        seen.add(key)
 
         safety.append({
             "kind": "safety",
-            "source": "PKU-Alignment/PKU-SafeRLHF",
+            "source": "iNLP-Lab/multilingual-safety:en",
             "source_index": idx,
             "prompt": prompt,
             "response": response,
             "prompt_sha256": sha(prompt),
-            "response_sha256": response_hash,
+            "response_sha256": sha(response),
         })
 
-    if len(safety) < args.n_safety:
-        raise RuntimeError(
-            f"Only {len(safety)} eligible safety examples found."
-        )
-
-    rng.shuffle(safety)
-    safety = safety[:args.n_safety]
-
-    print("Loading Alpaca benign examples...")
-    alpaca = load_dataset(
-        "tatsu-lab/alpaca",
-        split="train",
-    )
+    alpaca = load_dataset("tatsu-lab/alpaca", split="train")
 
     benign = []
-    seen_benign = {norm(r["prompt"]) for r in safety}
 
     for idx, row in enumerate(alpaca):
         instruction = row.get("instruction", "").strip()
@@ -122,13 +87,12 @@ def main():
         if inp:
             prompt += "\n\n" + inp
 
-        prompt_key = norm(prompt)
-        if prompt_key in adv_prompts:
-            continue
-        if prompt_key in seen_benign:
+        key = norm(prompt)
+
+        if key in adv_prompts or key in seen:
             continue
 
-        seen_benign.add(prompt_key)
+        seen.add(key)
 
         benign.append({
             "kind": "benign",
@@ -140,13 +104,8 @@ def main():
             "response_sha256": sha(response),
         })
 
-    if len(benign) < args.n_benign:
-        raise RuntimeError(
-            f"Only {len(benign)} eligible benign examples found."
-        )
-
     rng.shuffle(benign)
-    benign = benign[:args.n_benign]
+    benign = benign[:len(safety)]
 
     rows = safety + benign
     rng.shuffle(rows)
@@ -156,20 +115,21 @@ def main():
             "seed": args.seed,
             "n_safety": len(safety),
             "n_benign": len(benign),
+            "safety_source": "iNLP-Lab/multilingual-safety:en",
             "advbench_exact_overlap_excluded": True,
-            "safety_filter": "exactly_one_response_safe",
+            "normalized_prompt_deduplication": True,
         },
         "rows": rows,
     }
 
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(result, indent=2))
+    out.write_text(json.dumps(result, indent=2) + "\n")
 
-    print(f"Safety examples: {len(safety)}")
-    print(f"Benign examples: {len(benign)}")
-    print(f"Total: {len(rows)}")
-    print(f"Saved: {out}")
+    print("safety:", len(safety))
+    print("benign:", len(benign))
+    print("total:", len(rows))
+    print("saved:", out)
 
 
 if __name__ == "__main__":

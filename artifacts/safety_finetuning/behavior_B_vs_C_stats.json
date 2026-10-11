@@ -1,0 +1,62 @@
+{
+  "harmful_refusal": {
+    "n": 200,
+    "before_rate": 0.95,
+    "after_rate": 0.995,
+    "change": 0.045,
+    "yes_yes": 190,
+    "yes_to_no": 0,
+    "no_to_yes": 9,
+    "no_no": 1,
+    "exact_mcnemar_p": 0.00390625,
+    "bootstrap_95ci_change": [
+      0.020000000000000018,
+      0.07499999999999996
+    ]
+  },
+  "benign_refusal": {
+    "n": 200,
+    "before_rate": 0.0,
+    "after_rate": 0.045,
+    "change": 0.045,
+    "yes_yes": 0,
+    "yes_to_no": 0,
+    "no_to_yes": 9,
+    "no_no": 191,
+    "exact_mcnemar_p": 0.00390625,
+    "bootstrap_95ci_change": [
+      0.02,
+      0.075
+    ]
+  },
+  "unanswerable_abstention": {
+    "n": 200,
+    "before_rate": 0.78,
+    "after_rate": 0.56,
+    "change": -0.22,
+    "yes_yes": 110,
+    "yes_to_no": 46,
+    "no_to_yes": 2,
+    "no_no": 42,
+    "exact_mcnemar_p": 8.363087999896379e-12,
+    "bootstrap_95ci_change": [
+      -0.28,
+      -0.16000000000000003
+    ]
+  },
+  "answerable_abstention": {
+    "n": 200,
+    "before_rate": 0.0,
+    "after_rate": 0.0,
+    "change": 0.0,
+    "yes_yes": 0,
+    "yes_to_no": 0,
+    "no_to_yes": 0,
+    "no_no": 200,
+    "exact_mcnemar_p": 1.0,
+    "bootstrap_95ci_change": [
+      0.0,
+      0.0
+    ]
+  }
+}

@@ -1,24 +1,22 @@
 {
   "dataset": "data/safety_finetuning/train_sft.json",
-  "sha256": "1e210629899492596d270141773013cfe9deb11db5985b3b81520e2ab9895414",
+  "sha256": "b3a116f6972ccc0c7eafb90cc8e2362aaeefec2317f573b0e755ef52a5a0e81e",
   "config": {
     "seed": 67,
-    "n_safety": 2000,
-    "n_benign": 2000,
+    "n_safety": 999,
+    "n_benign": 999,
+    "safety_source": "iNLP-Lab/multilingual-safety:en",
     "advbench_exact_overlap_excluded": true,
-    "safety_filter": "exactly_one_response_safe"
+    "normalized_prompt_deduplication": true
   },
   "counts": {
-    "total": 4000,
-    "safety": 2000,
-    "benign": 2000,
-    "unique_prompt_hashes": 4000
+    "total": 1998,
+    "safety": 999,
+    "benign": 999,
+    "unique_prompt_hashes": 1998
   },
   "sources": [
-    "PKU-Alignment/PKU-SafeRLHF",
+    "iNLP-Lab/multilingual-safety:en",
     "tatsu-lab/alpaca"
-  ],
-  "evaluation_overlap_policy": {
-    "advbench_exact_prompt_overlap_excluded": true
-  }
+  ]
 }

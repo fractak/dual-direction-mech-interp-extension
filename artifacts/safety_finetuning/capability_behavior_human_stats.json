@@ -1,0 +1,14 @@
+{
+  "n": 60,
+  "B_rate": 0.95,
+  "C_rate": 0.9666666666666667,
+  "change": 0.016666666666666666,
+  "transitions": {
+    "refusal_to_refusal": 57,
+    "refusal_to_nonrefusal": 0,
+    "nonrefusal_to_refusal": 1,
+    "nonrefusal_to_nonrefusal": 2
+  },
+  "paired_exact_p": 1.0,
+  "annotation": "blind_human_capability_refusal"
+}

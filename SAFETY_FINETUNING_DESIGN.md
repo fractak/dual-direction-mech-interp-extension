@@ -151,7 +151,8 @@ Training construction:
 Training method:
 
 - QLoRA / parameter-efficient fine-tuning
-- fixed random seed
+- fixed dataset-construction seed: 67
+- fixed training seed: 42
 - save the adapter separately from the base model
 - record all hyperparameters and dataset indices used to construct checkpoint C
 
