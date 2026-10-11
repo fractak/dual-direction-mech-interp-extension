@@ -1,0 +1,24 @@
+{
+  "dataset": "data/safety_finetuning/train_sft.json",
+  "sha256": "1e210629899492596d270141773013cfe9deb11db5985b3b81520e2ab9895414",
+  "config": {
+    "seed": 67,
+    "n_safety": 2000,
+    "n_benign": 2000,
+    "advbench_exact_overlap_excluded": true,
+    "safety_filter": "exactly_one_response_safe"
+  },
+  "counts": {
+    "total": 4000,
+    "safety": 2000,
+    "benign": 2000,
+    "unique_prompt_hashes": 4000
+  },
+  "sources": [
+    "PKU-Alignment/PKU-SafeRLHF",
+    "tatsu-lab/alpaca"
+  ],
+  "evaluation_overlap_policy": {
+    "advbench_exact_prompt_overlap_excluded": true
+  }
+}
