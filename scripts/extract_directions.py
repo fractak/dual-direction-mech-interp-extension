@@ -25,6 +25,7 @@ if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
 from ddmi.data.loaders import (
+    load_capability_prompts,
     load_epistemic_prompts,
     load_safety_prompts,
     prompts_to_text_list,
@@ -48,11 +49,17 @@ def main() -> None:
     parser.add_argument(
         "--direction-type",
         required=True,
-        choices=["safety", "epistemic"],
+        choices=["safety", "epistemic", "capability"],
         help="Type of direction to extract",
     )
     parser.add_argument("--output", required=True, help="Output JSON path")
     parser.add_argument("--prompt-limit", type=int, default=200, help="Total prompts (split 50/50)")
+    parser.add_argument(
+        "--capability-split",
+        choices=["all", "train", "eval"],
+        default="all",
+        help="Capability dataset split to use",
+    )
     parser.add_argument("--load-in-4bit", action="store_true", help="Load in BnB NF4")
     parser.add_argument("--load-in-8bit", action="store_true", help="Load in BnB INT8")
     parser.add_argument("--max-input-length", type=int, default=512)
@@ -80,11 +87,26 @@ def main() -> None:
 
     # Load prompts
     if args.direction_type == "safety":
-        prompt_groups = load_safety_prompts(limit=args.prompt_limit, seed=args.seed)
+        prompt_groups = load_safety_prompts(
+            limit=args.prompt_limit,
+            seed=args.seed,
+        )
         group_a_key, group_b_key = "harmful", "benign"
-    else:
-        prompt_groups = load_epistemic_prompts(limit=args.prompt_limit, seed=args.seed)
+
+    elif args.direction_type == "epistemic":
+        prompt_groups = load_epistemic_prompts(
+            limit=args.prompt_limit,
+            seed=args.seed,
+        )
         group_a_key, group_b_key = "unanswerable", "answerable"
+
+    elif args.direction_type == "capability":
+        prompt_groups = load_capability_prompts(
+            limit=args.prompt_limit,
+            seed=args.seed,
+            split=args.capability_split,
+        )
+        group_a_key, group_b_key = "incapable", "capable"
 
     group_a_texts = prompts_to_text_list(prompt_groups[group_a_key])
     group_b_texts = prompts_to_text_list(prompt_groups[group_b_key])

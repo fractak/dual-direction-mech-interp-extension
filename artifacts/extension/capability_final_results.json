@@ -1,0 +1,109 @@
+{
+  "artifact_type": "capability_extension_final_results",
+  "experiment": {
+    "primary_model": "meta-llama/Llama-3.1-8B-Instruct",
+    "seed": 42,
+    "capability_train_prompts": 160,
+    "capability_train_families": 16,
+    "capability_eval_prompts": 60,
+    "capability_eval_families": 60,
+    "capability_layer": 24,
+    "safety_layer": 22,
+    "epistemic_layer": 9,
+    "top_k": 1,
+    "ablation_strength": 1.5,
+    "manual_evaluation": "180 responses blindly annotated using fixed rubric"
+  },
+  "capability_direction": {
+    "top_layer": "model.layers.24",
+    "top_separability": 0.6719830113877419
+  },
+  "probe": {
+    "selected_layer": "model.layers.24",
+    "selected_layer_train_accuracy": 1.0,
+    "selected_layer_eval_accuracy": 0.925,
+    "best_layer": "model.layers.0",
+    "best_eval_accuracy": 1.0
+  },
+  "causal": {
+    "safety_ablation": {
+      "baseline_rate": 0.95,
+      "after_rate": 0.8666666666666667,
+      "net_drop": 0.08333333333333333,
+      "refusal_to_nonrefusal": 6,
+      "nonrefusal_to_refusal": 1,
+      "exact_mcnemar_p": 0.125,
+      "bootstrap_95_ci": [
+        0.0,
+        0.16666666666666666
+      ]
+    },
+    "capability_ablation": {
+      "baseline_rate": 0.95,
+      "after_rate": 0.8166666666666667,
+      "net_drop": 0.13333333333333333,
+      "refusal_to_nonrefusal": 8,
+      "nonrefusal_to_refusal": 0,
+      "exact_mcnemar_p": 0.0078125,
+      "bootstrap_95_ci": [
+        0.05,
+        0.21666666666666667
+      ]
+    }
+  },
+  "quantization": [
+    {
+      "capability_cosine_vs_fp16": 1.0,
+      "capability_norm_ratio": 1.0,
+      "capability_raw_norm": null,
+      "capability_separability": 0.6719830113877419,
+      "precision": "fp16"
+    },
+    {
+      "capability_cosine_vs_fp16": 1.0,
+      "capability_norm_ratio": 1.0,
+      "capability_raw_norm": 12.097741075833742,
+      "capability_separability": 0.6719830113877419,
+      "precision": "bnb_nf4"
+    },
+    {
+      "capability_cosine_vs_fp16": 0.950340565772857,
+      "capability_norm_ratio": 0.9999999999999996,
+      "capability_raw_norm": 12.825304436392202,
+      "capability_separability": 0.6771740051758339,
+      "precision": "bnb_int8"
+    }
+  ],
+  "cross_model_geometry": [
+    {
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "top_capability_layer": "model.layers.24",
+      "top_capability_separability": 0.6719830113877419,
+      "mean_safety_epistemic_cosine": 0.049216608019585016,
+      "mean_safety_capability_cosine": 0.20618663075615548,
+      "mean_epistemic_capability_cosine": -0.08998630478642877,
+      "safety_capability_at_top_capability": 0.5019735018795469,
+      "epistemic_capability_at_top_capability": -0.17007993370380495
+    },
+    {
+      "model_id": "Qwen/Qwen3-8B",
+      "top_capability_layer": "model.layers.20",
+      "top_capability_separability": 0.4471914986273639,
+      "mean_safety_epistemic_cosine": -0.0008674031039664121,
+      "mean_safety_capability_cosine": 0.1987007585165628,
+      "mean_epistemic_capability_cosine": -0.07544065169675213,
+      "safety_capability_at_top_capability": 0.35480085793961613,
+      "epistemic_capability_at_top_capability": 0.06134892242646901
+    },
+    {
+      "model_id": "unsloth/gemma-2-9b-it-bnb-4bit",
+      "top_capability_layer": "model.layers.24",
+      "top_capability_separability": 0.8983778705955572,
+      "mean_safety_epistemic_cosine": 0.11166015143194147,
+      "mean_safety_capability_cosine": 0.20978319341425114,
+      "mean_epistemic_capability_cosine": -0.1352783224166773,
+      "safety_capability_at_top_capability": 0.38135651989824476,
+      "epistemic_capability_at_top_capability": 0.10704735558171152
+    }
+  ]
+}

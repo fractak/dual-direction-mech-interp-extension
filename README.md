@@ -4,9 +4,9 @@
 
 Do LLMs refuse harmful requests and abstain on unknown factual questions using the *same* internal mechanism — or are these mechanistically independent behaviors?
 
-## Paper
+## Original paper / upstream work
 
-This work was accepted as an in-person poster at the ICML 2026 Mechanistic Interpretability Workshop.
+The upstream work was accepted as an in-person poster at the ICML 2026 Mechanistic Interpretability Workshop.
 
 - OpenReview: https://openreview.net/forum?id=dQJuu7jlZJ
 - Preprint: https://zenodo.org/records/20009857
@@ -157,7 +157,7 @@ tests/             Unit tests
 
 ## Hardware Requirements
 
-All experiments run on **2× NVIDIA T4 (16 GB each)** — designed for Kaggle free-tier hardware.
+The upstream experiments were designed for **2× NVIDIA T4 (16 GB each)** in Kaggle-style GPU environments.
 
 - Llama-3.1-8B-Instruct in NF4: ~5 GB VRAM
 - Direction extraction (200 prompts): ~1 hour per model
@@ -175,7 +175,7 @@ All experiments run on **2× NVIDIA T4 (16 GB each)** — designed for Kaggle fr
 
 ## Citation
 
-If you find this work useful, please cite:
+If you use the original Dual-Direction Mechanistic Interpretability work, please cite:
 
 ```bibtex
 @misc{aaliyan2026dualdirection,
@@ -187,10 +187,90 @@ If you find this work useful, please cite:
 }
 ```
 
-**OpenReview:** https://openreview.net/forum?id=dQJuu7jlZJ  
-**Preprint:** https://zenodo.org/records/20009857  
-**DOI:** `10.5281/zenodo.20009857`
-
 ## License
 
 MIT
+
+---
+
+## Capability-refusal extension
+
+This is an experimental extension of the upstream project and is not currently associated with a separate paper or preprint.
+
+This branch extends the original safety-refusal vs. epistemic-abstention
+analysis with a third direction: **capability refusal** — responses where
+the model declines because it lacks access, perception, tools, or ability.
+
+### Experimental design
+
+Capability directions are extracted from matched incapable/capable prompt
+pairs using the same difference-in-means method as the original experiments.
+
+The final setup uses:
+
+- Primary model: `meta-llama/Llama-3.1-8B-Instruct`
+- Capability training set: 160 prompts from 16 task families
+- Capability evaluation set: 60 unseen task families
+- Safety layer: 22
+- Epistemic layer: 9
+- Capability layer: 24
+- Ablation: top-1 layer, strength 1.5
+- Seed: 42
+
+Capability behavior was evaluated using blinded manual annotation of all
+180 baseline/intervention responses with a fixed semantic rubric.
+
+### Environment
+
+The capability-refusal extension experiments were run on Ubuntu 22.04 using:
+
+- GPU: NVIDIA A30 (24 GB VRAM)
+- PyTorch: 2.14.1+cu130
+- CUDA: 13.0
+- Python virtual environment: `.venv`
+- Hugging Face model loading with `HF_HUB_DISABLE_XET=1`
+- Compute environment: Fabric-managed GPU node
+
+### Main results
+
+On Llama-3.1-8B-Instruct:
+
+- Capability separability peaks at layer 24: **0.672**
+- Family-disjoint probe accuracy at layer 24: **0.925**
+- Capability ablation reduces capability refusal by **13.3 percentage points**
+  - exact paired p = **0.0078**
+  - bootstrap 95% CI = **[0.050, 0.217]**
+- Safety ablation reduces capability refusal by **8.3 percentage points**
+  - exact paired p = **0.125**
+  - bootstrap 95% CI = **[0.000, 0.167]**
+
+Across Llama-3.1-8B, Qwen3-8B, and Gemma-2-9B, mean safety-capability
+cosine similarity is consistently about **0.20**, while
+epistemic-capability similarity is near zero or negative.
+
+The capability direction is also robust to quantization:
+NF4 cosine vs. FP16 = **1.000** and INT8 cosine vs. FP16 = **0.950**.
+
+### Reproduction
+
+Run:
+
+    ./scripts/reproduce_capability_extension.sh
+
+The blind annotation set can be rebuilt with:
+
+    python scripts/build_full_blind_annotation.py
+
+The completed human-scored annotation artifact is stored at:
+
+    artifacts/extension/capability_full_blind_annotation.json
+
+Final consolidated results:
+
+    artifacts/extension/capability_final_results.json
+
+Final table and figure:
+
+    artifacts/extension/capability_extension_final_table.md
+    artifacts/extension/capability_extension_final_figure.png
+    artifacts/extension/capability_extension_final_figure.pdf

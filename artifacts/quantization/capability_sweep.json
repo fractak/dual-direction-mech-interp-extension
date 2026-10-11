@@ -1,0 +1,51 @@
+{
+  "artifact_type": "capability_quantization_sweep",
+  "capability_split": "train",
+  "drift_table": [
+    {
+      "capability_cosine_vs_fp16": 1.0,
+      "capability_norm_ratio": 1.0,
+      "capability_raw_norm": null,
+      "capability_separability": 0.6719830113877419,
+      "precision": "fp16"
+    },
+    {
+      "capability_cosine_vs_fp16": 1.0,
+      "capability_norm_ratio": 1.0,
+      "capability_raw_norm": 12.097741075833742,
+      "capability_separability": 0.6719830113877419,
+      "precision": "bnb_nf4"
+    },
+    {
+      "capability_cosine_vs_fp16": 0.950340565772857,
+      "capability_norm_ratio": 0.9999999999999996,
+      "capability_raw_norm": 12.825304436392202,
+      "capability_separability": 0.6771740051758339,
+      "precision": "bnb_int8"
+    }
+  ],
+  "fp16_capability_artifact": "artifacts/directions/capability_train_160.json",
+  "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+  "per_precision_results": {
+    "bnb_int8": {
+      "capability_raw_norm": 12.825304436392202,
+      "capability_separability": 0.6771740051758339
+    },
+    "bnb_nf4": {
+      "capability_raw_norm": 12.097741075833742,
+      "capability_separability": 0.6719830113877419
+    },
+    "fp16": {
+      "capability_raw_norm": null,
+      "capability_separability": 0.6719830113877419
+    }
+  },
+  "precisions": [
+    "fp16",
+    "bnb_nf4",
+    "bnb_int8"
+  ],
+  "prompt_limit": 160,
+  "seed": 42,
+  "target_layer": "model.layers.24"
+}

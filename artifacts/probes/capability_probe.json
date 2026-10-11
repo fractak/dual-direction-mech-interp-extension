@@ -1,0 +1,209 @@
+{
+  "artifact_type": "capability_linear_probe",
+  "eval_prompts": 40,
+  "eval_split": "eval",
+  "layers": [
+    {
+      "eval_accuracy": 1.0,
+      "layer_index": 0,
+      "layer_name": "model.layers.0",
+      "train_accuracy": 0.975
+    },
+    {
+      "eval_accuracy": 1.0,
+      "layer_index": 1,
+      "layer_name": "model.layers.1",
+      "train_accuracy": 0.99375
+    },
+    {
+      "eval_accuracy": 1.0,
+      "layer_index": 2,
+      "layer_name": "model.layers.2",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 1.0,
+      "layer_index": 3,
+      "layer_name": "model.layers.3",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 1.0,
+      "layer_index": 4,
+      "layer_name": "model.layers.4",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 1.0,
+      "layer_index": 5,
+      "layer_name": "model.layers.5",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 1.0,
+      "layer_index": 6,
+      "layer_name": "model.layers.6",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 1.0,
+      "layer_index": 7,
+      "layer_name": "model.layers.7",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 1.0,
+      "layer_index": 8,
+      "layer_name": "model.layers.8",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 1.0,
+      "layer_index": 9,
+      "layer_name": "model.layers.9",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 1.0,
+      "layer_index": 10,
+      "layer_name": "model.layers.10",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 1.0,
+      "layer_index": 11,
+      "layer_name": "model.layers.11",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.975,
+      "layer_index": 31,
+      "layer_name": "model.layers.31",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.95,
+      "layer_index": 25,
+      "layer_name": "model.layers.25",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.925,
+      "layer_index": 17,
+      "layer_name": "model.layers.17",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.925,
+      "layer_index": 18,
+      "layer_name": "model.layers.18",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.925,
+      "layer_index": 19,
+      "layer_name": "model.layers.19",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.925,
+      "layer_index": 20,
+      "layer_name": "model.layers.20",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.925,
+      "layer_index": 21,
+      "layer_name": "model.layers.21",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.925,
+      "layer_index": 22,
+      "layer_name": "model.layers.22",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.925,
+      "layer_index": 23,
+      "layer_name": "model.layers.23",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.925,
+      "layer_index": 24,
+      "layer_name": "model.layers.24",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.925,
+      "layer_index": 26,
+      "layer_name": "model.layers.26",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.925,
+      "layer_index": 27,
+      "layer_name": "model.layers.27",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.925,
+      "layer_index": 28,
+      "layer_name": "model.layers.28",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.925,
+      "layer_index": 29,
+      "layer_name": "model.layers.29",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.925,
+      "layer_index": 30,
+      "layer_name": "model.layers.30",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.9,
+      "layer_index": 12,
+      "layer_name": "model.layers.12",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.9,
+      "layer_index": 13,
+      "layer_name": "model.layers.13",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.9,
+      "layer_index": 14,
+      "layer_name": "model.layers.14",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.9,
+      "layer_index": 15,
+      "layer_name": "model.layers.15",
+      "train_accuracy": 1.0
+    },
+    {
+      "eval_accuracy": 0.9,
+      "layer_index": 16,
+      "layer_name": "model.layers.16",
+      "train_accuracy": 1.0
+    }
+  ],
+  "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+  "selected_layer": "model.layers.24",
+  "summary": {
+    "best_eval_accuracy": 1.0,
+    "best_layer": "model.layers.0",
+    "selected_layer_eval_accuracy": 0.925,
+    "selected_layer_train_accuracy": 1.0
+  },
+  "train_prompts": 160,
+  "train_split": "train"
+}
