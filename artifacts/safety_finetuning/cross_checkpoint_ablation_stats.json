@@ -1,0 +1,230 @@
+{
+  "B_instruct": {
+    "ablate_B_safety": {
+      "safety_refusal": {
+        "before": 0.95,
+        "after": 0.215,
+        "change": -0.735,
+        "lost": 148,
+        "gained": 1,
+        "discordant": 149,
+        "p_exact": 4.203895392974451e-43,
+        "bootstrap_ci_95": [
+          -0.7949999999999999,
+          -0.67
+        ]
+      },
+      "epistemic_abstention": {
+        "before": 0.78,
+        "after": 0.875,
+        "change": 0.09499999999999997,
+        "lost": 0,
+        "gained": 19,
+        "discordant": 19,
+        "p_exact": 3.814697265625e-06,
+        "bootstrap_ci_95": [
+          0.05500000000000005,
+          0.135
+        ]
+      }
+    },
+    "ablate_C_safety": {
+      "safety_refusal": {
+        "before": 0.95,
+        "after": 0.115,
+        "change": -0.835,
+        "lost": 167,
+        "gained": 0,
+        "discordant": 167,
+        "p_exact": 1.0691058840368783e-50,
+        "bootstrap_ci_95": [
+          -0.885,
+          -0.7849999999999999
+        ]
+      },
+      "epistemic_abstention": {
+        "before": 0.78,
+        "after": 0.84,
+        "change": 0.05999999999999994,
+        "lost": 1,
+        "gained": 13,
+        "discordant": 14,
+        "p_exact": 0.0018310546875,
+        "bootstrap_ci_95": [
+          0.025000000000000022,
+          0.09499999999999997
+        ]
+      }
+    },
+    "ablate_B_epistemic": {
+      "safety_refusal": {
+        "before": 0.95,
+        "after": 0.96,
+        "change": 0.010000000000000009,
+        "lost": 1,
+        "gained": 3,
+        "discordant": 4,
+        "p_exact": 0.625,
+        "bootstrap_ci_95": [
+          -0.010000000000000009,
+          0.030000000000000027
+        ]
+      },
+      "epistemic_abstention": {
+        "before": 0.78,
+        "after": 0.79,
+        "change": 0.010000000000000009,
+        "lost": 1,
+        "gained": 3,
+        "discordant": 4,
+        "p_exact": 0.625,
+        "bootstrap_ci_95": [
+          -0.010000000000000009,
+          0.030000000000000027
+        ]
+      }
+    },
+    "ablate_C_epistemic": {
+      "safety_refusal": {
+        "before": 0.95,
+        "after": 0.945,
+        "change": -0.0050000000000000044,
+        "lost": 1,
+        "gained": 0,
+        "discordant": 1,
+        "p_exact": 1.0,
+        "bootstrap_ci_95": [
+          -0.015000000000000013,
+          0.0
+        ]
+      },
+      "epistemic_abstention": {
+        "before": 0.78,
+        "after": 0.785,
+        "change": 0.0050000000000000044,
+        "lost": 2,
+        "gained": 3,
+        "discordant": 5,
+        "p_exact": 1.0,
+        "bootstrap_ci_95": [
+          -0.015000000000000013,
+          0.025000000000000022
+        ]
+      }
+    }
+  },
+  "C_safety_lora": {
+    "ablate_B_safety": {
+      "safety_refusal": {
+        "before": 0.995,
+        "after": 1.0,
+        "change": 0.0050000000000000044,
+        "lost": 0,
+        "gained": 1,
+        "discordant": 1,
+        "p_exact": 1.0,
+        "bootstrap_ci_95": [
+          0.0,
+          0.015000000000000013
+        ]
+      },
+      "epistemic_abstention": {
+        "before": 0.56,
+        "after": 0.825,
+        "change": 0.2649999999999999,
+        "lost": 0,
+        "gained": 53,
+        "discordant": 53,
+        "p_exact": 2.220446049250313e-16,
+        "bootstrap_ci_95": [
+          0.20499999999999996,
+          0.32499999999999996
+        ]
+      }
+    },
+    "ablate_C_safety": {
+      "safety_refusal": {
+        "before": 0.995,
+        "after": 0.27,
+        "change": -0.725,
+        "lost": 145,
+        "gained": 0,
+        "discordant": 145,
+        "p_exact": 4.484155085839415e-44,
+        "bootstrap_ci_95": [
+          -0.785,
+          -0.665
+        ]
+      },
+      "epistemic_abstention": {
+        "before": 0.56,
+        "after": 0.805,
+        "change": 0.245,
+        "lost": 0,
+        "gained": 49,
+        "discordant": 49,
+        "p_exact": 3.552713678800501e-15,
+        "bootstrap_ci_95": [
+          0.18500000000000005,
+          0.30499999999999994
+        ]
+      }
+    },
+    "ablate_B_epistemic": {
+      "safety_refusal": {
+        "before": 0.995,
+        "after": 1.0,
+        "change": 0.0050000000000000044,
+        "lost": 0,
+        "gained": 1,
+        "discordant": 1,
+        "p_exact": 1.0,
+        "bootstrap_ci_95": [
+          0.0,
+          0.015000000000000013
+        ]
+      },
+      "epistemic_abstention": {
+        "before": 0.56,
+        "after": 0.525,
+        "change": -0.03500000000000003,
+        "lost": 8,
+        "gained": 1,
+        "discordant": 9,
+        "p_exact": 0.0390625,
+        "bootstrap_ci_95": [
+          -0.06500000000000006,
+          -0.009999999999999898
+        ]
+      }
+    },
+    "ablate_C_epistemic": {
+      "safety_refusal": {
+        "before": 0.995,
+        "after": 1.0,
+        "change": 0.0050000000000000044,
+        "lost": 0,
+        "gained": 1,
+        "discordant": 1,
+        "p_exact": 1.0,
+        "bootstrap_ci_95": [
+          0.0,
+          0.015000000000000013
+        ]
+      },
+      "epistemic_abstention": {
+        "before": 0.56,
+        "after": 0.52,
+        "change": -0.040000000000000036,
+        "lost": 8,
+        "gained": 0,
+        "discordant": 8,
+        "p_exact": 0.0078125,
+        "bootstrap_ci_95": [
+          -0.06999999999999995,
+          -0.015000000000000013
+        ]
+      }
+    }
+  }
+}

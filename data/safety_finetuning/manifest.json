@@ -1,0 +1,22 @@
+{
+  "dataset": "data/safety_finetuning/train_sft.json",
+  "sha256": "b3a116f6972ccc0c7eafb90cc8e2362aaeefec2317f573b0e755ef52a5a0e81e",
+  "config": {
+    "seed": 67,
+    "n_safety": 999,
+    "n_benign": 999,
+    "safety_source": "iNLP-Lab/multilingual-safety:en",
+    "advbench_exact_overlap_excluded": true,
+    "normalized_prompt_deduplication": true
+  },
+  "counts": {
+    "total": 1998,
+    "safety": 999,
+    "benign": 999,
+    "unique_prompt_hashes": 1998
+  },
+  "sources": [
+    "iNLP-Lab/multilingual-safety:en",
+    "tatsu-lab/alpaca"
+  ]
+}

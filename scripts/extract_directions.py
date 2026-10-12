@@ -53,6 +53,11 @@ def main() -> None:
         help="Type of direction to extract",
     )
     parser.add_argument("--output", required=True, help="Output JSON path")
+    parser.add_argument(
+        "--adapter-path",
+        default=None,
+        help="Optional local PEFT/LoRA adapter to apply before extraction",
+    )
     parser.add_argument("--prompt-limit", type=int, default=200, help="Total prompts (split 50/50)")
     parser.add_argument(
         "--capability-split",
@@ -79,6 +84,18 @@ def main() -> None:
     logger.info("Loading model: %s", args.model_id)
     t0 = time.time()
     model, tokenizer = load_model_and_tokenizer(config)
+
+    if args.adapter_path:
+        from peft import PeftModel
+
+        logger.info("Loading PEFT adapter: %s", args.adapter_path)
+        peft_model = PeftModel.from_pretrained(model, args.adapter_path)
+
+        # LoRA modules remain injected into the underlying model, while
+        # unwrapping restores canonical module names such as model.layers.22.
+        model = peft_model.base_model.model
+        model.eval()
+
     logger.info("Model loaded in %.1fs", time.time() - t0)
 
     # Discover residual stream layers
@@ -174,6 +191,7 @@ def main() -> None:
     artifact = {
         "artifact_type": "direction_collection",
         "model_id": args.model_id,
+        "adapter_path": args.adapter_path,
         "direction_type": args.direction_type,
         "source_groups": {"group_a": group_a_key, "group_b": group_b_key},
         "prompt_limit": args.prompt_limit,
