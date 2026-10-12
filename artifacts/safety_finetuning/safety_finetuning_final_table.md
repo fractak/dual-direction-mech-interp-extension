@@ -31,15 +31,15 @@
 | B | C safety | safety refusal -0.835 |
 | C | B safety | safety refusal +0.005 |
 | C | C safety | safety refusal -0.725 |
-| B | B capability | capability refusal -0.100 |
-| B | C capability | capability refusal -0.517 |
-| C | B capability | capability refusal -0.017 |
-| C | C capability | capability refusal -0.967 |
+| B | B capability | capability refusal -0.267 |
+| B | C capability | capability refusal -0.200 |
+| C | B capability | capability refusal -0.183 |
+| C | C capability | capability refusal -0.650 |
 
 ## Main interpretation
 
 Safety fine-tuning does not merely amplify a fixed refusal direction. It reorganizes a broader refusal-related representational system.
 
-Safety refusal becomes stronger and its causally effective direction is reorganized. Epistemic abstention falls substantially and its representation rotates, while direct epistemic-direction ablation remains weak; notably, safety-direction ablation restores much of the lost epistemic abstention in the tuned checkpoint. Capability refusal behavior remains nearly unchanged on 60 unseen task families even though its representation rotates most strongly and its causal control shifts dramatically toward the post-tuning direction.
+Safety refusal becomes stronger and its causally effective direction is reorganized. Epistemic abstention falls substantially and its representation rotates, while direct epistemic-direction ablation remains weak; notably, safety-direction ablation restores much of the lost epistemic abstention in the tuned checkpoint. Capability refusal behavior remains nearly unchanged on 60 unseen task families even though its representation rotates most strongly. Independent blind annotation shows that both pre- and post-tuning capability directions retain causal influence, but the post-tuning direction becomes substantially more important in the tuned checkpoint.
 
 Together, the results support a broader reorganization of refusal-related representations rather than simple amplification of a single fixed abstention/refusal axis.

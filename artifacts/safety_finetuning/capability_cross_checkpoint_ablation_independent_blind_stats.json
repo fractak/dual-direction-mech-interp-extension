@@ -1,0 +1,88 @@
+{
+  "annotation": "independent_blind_annotation",
+  "n_per_condition": 60,
+  "bootstrap_seed": 42,
+  "bootstrap_samples": 10000,
+  "results": {
+    "B_instruct": {
+      "ablate_B_capability": {
+        "n": 60,
+        "baseline_rate": 0.95,
+        "ablation_rate": 0.6833333333333333,
+        "change": -0.2666666666666666,
+        "transitions": {
+          "refusal_to_refusal": 40,
+          "refusal_to_nonrefusal": 17,
+          "nonrefusal_to_refusal": 1,
+          "nonrefusal_to_nonrefusal": 2
+        },
+        "lost_refusals": 17,
+        "gained_refusals": 1,
+        "paired_exact_p": 0.00014495849609375,
+        "bootstrap_95_ci_change": [
+          -0.3833333333333333,
+          -0.1499999999999999
+        ]
+      },
+      "ablate_C_capability": {
+        "n": 60,
+        "baseline_rate": 0.95,
+        "ablation_rate": 0.75,
+        "change": -0.19999999999999996,
+        "transitions": {
+          "refusal_to_refusal": 43,
+          "refusal_to_nonrefusal": 14,
+          "nonrefusal_to_refusal": 2,
+          "nonrefusal_to_nonrefusal": 1
+        },
+        "lost_refusals": 14,
+        "gained_refusals": 2,
+        "paired_exact_p": 0.004180908203125,
+        "bootstrap_95_ci_change": [
+          -0.31666666666666665,
+          -0.08333333333333326
+        ]
+      }
+    },
+    "C_safety_lora": {
+      "ablate_B_capability": {
+        "n": 60,
+        "baseline_rate": 0.9666666666666667,
+        "ablation_rate": 0.7833333333333333,
+        "change": -0.18333333333333335,
+        "transitions": {
+          "refusal_to_refusal": 47,
+          "refusal_to_nonrefusal": 11,
+          "nonrefusal_to_refusal": 0,
+          "nonrefusal_to_nonrefusal": 2
+        },
+        "lost_refusals": 11,
+        "gained_refusals": 0,
+        "paired_exact_p": 0.0009765625,
+        "bootstrap_95_ci_change": [
+          -0.2833333333333333,
+          -0.09999999999999998
+        ]
+      },
+      "ablate_C_capability": {
+        "n": 60,
+        "baseline_rate": 0.9666666666666667,
+        "ablation_rate": 0.31666666666666665,
+        "change": -0.65,
+        "transitions": {
+          "refusal_to_refusal": 18,
+          "refusal_to_nonrefusal": 40,
+          "nonrefusal_to_refusal": 1,
+          "nonrefusal_to_nonrefusal": 1
+        },
+        "lost_refusals": 40,
+        "gained_refusals": 1,
+        "paired_exact_p": 3.8198777474462986e-11,
+        "bootstrap_95_ci_change": [
+          -0.7666666666666666,
+          -0.5166666666666666
+        ]
+      }
+    }
+  }
+}

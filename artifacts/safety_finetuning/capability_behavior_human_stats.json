@@ -10,5 +10,9 @@
     "nonrefusal_to_nonrefusal": 2
   },
   "paired_exact_p": 1.0,
-  "annotation": "blind_human_capability_refusal"
+  "annotation": "blind_human_capability_refusal",
+  "bootstrap_95_ci_change": [
+    0.0,
+    0.050000000000000044
+  ]
 }
