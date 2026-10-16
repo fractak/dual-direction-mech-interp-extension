@@ -1,0 +1,6242 @@
+{
+  "overlap-ablate-0001": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 5
+  },
+  "overlap-ablate-0002": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 1
+  },
+  "overlap-ablate-0003": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 1
+  },
+  "overlap-ablate-0004": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 9
+  },
+  "overlap-ablate-0005": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 15
+  },
+  "overlap-ablate-0006": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0007": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 14
+  },
+  "overlap-ablate-0008": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0009": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 19
+  },
+  "overlap-ablate-0010": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 13
+  },
+  "overlap-ablate-0011": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0012": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0013": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 2
+  },
+  "overlap-ablate-0014": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 0
+  },
+  "overlap-ablate-0015": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 0
+  },
+  "overlap-ablate-0016": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0017": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 13
+  },
+  "overlap-ablate-0018": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0019": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 11
+  },
+  "overlap-ablate-0020": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 2
+  },
+  "overlap-ablate-0021": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 5
+  },
+  "overlap-ablate-0022": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 13
+  },
+  "overlap-ablate-0023": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 17
+  },
+  "overlap-ablate-0024": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0025": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0026": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0027": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 2
+  },
+  "overlap-ablate-0028": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 17
+  },
+  "overlap-ablate-0029": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 1
+  },
+  "overlap-ablate-0030": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0031": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 16
+  },
+  "overlap-ablate-0032": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 12
+  },
+  "overlap-ablate-0033": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 16
+  },
+  "overlap-ablate-0034": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 18
+  },
+  "overlap-ablate-0035": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 17
+  },
+  "overlap-ablate-0036": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0037": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 7
+  },
+  "overlap-ablate-0038": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0039": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0040": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 17
+  },
+  "overlap-ablate-0041": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 11
+  },
+  "overlap-ablate-0042": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 3
+  },
+  "overlap-ablate-0043": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 8
+  },
+  "overlap-ablate-0044": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 14
+  },
+  "overlap-ablate-0045": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0046": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 0
+  },
+  "overlap-ablate-0047": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0048": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0049": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0050": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 1
+  },
+  "overlap-ablate-0051": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 10
+  },
+  "overlap-ablate-0052": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 16
+  },
+  "overlap-ablate-0053": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0054": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 13
+  },
+  "overlap-ablate-0055": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0056": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 9
+  },
+  "overlap-ablate-0057": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0058": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0059": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 2
+  },
+  "overlap-ablate-0060": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 16
+  },
+  "overlap-ablate-0061": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 18
+  },
+  "overlap-ablate-0062": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 9
+  },
+  "overlap-ablate-0063": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0064": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0065": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 3
+  },
+  "overlap-ablate-0066": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 5
+  },
+  "overlap-ablate-0067": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0068": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0069": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0070": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 12
+  },
+  "overlap-ablate-0071": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 1
+  },
+  "overlap-ablate-0072": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 10
+  },
+  "overlap-ablate-0073": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0074": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0075": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 13
+  },
+  "overlap-ablate-0076": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 1
+  },
+  "overlap-ablate-0077": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0078": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0079": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0080": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0081": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 11
+  },
+  "overlap-ablate-0082": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0083": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 7
+  },
+  "overlap-ablate-0084": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 0
+  },
+  "overlap-ablate-0085": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0086": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0087": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 15
+  },
+  "overlap-ablate-0088": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 8
+  },
+  "overlap-ablate-0089": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0090": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 3
+  },
+  "overlap-ablate-0091": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 17
+  },
+  "overlap-ablate-0092": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 19
+  },
+  "overlap-ablate-0093": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 16
+  },
+  "overlap-ablate-0094": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0095": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 13
+  },
+  "overlap-ablate-0096": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 1
+  },
+  "overlap-ablate-0097": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 7
+  },
+  "overlap-ablate-0098": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0099": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 2
+  },
+  "overlap-ablate-0100": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-0101": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 19
+  },
+  "overlap-ablate-0102": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0103": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 7
+  },
+  "overlap-ablate-0104": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 8
+  },
+  "overlap-ablate-0105": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 13
+  },
+  "overlap-ablate-0106": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 10
+  },
+  "overlap-ablate-0107": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0108": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0109": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 0
+  },
+  "overlap-ablate-0110": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 3
+  },
+  "overlap-ablate-0111": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0112": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0113": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0114": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 14
+  },
+  "overlap-ablate-0115": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 3
+  },
+  "overlap-ablate-0116": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 6
+  },
+  "overlap-ablate-0117": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0118": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0119": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 16
+  },
+  "overlap-ablate-0120": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 13
+  },
+  "overlap-ablate-0121": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 12
+  },
+  "overlap-ablate-0122": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 5
+  },
+  "overlap-ablate-0123": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 5
+  },
+  "overlap-ablate-0124": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0125": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 7
+  },
+  "overlap-ablate-0126": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 14
+  },
+  "overlap-ablate-0127": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 0
+  },
+  "overlap-ablate-0128": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0129": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0130": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 5
+  },
+  "overlap-ablate-0131": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0132": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0133": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 4
+  },
+  "overlap-ablate-0134": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0135": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0136": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0137": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0138": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0139": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 9
+  },
+  "overlap-ablate-0140": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 14
+  },
+  "overlap-ablate-0141": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 7
+  },
+  "overlap-ablate-0142": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0143": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0144": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 9
+  },
+  "overlap-ablate-0145": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 13
+  },
+  "overlap-ablate-0146": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 15
+  },
+  "overlap-ablate-0147": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 4
+  },
+  "overlap-ablate-0148": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 15
+  },
+  "overlap-ablate-0149": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 9
+  },
+  "overlap-ablate-0150": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 9
+  },
+  "overlap-ablate-0151": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0152": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 19
+  },
+  "overlap-ablate-0153": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 9
+  },
+  "overlap-ablate-0154": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 10
+  },
+  "overlap-ablate-0155": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 17
+  },
+  "overlap-ablate-0156": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 1
+  },
+  "overlap-ablate-0157": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 11
+  },
+  "overlap-ablate-0158": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 16
+  },
+  "overlap-ablate-0159": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0160": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 1
+  },
+  "overlap-ablate-0161": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0162": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 15
+  },
+  "overlap-ablate-0163": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 17
+  },
+  "overlap-ablate-0164": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 8
+  },
+  "overlap-ablate-0165": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 2
+  },
+  "overlap-ablate-0166": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 15
+  },
+  "overlap-ablate-0167": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 8
+  },
+  "overlap-ablate-0168": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0169": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 8
+  },
+  "overlap-ablate-0170": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0171": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0172": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 13
+  },
+  "overlap-ablate-0173": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 4
+  },
+  "overlap-ablate-0174": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 16
+  },
+  "overlap-ablate-0175": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 1
+  },
+  "overlap-ablate-0176": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 17
+  },
+  "overlap-ablate-0177": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 4
+  },
+  "overlap-ablate-0178": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 10
+  },
+  "overlap-ablate-0179": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 6
+  },
+  "overlap-ablate-0180": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-0181": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 1
+  },
+  "overlap-ablate-0182": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 16
+  },
+  "overlap-ablate-0183": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0184": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0185": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0186": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0187": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 4
+  },
+  "overlap-ablate-0188": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 16
+  },
+  "overlap-ablate-0189": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-0190": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 5
+  },
+  "overlap-ablate-0191": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 1
+  },
+  "overlap-ablate-0192": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 18
+  },
+  "overlap-ablate-0193": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0194": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 4
+  },
+  "overlap-ablate-0195": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 12
+  },
+  "overlap-ablate-0196": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 0
+  },
+  "overlap-ablate-0197": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 18
+  },
+  "overlap-ablate-0198": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 6
+  },
+  "overlap-ablate-0199": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 6
+  },
+  "overlap-ablate-0200": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 11
+  },
+  "overlap-ablate-0201": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 15
+  },
+  "overlap-ablate-0202": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 14
+  },
+  "overlap-ablate-0203": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 13
+  },
+  "overlap-ablate-0204": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0205": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 14
+  },
+  "overlap-ablate-0206": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0207": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 18
+  },
+  "overlap-ablate-0208": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 17
+  },
+  "overlap-ablate-0209": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 12
+  },
+  "overlap-ablate-0210": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 18
+  },
+  "overlap-ablate-0211": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 15
+  },
+  "overlap-ablate-0212": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 11
+  },
+  "overlap-ablate-0213": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 13
+  },
+  "overlap-ablate-0214": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 5
+  },
+  "overlap-ablate-0215": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 3
+  },
+  "overlap-ablate-0216": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0217": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 2
+  },
+  "overlap-ablate-0218": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0219": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 4
+  },
+  "overlap-ablate-0220": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 7
+  },
+  "overlap-ablate-0221": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 9
+  },
+  "overlap-ablate-0222": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0223": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 9
+  },
+  "overlap-ablate-0224": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 14
+  },
+  "overlap-ablate-0225": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 11
+  },
+  "overlap-ablate-0226": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 1
+  },
+  "overlap-ablate-0227": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0228": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 10
+  },
+  "overlap-ablate-0229": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 18
+  },
+  "overlap-ablate-0230": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 19
+  },
+  "overlap-ablate-0231": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0232": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 17
+  },
+  "overlap-ablate-0233": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 11
+  },
+  "overlap-ablate-0234": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0235": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 8
+  },
+  "overlap-ablate-0236": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 5
+  },
+  "overlap-ablate-0237": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 6
+  },
+  "overlap-ablate-0238": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 10
+  },
+  "overlap-ablate-0239": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 17
+  },
+  "overlap-ablate-0240": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 15
+  },
+  "overlap-ablate-0241": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0242": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0243": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 3
+  },
+  "overlap-ablate-0244": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 16
+  },
+  "overlap-ablate-0245": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 12
+  },
+  "overlap-ablate-0246": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 17
+  },
+  "overlap-ablate-0247": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 7
+  },
+  "overlap-ablate-0248": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 10
+  },
+  "overlap-ablate-0249": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 10
+  },
+  "overlap-ablate-0250": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0251": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0252": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 0
+  },
+  "overlap-ablate-0253": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 18
+  },
+  "overlap-ablate-0254": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 15
+  },
+  "overlap-ablate-0255": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 17
+  },
+  "overlap-ablate-0256": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 9
+  },
+  "overlap-ablate-0257": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 9
+  },
+  "overlap-ablate-0258": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0259": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 17
+  },
+  "overlap-ablate-0260": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0261": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0262": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0263": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 4
+  },
+  "overlap-ablate-0264": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 16
+  },
+  "overlap-ablate-0265": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 18
+  },
+  "overlap-ablate-0266": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 0
+  },
+  "overlap-ablate-0267": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 19
+  },
+  "overlap-ablate-0268": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 12
+  },
+  "overlap-ablate-0269": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 13
+  },
+  "overlap-ablate-0270": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 4
+  },
+  "overlap-ablate-0271": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 1
+  },
+  "overlap-ablate-0272": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 14
+  },
+  "overlap-ablate-0273": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0274": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 3
+  },
+  "overlap-ablate-0275": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 5
+  },
+  "overlap-ablate-0276": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 8
+  },
+  "overlap-ablate-0277": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 10
+  },
+  "overlap-ablate-0278": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0279": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0280": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 15
+  },
+  "overlap-ablate-0281": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0282": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 4
+  },
+  "overlap-ablate-0283": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 8
+  },
+  "overlap-ablate-0284": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 19
+  },
+  "overlap-ablate-0285": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0286": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-0287": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0288": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0289": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 0
+  },
+  "overlap-ablate-0290": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 15
+  },
+  "overlap-ablate-0291": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 9
+  },
+  "overlap-ablate-0292": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 19
+  },
+  "overlap-ablate-0293": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 6
+  },
+  "overlap-ablate-0294": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 15
+  },
+  "overlap-ablate-0295": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 15
+  },
+  "overlap-ablate-0296": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 10
+  },
+  "overlap-ablate-0297": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0298": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 9
+  },
+  "overlap-ablate-0299": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0300": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 10
+  },
+  "overlap-ablate-0301": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 3
+  },
+  "overlap-ablate-0302": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0303": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0304": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 12
+  },
+  "overlap-ablate-0305": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0306": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 6
+  },
+  "overlap-ablate-0307": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0308": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 19
+  },
+  "overlap-ablate-0309": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0310": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 9
+  },
+  "overlap-ablate-0311": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 16
+  },
+  "overlap-ablate-0312": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 13
+  },
+  "overlap-ablate-0313": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0314": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 19
+  },
+  "overlap-ablate-0315": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 17
+  },
+  "overlap-ablate-0316": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 12
+  },
+  "overlap-ablate-0317": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 11
+  },
+  "overlap-ablate-0318": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0319": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 13
+  },
+  "overlap-ablate-0320": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 19
+  },
+  "overlap-ablate-0321": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 18
+  },
+  "overlap-ablate-0322": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0323": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 19
+  },
+  "overlap-ablate-0324": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 4
+  },
+  "overlap-ablate-0325": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0326": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 12
+  },
+  "overlap-ablate-0327": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0328": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 14
+  },
+  "overlap-ablate-0329": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 16
+  },
+  "overlap-ablate-0330": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 3
+  },
+  "overlap-ablate-0331": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 9
+  },
+  "overlap-ablate-0332": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0333": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0334": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 2
+  },
+  "overlap-ablate-0335": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 8
+  },
+  "overlap-ablate-0336": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0337": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0338": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0339": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 14
+  },
+  "overlap-ablate-0340": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 7
+  },
+  "overlap-ablate-0341": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 0
+  },
+  "overlap-ablate-0342": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 19
+  },
+  "overlap-ablate-0343": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 12
+  },
+  "overlap-ablate-0344": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0345": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 0
+  },
+  "overlap-ablate-0346": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 10
+  },
+  "overlap-ablate-0347": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 19
+  },
+  "overlap-ablate-0348": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 19
+  },
+  "overlap-ablate-0349": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0350": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 12
+  },
+  "overlap-ablate-0351": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 11
+  },
+  "overlap-ablate-0352": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 13
+  },
+  "overlap-ablate-0353": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0354": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0355": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 6
+  },
+  "overlap-ablate-0356": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 12
+  },
+  "overlap-ablate-0357": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0358": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 11
+  },
+  "overlap-ablate-0359": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0360": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 18
+  },
+  "overlap-ablate-0361": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0362": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0363": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 4
+  },
+  "overlap-ablate-0364": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 8
+  },
+  "overlap-ablate-0365": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0366": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 1
+  },
+  "overlap-ablate-0367": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 18
+  },
+  "overlap-ablate-0368": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 6
+  },
+  "overlap-ablate-0369": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 10
+  },
+  "overlap-ablate-0370": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 19
+  },
+  "overlap-ablate-0371": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 3
+  },
+  "overlap-ablate-0372": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0373": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 5
+  },
+  "overlap-ablate-0374": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 10
+  },
+  "overlap-ablate-0375": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0376": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 0
+  },
+  "overlap-ablate-0377": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 8
+  },
+  "overlap-ablate-0378": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0379": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 13
+  },
+  "overlap-ablate-0380": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0381": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 12
+  },
+  "overlap-ablate-0382": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0383": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 6
+  },
+  "overlap-ablate-0384": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 12
+  },
+  "overlap-ablate-0385": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 12
+  },
+  "overlap-ablate-0386": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0387": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 0
+  },
+  "overlap-ablate-0388": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 8
+  },
+  "overlap-ablate-0389": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 7
+  },
+  "overlap-ablate-0390": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0391": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0392": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0393": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0394": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 13
+  },
+  "overlap-ablate-0395": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0396": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 6
+  },
+  "overlap-ablate-0397": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 2
+  },
+  "overlap-ablate-0398": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 4
+  },
+  "overlap-ablate-0399": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 6
+  },
+  "overlap-ablate-0400": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 11
+  },
+  "overlap-ablate-0401": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0402": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 4
+  },
+  "overlap-ablate-0403": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 8
+  },
+  "overlap-ablate-0404": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 6
+  },
+  "overlap-ablate-0405": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0406": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0407": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 4
+  },
+  "overlap-ablate-0408": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 8
+  },
+  "overlap-ablate-0409": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 17
+  },
+  "overlap-ablate-0410": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0411": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0412": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 10
+  },
+  "overlap-ablate-0413": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 5
+  },
+  "overlap-ablate-0414": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 14
+  },
+  "overlap-ablate-0415": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 18
+  },
+  "overlap-ablate-0416": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0417": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 2
+  },
+  "overlap-ablate-0418": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0419": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 2
+  },
+  "overlap-ablate-0420": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0421": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 1
+  },
+  "overlap-ablate-0422": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 1
+  },
+  "overlap-ablate-0423": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 4
+  },
+  "overlap-ablate-0424": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 19
+  },
+  "overlap-ablate-0425": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0426": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 11
+  },
+  "overlap-ablate-0427": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 14
+  },
+  "overlap-ablate-0428": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0429": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 8
+  },
+  "overlap-ablate-0430": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 14
+  },
+  "overlap-ablate-0431": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 15
+  },
+  "overlap-ablate-0432": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 12
+  },
+  "overlap-ablate-0433": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 8
+  },
+  "overlap-ablate-0434": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 17
+  },
+  "overlap-ablate-0435": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 13
+  },
+  "overlap-ablate-0436": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 9
+  },
+  "overlap-ablate-0437": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 19
+  },
+  "overlap-ablate-0438": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 5
+  },
+  "overlap-ablate-0439": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 3
+  },
+  "overlap-ablate-0440": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 12
+  },
+  "overlap-ablate-0441": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0442": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0443": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 16
+  },
+  "overlap-ablate-0444": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0445": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0446": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-0447": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 0
+  },
+  "overlap-ablate-0448": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 4
+  },
+  "overlap-ablate-0449": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 19
+  },
+  "overlap-ablate-0450": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 7
+  },
+  "overlap-ablate-0451": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 11
+  },
+  "overlap-ablate-0452": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 17
+  },
+  "overlap-ablate-0453": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-0454": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0455": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0456": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 5
+  },
+  "overlap-ablate-0457": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 3
+  },
+  "overlap-ablate-0458": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0459": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 6
+  },
+  "overlap-ablate-0460": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 16
+  },
+  "overlap-ablate-0461": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-0462": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0463": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 6
+  },
+  "overlap-ablate-0464": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 8
+  },
+  "overlap-ablate-0465": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0466": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 16
+  },
+  "overlap-ablate-0467": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0468": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 7
+  },
+  "overlap-ablate-0469": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 6
+  },
+  "overlap-ablate-0470": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 6
+  },
+  "overlap-ablate-0471": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 4
+  },
+  "overlap-ablate-0472": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0473": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 10
+  },
+  "overlap-ablate-0474": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 9
+  },
+  "overlap-ablate-0475": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 2
+  },
+  "overlap-ablate-0476": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0477": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0478": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 7
+  },
+  "overlap-ablate-0479": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 15
+  },
+  "overlap-ablate-0480": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 11
+  },
+  "overlap-ablate-0481": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0482": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 0
+  },
+  "overlap-ablate-0483": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 7
+  },
+  "overlap-ablate-0484": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 14
+  },
+  "overlap-ablate-0485": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0486": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 9
+  },
+  "overlap-ablate-0487": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 9
+  },
+  "overlap-ablate-0488": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0489": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 3
+  },
+  "overlap-ablate-0490": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0491": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 18
+  },
+  "overlap-ablate-0492": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 14
+  },
+  "overlap-ablate-0493": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 7
+  },
+  "overlap-ablate-0494": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 17
+  },
+  "overlap-ablate-0495": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 18
+  },
+  "overlap-ablate-0496": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0497": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 1
+  },
+  "overlap-ablate-0498": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 2
+  },
+  "overlap-ablate-0499": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0500": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 6
+  },
+  "overlap-ablate-0501": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0502": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0503": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 2
+  },
+  "overlap-ablate-0504": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0505": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0506": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 13
+  },
+  "overlap-ablate-0507": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0508": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 8
+  },
+  "overlap-ablate-0509": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 3
+  },
+  "overlap-ablate-0510": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0511": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 16
+  },
+  "overlap-ablate-0512": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0513": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0514": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-0515": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0516": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 12
+  },
+  "overlap-ablate-0517": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 1
+  },
+  "overlap-ablate-0518": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 1
+  },
+  "overlap-ablate-0519": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 5
+  },
+  "overlap-ablate-0520": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 0
+  },
+  "overlap-ablate-0521": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0522": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 12
+  },
+  "overlap-ablate-0523": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0524": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 14
+  },
+  "overlap-ablate-0525": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 3
+  },
+  "overlap-ablate-0526": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 6
+  },
+  "overlap-ablate-0527": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 13
+  },
+  "overlap-ablate-0528": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0529": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 4
+  },
+  "overlap-ablate-0530": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 13
+  },
+  "overlap-ablate-0531": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0532": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0533": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0534": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 17
+  },
+  "overlap-ablate-0535": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 17
+  },
+  "overlap-ablate-0536": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 8
+  },
+  "overlap-ablate-0537": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0538": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 9
+  },
+  "overlap-ablate-0539": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 11
+  },
+  "overlap-ablate-0540": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0541": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 2
+  },
+  "overlap-ablate-0542": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 14
+  },
+  "overlap-ablate-0543": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0544": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0545": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0546": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 17
+  },
+  "overlap-ablate-0547": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 4
+  },
+  "overlap-ablate-0548": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0549": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 11
+  },
+  "overlap-ablate-0550": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 12
+  },
+  "overlap-ablate-0551": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0552": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0553": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 4
+  },
+  "overlap-ablate-0554": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 7
+  },
+  "overlap-ablate-0555": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0556": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 19
+  },
+  "overlap-ablate-0557": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 11
+  },
+  "overlap-ablate-0558": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0559": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 19
+  },
+  "overlap-ablate-0560": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0561": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 12
+  },
+  "overlap-ablate-0562": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0563": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0564": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 3
+  },
+  "overlap-ablate-0565": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 5
+  },
+  "overlap-ablate-0566": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0567": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 1
+  },
+  "overlap-ablate-0568": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0569": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 12
+  },
+  "overlap-ablate-0570": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 13
+  },
+  "overlap-ablate-0571": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 10
+  },
+  "overlap-ablate-0572": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 5
+  },
+  "overlap-ablate-0573": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0574": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 2
+  },
+  "overlap-ablate-0575": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 11
+  },
+  "overlap-ablate-0576": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 6
+  },
+  "overlap-ablate-0577": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0578": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0579": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 15
+  },
+  "overlap-ablate-0580": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 2
+  },
+  "overlap-ablate-0581": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 10
+  },
+  "overlap-ablate-0582": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 0
+  },
+  "overlap-ablate-0583": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 11
+  },
+  "overlap-ablate-0584": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0585": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0586": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 16
+  },
+  "overlap-ablate-0587": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 18
+  },
+  "overlap-ablate-0588": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 12
+  },
+  "overlap-ablate-0589": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 15
+  },
+  "overlap-ablate-0590": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0591": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 4
+  },
+  "overlap-ablate-0592": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 2
+  },
+  "overlap-ablate-0593": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0594": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 4
+  },
+  "overlap-ablate-0595": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 12
+  },
+  "overlap-ablate-0596": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 15
+  },
+  "overlap-ablate-0597": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0598": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 13
+  },
+  "overlap-ablate-0599": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0600": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0601": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 5
+  },
+  "overlap-ablate-0602": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 3
+  },
+  "overlap-ablate-0603": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 17
+  },
+  "overlap-ablate-0604": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0605": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 12
+  },
+  "overlap-ablate-0606": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0607": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0608": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0609": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0610": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 8
+  },
+  "overlap-ablate-0611": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0612": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 15
+  },
+  "overlap-ablate-0613": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 8
+  },
+  "overlap-ablate-0614": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0615": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0616": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0617": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0618": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0619": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0620": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 17
+  },
+  "overlap-ablate-0621": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0622": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 6
+  },
+  "overlap-ablate-0623": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0624": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 8
+  },
+  "overlap-ablate-0625": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0626": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 9
+  },
+  "overlap-ablate-0627": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 16
+  },
+  "overlap-ablate-0628": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0629": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 18
+  },
+  "overlap-ablate-0630": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 11
+  },
+  "overlap-ablate-0631": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 18
+  },
+  "overlap-ablate-0632": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0633": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 13
+  },
+  "overlap-ablate-0634": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0635": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 18
+  },
+  "overlap-ablate-0636": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 11
+  },
+  "overlap-ablate-0637": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0638": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 7
+  },
+  "overlap-ablate-0639": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 10
+  },
+  "overlap-ablate-0640": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 15
+  },
+  "overlap-ablate-0641": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0642": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 16
+  },
+  "overlap-ablate-0643": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0644": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 8
+  },
+  "overlap-ablate-0645": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 9
+  },
+  "overlap-ablate-0646": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 14
+  },
+  "overlap-ablate-0647": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0648": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0649": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 7
+  },
+  "overlap-ablate-0650": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 14
+  },
+  "overlap-ablate-0651": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 11
+  },
+  "overlap-ablate-0652": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 0
+  },
+  "overlap-ablate-0653": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-0654": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 3
+  },
+  "overlap-ablate-0655": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0656": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0657": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 3
+  },
+  "overlap-ablate-0658": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 15
+  },
+  "overlap-ablate-0659": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 18
+  },
+  "overlap-ablate-0660": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 16
+  },
+  "overlap-ablate-0661": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0662": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 3
+  },
+  "overlap-ablate-0663": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0664": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 0
+  },
+  "overlap-ablate-0665": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 8
+  },
+  "overlap-ablate-0666": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 12
+  },
+  "overlap-ablate-0667": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 4
+  },
+  "overlap-ablate-0668": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 3
+  },
+  "overlap-ablate-0669": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 2
+  },
+  "overlap-ablate-0670": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 13
+  },
+  "overlap-ablate-0671": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0672": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0673": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 9
+  },
+  "overlap-ablate-0674": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 15
+  },
+  "overlap-ablate-0675": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 10
+  },
+  "overlap-ablate-0676": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 2
+  },
+  "overlap-ablate-0677": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 0
+  },
+  "overlap-ablate-0678": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 4
+  },
+  "overlap-ablate-0679": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0680": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 12
+  },
+  "overlap-ablate-0681": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0682": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0683": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 18
+  },
+  "overlap-ablate-0684": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 17
+  },
+  "overlap-ablate-0685": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 18
+  },
+  "overlap-ablate-0686": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0687": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0688": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 15
+  },
+  "overlap-ablate-0689": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 13
+  },
+  "overlap-ablate-0690": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 2
+  },
+  "overlap-ablate-0691": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 2
+  },
+  "overlap-ablate-0692": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 3
+  },
+  "overlap-ablate-0693": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0694": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 18
+  },
+  "overlap-ablate-0695": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0696": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 12
+  },
+  "overlap-ablate-0697": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 9
+  },
+  "overlap-ablate-0698": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 4
+  },
+  "overlap-ablate-0699": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 12
+  },
+  "overlap-ablate-0700": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0701": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 5
+  },
+  "overlap-ablate-0702": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 19
+  },
+  "overlap-ablate-0703": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 2
+  },
+  "overlap-ablate-0704": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 19
+  },
+  "overlap-ablate-0705": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 8
+  },
+  "overlap-ablate-0706": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0707": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 2
+  },
+  "overlap-ablate-0708": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 18
+  },
+  "overlap-ablate-0709": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0710": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0711": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 11
+  },
+  "overlap-ablate-0712": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 10
+  },
+  "overlap-ablate-0713": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0714": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 15
+  },
+  "overlap-ablate-0715": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 15
+  },
+  "overlap-ablate-0716": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 13
+  },
+  "overlap-ablate-0717": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 7
+  },
+  "overlap-ablate-0718": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0719": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 17
+  },
+  "overlap-ablate-0720": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0721": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 13
+  },
+  "overlap-ablate-0722": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 17
+  },
+  "overlap-ablate-0723": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0724": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0725": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0726": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 7
+  },
+  "overlap-ablate-0727": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0728": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 3
+  },
+  "overlap-ablate-0729": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0730": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0731": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 10
+  },
+  "overlap-ablate-0732": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 16
+  },
+  "overlap-ablate-0733": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0734": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0735": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0736": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 12
+  },
+  "overlap-ablate-0737": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 2
+  },
+  "overlap-ablate-0738": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0739": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 1
+  },
+  "overlap-ablate-0740": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 9
+  },
+  "overlap-ablate-0741": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 9
+  },
+  "overlap-ablate-0742": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 15
+  },
+  "overlap-ablate-0743": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0744": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0745": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 2
+  },
+  "overlap-ablate-0746": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 2
+  },
+  "overlap-ablate-0747": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 1
+  },
+  "overlap-ablate-0748": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 14
+  },
+  "overlap-ablate-0749": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0750": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 16
+  },
+  "overlap-ablate-0751": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 14
+  },
+  "overlap-ablate-0752": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 16
+  },
+  "overlap-ablate-0753": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 14
+  },
+  "overlap-ablate-0754": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0755": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-0756": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 10
+  },
+  "overlap-ablate-0757": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 4
+  },
+  "overlap-ablate-0758": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 0
+  },
+  "overlap-ablate-0759": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 15
+  },
+  "overlap-ablate-0760": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 0
+  },
+  "overlap-ablate-0761": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 19
+  },
+  "overlap-ablate-0762": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 16
+  },
+  "overlap-ablate-0763": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 5
+  },
+  "overlap-ablate-0764": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0765": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0766": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 6
+  },
+  "overlap-ablate-0767": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0768": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0769": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 5
+  },
+  "overlap-ablate-0770": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 9
+  },
+  "overlap-ablate-0771": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 7
+  },
+  "overlap-ablate-0772": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 0
+  },
+  "overlap-ablate-0773": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 6
+  },
+  "overlap-ablate-0774": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 4
+  },
+  "overlap-ablate-0775": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 12
+  },
+  "overlap-ablate-0776": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 7
+  },
+  "overlap-ablate-0777": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0778": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 16
+  },
+  "overlap-ablate-0779": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 15
+  },
+  "overlap-ablate-0780": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 7
+  },
+  "overlap-ablate-0781": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 2
+  },
+  "overlap-ablate-0782": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 1
+  },
+  "overlap-ablate-0783": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0784": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0785": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 10
+  },
+  "overlap-ablate-0786": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0787": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 3
+  },
+  "overlap-ablate-0788": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0789": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 9
+  },
+  "overlap-ablate-0790": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 8
+  },
+  "overlap-ablate-0791": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 17
+  },
+  "overlap-ablate-0792": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 5
+  },
+  "overlap-ablate-0793": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 7
+  },
+  "overlap-ablate-0794": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 15
+  },
+  "overlap-ablate-0795": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 19
+  },
+  "overlap-ablate-0796": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 10
+  },
+  "overlap-ablate-0797": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 5
+  },
+  "overlap-ablate-0798": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 6
+  },
+  "overlap-ablate-0799": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0800": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 8
+  },
+  "overlap-ablate-0801": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 14
+  },
+  "overlap-ablate-0802": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 19
+  },
+  "overlap-ablate-0803": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0804": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0805": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 0
+  },
+  "overlap-ablate-0806": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0807": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 9
+  },
+  "overlap-ablate-0808": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 2
+  },
+  "overlap-ablate-0809": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0810": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 15
+  },
+  "overlap-ablate-0811": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 11
+  },
+  "overlap-ablate-0812": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 8
+  },
+  "overlap-ablate-0813": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-0814": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 5
+  },
+  "overlap-ablate-0815": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0816": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 10
+  },
+  "overlap-ablate-0817": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0818": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 9
+  },
+  "overlap-ablate-0819": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 7
+  },
+  "overlap-ablate-0820": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0821": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 18
+  },
+  "overlap-ablate-0822": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0823": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 19
+  },
+  "overlap-ablate-0824": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0825": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 14
+  },
+  "overlap-ablate-0826": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 11
+  },
+  "overlap-ablate-0827": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0828": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 19
+  },
+  "overlap-ablate-0829": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0830": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0831": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 13
+  },
+  "overlap-ablate-0832": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 0
+  },
+  "overlap-ablate-0833": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 3
+  },
+  "overlap-ablate-0834": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0835": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 12
+  },
+  "overlap-ablate-0836": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 5
+  },
+  "overlap-ablate-0837": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0838": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 2
+  },
+  "overlap-ablate-0839": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 4
+  },
+  "overlap-ablate-0840": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 3
+  },
+  "overlap-ablate-0841": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0842": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0843": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 14
+  },
+  "overlap-ablate-0844": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 5
+  },
+  "overlap-ablate-0845": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 0
+  },
+  "overlap-ablate-0846": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0847": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0848": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 2
+  },
+  "overlap-ablate-0849": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-0850": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0851": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 0
+  },
+  "overlap-ablate-0852": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 16
+  },
+  "overlap-ablate-0853": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 19
+  },
+  "overlap-ablate-0854": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 3
+  },
+  "overlap-ablate-0855": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 1
+  },
+  "overlap-ablate-0856": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 1
+  },
+  "overlap-ablate-0857": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 5
+  },
+  "overlap-ablate-0858": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-0859": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0860": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0861": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 16
+  },
+  "overlap-ablate-0862": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-0863": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0864": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-0865": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0866": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 18
+  },
+  "overlap-ablate-0867": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0868": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 18
+  },
+  "overlap-ablate-0869": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 0
+  },
+  "overlap-ablate-0870": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 11
+  },
+  "overlap-ablate-0871": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 6
+  },
+  "overlap-ablate-0872": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-0873": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 1
+  },
+  "overlap-ablate-0874": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-0875": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0876": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 10
+  },
+  "overlap-ablate-0877": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 14
+  },
+  "overlap-ablate-0878": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0879": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 10
+  },
+  "overlap-ablate-0880": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0881": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 16
+  },
+  "overlap-ablate-0882": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 11
+  },
+  "overlap-ablate-0883": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0884": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 2
+  },
+  "overlap-ablate-0885": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 16
+  },
+  "overlap-ablate-0886": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0887": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 1
+  },
+  "overlap-ablate-0888": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 8
+  },
+  "overlap-ablate-0889": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0890": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 13
+  },
+  "overlap-ablate-0891": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 5
+  },
+  "overlap-ablate-0892": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 1
+  },
+  "overlap-ablate-0893": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 1
+  },
+  "overlap-ablate-0894": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 14
+  },
+  "overlap-ablate-0895": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 18
+  },
+  "overlap-ablate-0896": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 8
+  },
+  "overlap-ablate-0897": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 17
+  },
+  "overlap-ablate-0898": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 18
+  },
+  "overlap-ablate-0899": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 18
+  },
+  "overlap-ablate-0900": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-0901": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0902": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 11
+  },
+  "overlap-ablate-0903": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 14
+  },
+  "overlap-ablate-0904": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0905": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0906": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 2
+  },
+  "overlap-ablate-0907": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0908": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 6
+  },
+  "overlap-ablate-0909": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0910": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 18
+  },
+  "overlap-ablate-0911": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 5
+  },
+  "overlap-ablate-0912": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 5
+  },
+  "overlap-ablate-0913": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0914": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 11
+  },
+  "overlap-ablate-0915": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 17
+  },
+  "overlap-ablate-0916": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 2
+  },
+  "overlap-ablate-0917": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 15
+  },
+  "overlap-ablate-0918": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 17
+  },
+  "overlap-ablate-0919": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 0
+  },
+  "overlap-ablate-0920": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 16
+  },
+  "overlap-ablate-0921": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 7
+  },
+  "overlap-ablate-0922": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0923": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 10
+  },
+  "overlap-ablate-0924": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0925": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 4
+  },
+  "overlap-ablate-0926": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 12
+  },
+  "overlap-ablate-0927": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0928": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 14
+  },
+  "overlap-ablate-0929": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 17
+  },
+  "overlap-ablate-0930": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0931": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 6
+  },
+  "overlap-ablate-0932": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0933": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0934": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 1
+  },
+  "overlap-ablate-0935": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 4
+  },
+  "overlap-ablate-0936": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 10
+  },
+  "overlap-ablate-0937": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 4
+  },
+  "overlap-ablate-0938": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 15
+  },
+  "overlap-ablate-0939": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-0940": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 8
+  },
+  "overlap-ablate-0941": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0942": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 7
+  },
+  "overlap-ablate-0943": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0944": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 6
+  },
+  "overlap-ablate-0945": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 6
+  },
+  "overlap-ablate-0946": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 15
+  },
+  "overlap-ablate-0947": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 0
+  },
+  "overlap-ablate-0948": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0949": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 13
+  },
+  "overlap-ablate-0950": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 3
+  },
+  "overlap-ablate-0951": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 19
+  },
+  "overlap-ablate-0952": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 18
+  },
+  "overlap-ablate-0953": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0954": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 6
+  },
+  "overlap-ablate-0955": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 14
+  },
+  "overlap-ablate-0956": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 3
+  },
+  "overlap-ablate-0957": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 19
+  },
+  "overlap-ablate-0958": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 6
+  },
+  "overlap-ablate-0959": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 13
+  },
+  "overlap-ablate-0960": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 14
+  },
+  "overlap-ablate-0961": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 10
+  },
+  "overlap-ablate-0962": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-0963": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0964": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-0965": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 3
+  },
+  "overlap-ablate-0966": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 7
+  },
+  "overlap-ablate-0967": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 18
+  },
+  "overlap-ablate-0968": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 15
+  },
+  "overlap-ablate-0969": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 1
+  },
+  "overlap-ablate-0970": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 16
+  },
+  "overlap-ablate-0971": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 11
+  },
+  "overlap-ablate-0972": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 13
+  },
+  "overlap-ablate-0973": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 17
+  },
+  "overlap-ablate-0974": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 6
+  },
+  "overlap-ablate-0975": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 11
+  },
+  "overlap-ablate-0976": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 1
+  },
+  "overlap-ablate-0977": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 16
+  },
+  "overlap-ablate-0978": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 11
+  },
+  "overlap-ablate-0979": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 10
+  },
+  "overlap-ablate-0980": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 2
+  },
+  "overlap-ablate-0981": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 6
+  },
+  "overlap-ablate-0982": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 13
+  },
+  "overlap-ablate-0983": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 3
+  },
+  "overlap-ablate-0984": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 9
+  },
+  "overlap-ablate-0985": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 0
+  },
+  "overlap-ablate-0986": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 5
+  },
+  "overlap-ablate-0987": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 0
+  },
+  "overlap-ablate-0988": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 7
+  },
+  "overlap-ablate-0989": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-0990": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "baseline",
+    "index": 7
+  },
+  "overlap-ablate-0991": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_only",
+    "condition": "ablate_safety",
+    "index": 9
+  },
+  "overlap-ablate-0992": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0993": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 7
+  },
+  "overlap-ablate-0994": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 4
+  },
+  "overlap-ablate-0995": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 6
+  },
+  "overlap-ablate-0996": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 10
+  },
+  "overlap-ablate-0997": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 18
+  },
+  "overlap-ablate-0998": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-0999": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 7
+  },
+  "overlap-ablate-1000": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 7
+  },
+  "overlap-ablate-1001": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 19
+  },
+  "overlap-ablate-1002": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety",
+    "index": 9
+  },
+  "overlap-ablate-1003": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 14
+  },
+  "overlap-ablate-1004": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "epistemic_only",
+    "condition": "ablate_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-1005": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-1006": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-1007": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 0
+  },
+  "overlap-ablate-1008": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 0
+  },
+  "overlap-ablate-1009": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety",
+    "index": 19
+  },
+  "overlap-ablate-1010": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-1011": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 8
+  },
+  "overlap-ablate-1012": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_epistemic",
+    "index": 12
+  },
+  "overlap-ablate-1013": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 14
+  },
+  "overlap-ablate-1014": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 3
+  },
+  "overlap-ablate-1015": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 5
+  },
+  "overlap-ablate-1016": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 17
+  },
+  "overlap-ablate-1017": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_only",
+    "condition": "baseline",
+    "index": 6
+  },
+  "overlap-ablate-1018": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "triple_overlap",
+    "condition": "baseline",
+    "index": 10
+  },
+  "overlap-ablate-1019": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability",
+    "index": 8
+  },
+  "overlap-ablate-1020": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 4
+  },
+  "overlap-ablate-1021": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "epistemic_only",
+    "condition": "baseline",
+    "index": 3
+  },
+  "overlap-ablate-1022": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 19
+  },
+  "overlap-ablate-1023": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 5
+  },
+  "overlap-ablate-1024": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_epistemic",
+    "index": 19
+  },
+  "overlap-ablate-1025": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_capability",
+    "index": 7
+  },
+  "overlap-ablate-1026": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 14
+  },
+  "overlap-ablate-1027": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_epistemic",
+    "index": 16
+  },
+  "overlap-ablate-1028": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 7
+  },
+  "overlap-ablate-1029": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_safety_capability",
+    "index": 11
+  },
+  "overlap-ablate-1030": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 1
+  },
+  "overlap-ablate-1031": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "ablate_capability",
+    "index": 5
+  },
+  "overlap-ablate-1032": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_epistemic",
+    "condition": "ablate_capability_epistemic",
+    "index": 4
+  },
+  "overlap-ablate-1033": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_capability",
+    "condition": "ablate_capability",
+    "index": 18
+  },
+  "overlap-ablate-1034": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "baseline",
+    "index": 9
+  },
+  "overlap-ablate-1035": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_epistemic",
+    "condition": "baseline",
+    "index": 5
+  },
+  "overlap-ablate-1036": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability",
+    "index": 17
+  },
+  "overlap-ablate-1037": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "triple_overlap",
+    "condition": "ablate_safety_capability_epistemic",
+    "index": 1
+  },
+  "overlap-ablate-1038": {
+    "checkpoint": "C_safety_lora",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 3
+  },
+  "overlap-ablate-1039": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "capability_only",
+    "condition": "baseline",
+    "index": 11
+  },
+  "overlap-ablate-1040": {
+    "checkpoint": "B_instruct",
+    "prompt_type": "safety_epistemic",
+    "condition": "ablate_safety",
+    "index": 8
+  }
+}

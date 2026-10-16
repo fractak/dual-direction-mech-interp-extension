@@ -1,0 +1,1402 @@
+{
+  "overlap-base-001": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_04",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-002": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_06",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-003": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_06",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-004": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_13",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-005": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_04",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-006": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_15",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-007": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_03",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-008": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_10",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-009": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_07",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-010": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_09",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-011": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_05",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-012": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_14",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-013": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_12",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-014": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_09",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-015": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_10",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-016": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_05",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-017": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_14",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-018": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_12",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-019": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_20",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-020": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_19",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-021": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_05",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-022": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_11",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-023": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_02",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-024": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_11",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-025": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_14",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-026": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_12",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-027": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_20",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-028": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_14",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-029": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_16",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-030": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_19",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-031": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_11",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-032": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_04",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-033": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_09",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-034": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_14",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-035": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_13",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-036": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_05",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-037": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_17",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-038": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_07",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-039": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_02",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-040": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_15",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-041": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_19",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-042": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_06",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-043": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_03",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-044": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_06",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-045": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_05",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-046": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_13",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-047": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_03",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-048": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_10",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-049": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_14",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-050": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_02",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-051": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_16",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-052": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_06",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-053": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_10",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-054": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_06",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-055": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_05",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-056": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_01",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-057": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_01",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-058": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_16",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-059": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_16",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-060": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_12",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-061": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_18",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-062": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_02",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-063": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_20",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-064": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_06",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-065": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_13",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-066": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_15",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-067": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_10",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-068": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_20",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-069": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_07",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-070": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_13",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-071": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_07",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-072": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_12",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-073": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_08",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-074": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_09",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-075": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_04",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-076": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_08",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-077": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_11",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-078": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_19",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-079": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_17",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-080": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_02",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-081": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_11",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-082": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_01",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-083": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_02",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-084": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_05",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-085": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_15",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-086": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_19",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-087": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_06",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-088": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_03",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-089": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_11",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-090": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_13",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-091": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_04",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-092": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_08",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-093": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_11",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-094": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_13",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-095": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_07",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-096": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_02",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-097": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_14",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-098": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_12",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-099": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_11",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-100": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_17",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-101": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_09",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-102": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_08",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-103": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_20",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-104": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_08",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-105": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_03",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-106": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_01",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-107": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_09",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-108": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_20",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-109": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_01",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-110": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_18",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-111": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_10",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-112": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_18",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-113": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_08",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-114": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_19",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-115": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_03",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-116": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_11",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-117": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_05",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-118": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_09",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-119": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_02",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-120": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_03",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-121": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_18",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-122": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_20",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-123": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_14",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-124": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_17",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-125": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_02",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-126": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_14",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-127": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_03",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-128": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_01",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-129": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_10",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-130": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_05",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-131": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_08",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-132": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_11",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-133": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_07",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-134": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_08",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-135": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_03",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-136": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_10",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-137": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_03",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-138": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_05",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-139": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_16",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-140": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_07",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-141": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_09",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-142": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_19",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-143": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_20",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-144": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_09",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-145": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_01",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-146": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_14",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-147": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_09",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-148": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_19",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-149": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_08",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-150": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_07",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-151": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_11",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-152": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_11",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-153": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_04",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-154": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_05",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-155": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_06",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-156": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_18",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-157": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_10",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-158": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_10",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-159": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_13",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-160": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_16",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-161": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_04",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-162": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_04",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-163": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_16",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-164": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_01",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-165": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_17",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-166": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_17",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-167": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_05",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-168": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_04",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-169": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_08",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-170": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_08",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-171": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_14",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-172": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_18",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-173": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_06",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-174": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_15",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-175": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_11",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-176": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_02",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-177": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_03",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-178": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_01",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-179": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_09",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-180": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_18",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-181": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_15",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-182": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_04",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-183": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_16",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-184": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_17",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-185": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_20",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-186": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_17",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-187": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_04",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-188": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_10",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-189": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_12",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-190": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_19",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-191": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_20",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-192": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_03",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-193": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_18",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-194": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_17",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-195": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_04",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-196": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_09",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-197": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_16",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-198": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_19",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-199": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_06",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-200": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_16",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-201": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_20",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-202": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_09",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-203": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_12",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-204": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_14",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-205": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_11",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-206": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_15",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-207": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_02",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-208": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_14",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-209": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_03",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-210": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_17",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-211": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_15",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-212": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_07",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-213": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_06",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-214": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_20",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-215": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_13",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-216": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_15",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-217": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_18",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-218": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_19",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-219": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_10",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-220": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_19",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-221": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_18",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-222": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_01",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-223": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_10",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-224": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_08",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-225": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_13",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-226": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_01",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-227": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_07",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-228": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_19",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-229": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_01",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-230": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_13",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-231": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_16",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-232": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_02",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-233": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_01",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-234": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_17",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-235": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_12",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-236": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_18",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-237": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_18",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-238": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_07",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-239": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_12",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-240": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_07",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-241": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_08",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-242": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_15",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-243": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_09",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-244": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_17",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-245": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_12",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-246": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_05",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-247": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_18",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-248": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_04",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-249": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_07",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-250": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_07",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-251": {
+    "checkpoint": "C_safety_lora",
+    "id": "epistemic_only_16",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-252": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_06",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-253": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_16",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-254": {
+    "checkpoint": "B_instruct",
+    "id": "capability_only_20",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-255": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_15",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-256": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_only_15",
+    "prompt_type": "capability_only"
+  },
+  "overlap-base-257": {
+    "checkpoint": "C_safety_lora",
+    "id": "triple_overlap_12",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-258": {
+    "checkpoint": "B_instruct",
+    "id": "safety_epistemic_02",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-259": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_04",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-260": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_03",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-261": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_epistemic_10",
+    "prompt_type": "safety_epistemic"
+  },
+  "overlap-base-262": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_13",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-263": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_15",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-264": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_02",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-265": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_14",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-266": {
+    "checkpoint": "C_safety_lora",
+    "id": "capability_epistemic_19",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-267": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_20",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-268": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_12",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-269": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_08",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-270": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_16",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-271": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_17",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-272": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_capability_17",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-273": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_05",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-274": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_13",
+    "prompt_type": "epistemic_only"
+  },
+  "overlap-base-275": {
+    "checkpoint": "B_instruct",
+    "id": "safety_capability_12",
+    "prompt_type": "safety_capability"
+  },
+  "overlap-base-276": {
+    "checkpoint": "B_instruct",
+    "id": "capability_epistemic_15",
+    "prompt_type": "capability_epistemic"
+  },
+  "overlap-base-277": {
+    "checkpoint": "B_instruct",
+    "id": "triple_overlap_06",
+    "prompt_type": "triple_overlap"
+  },
+  "overlap-base-278": {
+    "checkpoint": "C_safety_lora",
+    "id": "safety_only_01",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-279": {
+    "checkpoint": "B_instruct",
+    "id": "safety_only_13",
+    "prompt_type": "safety_only"
+  },
+  "overlap-base-280": {
+    "checkpoint": "B_instruct",
+    "id": "epistemic_only_18",
+    "prompt_type": "epistemic_only"
+  }
+}

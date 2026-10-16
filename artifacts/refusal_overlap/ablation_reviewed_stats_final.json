@@ -1,0 +1,72 @@
+{
+  "B_safety_epistemic_refusal_safety_ablation": {
+    "n": 20,
+    "baseline_rate": 1.0,
+    "comparison_rate": 0.4,
+    "delta": -0.6,
+    "lost": 12,
+    "gained": 0,
+    "exact_p": 0.00048828125,
+    "bootstrap_ci": [
+      -0.8,
+      -0.4
+    ],
+    "holm_p": 0.00244140625
+  },
+  "B_safety_epistemic_epi_reason_safety_ablation": {
+    "n": 20,
+    "baseline_rate": 0.2,
+    "comparison_rate": 0.65,
+    "delta": 0.45,
+    "lost": 0,
+    "gained": 9,
+    "exact_p": 0.00390625,
+    "bootstrap_ci": [
+      0.25,
+      0.65
+    ],
+    "holm_p": 0.01171875
+  },
+  "C_capability_epistemic_refusal_cap_ablation": {
+    "n": 20,
+    "baseline_rate": 1.0,
+    "comparison_rate": 0.6,
+    "delta": -0.4,
+    "lost": 8,
+    "gained": 0,
+    "exact_p": 0.0078125,
+    "bootstrap_ci": [
+      -0.6,
+      -0.19999999999999996
+    ],
+    "holm_p": 0.015625
+  },
+  "C_triple_refusal_safety_cap_ablation": {
+    "n": 20,
+    "baseline_rate": 1.0,
+    "comparison_rate": 0.4,
+    "delta": -0.6,
+    "lost": 12,
+    "gained": 0,
+    "exact_p": 0.00048828125,
+    "bootstrap_ci": [
+      -0.8,
+      -0.4
+    ],
+    "holm_p": 0.00244140625
+  },
+  "C_triple_refusal_add_epistemic": {
+    "n": 20,
+    "baseline_rate": 0.4,
+    "comparison_rate": 0.4,
+    "delta": 0.0,
+    "lost": 1,
+    "gained": 1,
+    "exact_p": 1.0,
+    "bootstrap_ci": [
+      -0.15000000000000002,
+      0.15000000000000002
+    ],
+    "holm_p": 1.0
+  }
+}
