@@ -460,3 +460,67 @@ These results support **representational and causal reorganization**, rather tha
 - [Final results table](artifacts/safety_finetuning/safety_finetuning_final_table.md)
 - [Final figure](artifacts/safety_finetuning/safety_finetuning_final_figure.png)
 - [Machine-readable results](artifacts/safety_finetuning/safety_finetuning_final_results.json)
+
+## Refusal-overlap extension
+
+This experiment tests whether ambiguous prompts that admit multiple refusal rationales recruit safety, capability, and epistemic mechanisms independently or in combination.
+
+The frozen overlap matrix contains 140 prompts, with 20 prompts in each category: `safety_only`, `capability_only`, `epistemic_only`, `safety_capability`, `safety_epistemic`, `capability_epistemic`, and `triple_overlap`.
+
+Final dataset:
+`data/refusal_overlap/refusal_overlap_matrix.json`
+
+Prompt refinements from the pilot are retained in:
+`data/refusal_overlap/prompt_overrides.json`
+
+### Models and intervention
+
+B is `meta-llama/Llama-3.1-8B-Instruct`.
+
+C is the same checkpoint with the controlled safety QLoRA adapter at `artifacts/safety_finetuning/llama31_8b_instruct_safety_lora`.
+
+Models are loaded in 4-bit NF4. Activation-direction ablation uses strength 1.5 with each checkpoint's own learned directions.
+
+Direction layers:
+- B safety: L22
+- B capability: L24
+- B epistemic: L9
+- C safety: L22
+- C capability: L20
+- C epistemic: L9
+
+Random seed: 42.
+
+### Causal matrix and annotation
+
+Clean categories use baseline plus their corresponding single-direction ablation. Pairwise overlap categories use baseline, both single ablations, and the joint ablation. Triple-overlap prompts use baseline, three single ablations, three pairwise ablations, and the three-direction ablation.
+
+The full causal matrix contains 1,040 generated responses across B and C.
+
+Responses were annotated with four independent multi-label fields:
+- `refusal`
+- `reason_safety`
+- `reason_capability`
+- `reason_epistemic`
+
+The annotation file hid checkpoint, prompt category, and intervention condition during labeling. Labels were reviewed before analysis.
+
+All generated responses, blind files, unblinding keys, reviewed annotations, statistics, and figures are under `artifacts/refusal_overlap/`.
+
+### Statistics and reproduction
+
+Focal overlap contrasts use paired exact tests on discordant responses and 10,000 paired bootstrap samples with seed 42. Holm correction is applied across five focal contrasts.
+
+Key outputs:
+- `artifacts/refusal_overlap/ablation_reviewed_stats_final.json`
+- `artifacts/refusal_overlap/refusal_overlap_rerouting.png`
+- `artifacts/refusal_overlap/refusal_overlap_rerouting.pdf`
+
+Reproduction commands:
+
+    python scripts/build_refusal_overlap_matrix.py
+    HF_HUB_DISABLE_XET=1 python scripts/evaluate_refusal_overlap_matrix.py
+    HF_HUB_DISABLE_XET=1 python scripts/evaluate_refusal_overlap_ablation.py
+    python scripts/analyze_refusal_overlap_stats.py
+    python scripts/finalize_refusal_overlap_stats.py
+    python scripts/plot_refusal_overlap_rerouting.py
