@@ -1,0 +1,1202 @@
+{
+  "cap-causal-001": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-002": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-003": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-004": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-005": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-006": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-007": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-008": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-009": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-010": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-011": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-012": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-013": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-014": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-015": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-016": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-017": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-018": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-019": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-020": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-021": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-022": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-023": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-024": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-025": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-026": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-027": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-028": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-029": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-030": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-031": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-032": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-033": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-034": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-035": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-036": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-037": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-038": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-039": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-040": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-041": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-042": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-043": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-044": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-045": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-046": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-047": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-048": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-049": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-050": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-051": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-052": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-053": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-054": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-055": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-056": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-057": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-058": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-059": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-060": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-061": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-062": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-063": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-064": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-065": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-066": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-067": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-068": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-069": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-070": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-071": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-072": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-073": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-074": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-075": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-076": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-077": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-078": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-079": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-080": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-081": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-082": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-083": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-084": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-085": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-086": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-087": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-088": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-089": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-090": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-091": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-092": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-093": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-094": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-095": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-096": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-097": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-098": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-099": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-100": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-101": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-102": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-103": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-104": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-105": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-106": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-107": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-108": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-109": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-110": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-111": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-112": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-113": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-114": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-115": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-116": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-117": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-118": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-119": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-120": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-121": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-122": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-123": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-124": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-125": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-126": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-127": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-128": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-129": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-130": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-131": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-132": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-133": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-134": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-135": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-136": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-137": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-138": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-139": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-140": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-141": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-142": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-143": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-144": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-145": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-146": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-147": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-148": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-149": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-150": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-151": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-152": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-153": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-154": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-155": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-156": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-157": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-158": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-159": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-160": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-161": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-162": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-163": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-164": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-165": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-166": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-167": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-168": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-169": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-170": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-171": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-172": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-173": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-174": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-175": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-176": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-177": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-178": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-179": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-180": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-181": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-182": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-183": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-184": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-185": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-186": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-187": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-188": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-189": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-190": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-191": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-192": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-193": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-194": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-195": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-196": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-197": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-198": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-199": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-200": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-201": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-202": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-203": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-204": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-205": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-206": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-207": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-208": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-209": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-210": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-211": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-212": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-213": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-214": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-215": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-216": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-217": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-218": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-219": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-220": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-221": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-222": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-223": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-224": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-225": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-226": {
+    "explicit_capability": "0",
+    "instructions_only": "0",
+    "fabricated_answer": "1"
+  },
+  "cap-causal-227": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-228": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-229": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-230": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-231": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-232": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-233": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-234": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-235": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-236": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-237": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-238": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-239": {
+    "explicit_capability": "1",
+    "instructions_only": "0",
+    "fabricated_answer": "0"
+  },
+  "cap-causal-240": {
+    "explicit_capability": "0",
+    "instructions_only": "1",
+    "fabricated_answer": "0"
+  }
+}
