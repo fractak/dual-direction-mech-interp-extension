@@ -85,7 +85,7 @@ def angular_distance_degrees(left: Sequence[float], right: Sequence[float]) -> f
 
 def difference_of_means(group_a: Sequence[Sequence[float]],
                         group_b: Sequence[Sequence[float]]) -> Vector:
-    """Raw difference-in-means direction (unnormalized): mean(A) - mean(B)."""
+    """Raw difference-in-means direction: positive mean minus negative mean."""
     mean_a = mean_vector(group_a)
     mean_b = mean_vector(group_b)
     return subtract_vectors(mean_a, mean_b)

@@ -11,10 +11,11 @@ Usage:
         --output artifacts/directions/llama31_8b_safety.json \
         --load-in-4bit --prompt-limit 200
 """
+
 from __future__ import annotations
 
 import argparse
-import logging
+import hashlib
 import sys
 import time
 from pathlib import Path
@@ -24,28 +25,15 @@ SRC = ROOT / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from ddmi.data.loaders import (
-    load_capability_prompts,
-    load_epistemic_prompts,
-    load_safety_prompts,
-    prompts_to_text_list,
-)
-from ddmi.editing.directions import (
-    direction_from_contrast,
-    l2_norm,
-    rank_layers_by_separability,
-    separability_score,
-)
-from ddmi.models.hooks import collect_activations_batched, get_residual_stream_names
-from ddmi.models.loader import ModelLoadConfig, load_model_and_tokenizer
-from ddmi.utils.io import configure_logging, set_seed, write_json
-
-logger = configure_logging(name="extract_directions")
-
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Extract activation directions")
-    parser.add_argument("--model-id", required=True, help="HF model ID")
+    parser.add_argument(
+        "--model-id", default="meta-llama/Llama-3.1-8B-Instruct", help="HF model ID"
+    )
+    parser.add_argument(
+        "--checkpoint", choices=("original_instruct", "safety_lora"), default="original_instruct"
+    )
     parser.add_argument(
         "--direction-type",
         required=True,
@@ -61,8 +49,8 @@ def main() -> None:
     parser.add_argument("--prompt-limit", type=int, default=200, help="Total prompts (split 50/50)")
     parser.add_argument(
         "--capability-split",
-        choices=["all", "train", "eval"],
-        default="all",
+        choices=["train", "expanded_eval"],
+        default="train",
         help="Capability dataset split to use",
     )
     parser.add_argument("--load-in-4bit", action="store_true", help="Load in BnB NF4")
@@ -71,6 +59,28 @@ def main() -> None:
     parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
 
+    if (args.checkpoint == "safety_lora") != bool(args.adapter_path):
+        parser.error(
+            "safety_lora requires --adapter-path; original_instruct must not use an adapter"
+        )
+
+    from ddmi.data.loaders import (
+        load_capability_prompts,
+        load_epistemic_prompts,
+        load_safety_prompts,
+        prompts_to_text_list,
+    )
+    from ddmi.editing.directions import (
+        direction_from_contrast,
+        l2_norm,
+        rank_layers_by_separability,
+        separability_score,
+    )
+    from ddmi.models.hooks import collect_activations_batched, get_residual_stream_names
+    from ddmi.models.loader import ModelLoadConfig, load_model_and_tokenizer
+    from ddmi.utils.io import configure_logging, set_seed, write_json
+
+    logger = configure_logging(name="extract_directions")
     set_seed(args.seed)
 
     # Load model
@@ -128,26 +138,35 @@ def main() -> None:
     group_a_texts = prompts_to_text_list(prompt_groups[group_a_key])
     group_b_texts = prompts_to_text_list(prompt_groups[group_b_key])
     logger.info(
-        "Group A (%s): %d prompts, Group B (%s): %d prompts",
-        group_a_key, len(group_a_texts), group_b_key, len(group_b_texts),
+        "Positive contrast (%s): %d prompts, negative contrast (%s): %d prompts",
+        group_a_key,
+        len(group_a_texts),
+        group_b_key,
+        len(group_b_texts),
     )
 
     # Collect activations for both groups
-    logger.info("Collecting activations for group A (%s)...", group_a_key)
+    logger.info("Collecting activations for positive contrast (%s)...", group_a_key)
     t0 = time.time()
     acts_a = collect_activations_batched(
-        model, tokenizer, group_a_texts, layer_names,
+        model,
+        tokenizer,
+        group_a_texts,
+        layer_names,
         max_input_length=args.max_input_length,
     )
-    logger.info("Group A activations collected in %.1fs", time.time() - t0)
+    logger.info("Positive-contrast activations collected in %.1fs", time.time() - t0)
 
-    logger.info("Collecting activations for group B (%s)...", group_b_key)
+    logger.info("Collecting activations for negative contrast (%s)...", group_b_key)
     t0 = time.time()
     acts_b = collect_activations_batched(
-        model, tokenizer, group_b_texts, layer_names,
+        model,
+        tokenizer,
+        group_b_texts,
+        layer_names,
         max_input_length=args.max_input_length,
     )
-    logger.info("Group B activations collected in %.1fs", time.time() - t0)
+    logger.info("Negative-contrast activations collected in %.1fs", time.time() - t0)
 
     # Compute directions and separability at each layer
     directions = {}
@@ -159,14 +178,21 @@ def main() -> None:
 
         direction = direction_from_contrast(vecs_a, vecs_b)
         sep = separability_score(vecs_a, vecs_b)
-        raw_norm = l2_norm(
-            [ma - mb for ma, mb in zip(
-                [sum(v) / len(v) for v in zip(*vecs_a)],
-                [sum(v) / len(v) for v in zip(*vecs_b)],
-            )]
-        ) if vecs_a and vecs_b else 0.0
+        raw_norm = (
+            l2_norm(
+                [
+                    ma - mb
+                    for ma, mb in zip(
+                        [sum(v) / len(v) for v in zip(*vecs_a)],
+                        [sum(v) / len(v) for v in zip(*vecs_b)],
+                    )
+                ]
+            )
+            if vecs_a and vecs_b
+            else 0.0
+        )
 
-        layer_idx = int(layer_name.split(".")[-1])
+        int(layer_name.split(".")[-1])
         directions[layer_name] = {
             "direction": direction,
             "separability_score": sep,
@@ -178,7 +204,9 @@ def main() -> None:
 
         logger.info(
             "  %s: separability=%.4f, raw_norm=%.4f",
-            layer_name, sep, raw_norm,
+            layer_name,
+            sep,
+            raw_norm,
         )
 
     # Rank layers
@@ -190,12 +218,20 @@ def main() -> None:
     # Save artifact
     artifact = {
         "artifact_type": "direction_collection",
+        "checkpoint": args.checkpoint,
+        "capability_split": args.capability_split if args.direction_type == "capability" else None,
+        "prompt_sha256": {
+            "positive": [hashlib.sha256(text.encode()).hexdigest() for text in group_a_texts],
+            "negative": [hashlib.sha256(text.encode()).hexdigest() for text in group_b_texts],
+        },
         "model_id": args.model_id,
         "adapter_path": args.adapter_path,
         "direction_type": args.direction_type,
         "source_groups": {"group_a": group_a_key, "group_b": group_b_key},
         "prompt_limit": args.prompt_limit,
-        "precision": "bnb_nf4" if args.load_in_4bit else ("bnb_int8" if args.load_in_8bit else "fp16"),
+        "precision": "bnb_nf4"
+        if args.load_in_4bit
+        else ("bnb_int8" if args.load_in_8bit else "fp16"),
         "seed": args.seed,
         "num_layers": len(layer_names),
         "directions": directions,

@@ -38,5 +38,15 @@ ddmi_kaggle_export.zip
 
 
 *_PLAN.md
-paper/
+/paper/
 .venv-figures/
+
+# Reproducible derived outputs and new model runs
+artifacts/paper/
+artifacts/figures/revised_paper/
+artifacts/runs/
+artifacts/adapters/
+artifacts/datasets/
+artifacts/directions/
+.pytest_cache/
+.ruff_cache/

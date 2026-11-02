@@ -1,9 +1,12 @@
 """Unit tests for activation-space directional ablation."""
+
 from __future__ import annotations
 
-import torch
+import pytest
 
-from ddmi.editing.apply_edit import (
+torch = pytest.importorskip("torch")
+
+from ddmi.editing.apply_edit import (  # noqa: E402 - torch is an optional GPU extra
     ActivationDirectionAblator,
     EditSpec,
     LayerwiseActivationDirectionAblator,

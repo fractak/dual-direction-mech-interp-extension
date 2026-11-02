@@ -1,526 +1,118 @@
-# Dual-Direction Mechanistic Interpretability
+# Acknowledgment of access limits before and after LoRA adaptation
 
-**Disentangling safety-refusal and epistemic-abstention directions in LLM activation space, with an extension to capability refusal.**
+This repository supports a directional-intervention study of **Llama 3.1 8B Instruct** before and after an additional safety-oriented LoRA adaptation.
 
-Do LLMs refuse harmful requests and abstain on unknown factual questions using the *same* internal mechanism — or are these mechanistically independent behaviors?
+The main question is whether two checkpoints that acknowledge their access limits equally often without an edit can respond differently to the same activation operator.
 
-> **Extension:** This fork adds **capability refusal** as a third behavior: cases where a model declines because it lacks access, perception, tools, data, or another required capability. See [Capability-refusal extension](#capability-refusal-extension) for the new experiments, results, and reproduction instructions.
+## Checkpoints
 
-## Original paper / upstream work
+| Identifier used in commands and results | What it is |
+|---|---|
+| `original_instruct` | `meta-llama/Llama-3.1-8B-Instruct`, without the additional adapter |
+| `safety_lora` | The same Instruct checkpoint with the study's additional LoRA adapter |
 
-The upstream work was accepted as an in-person poster at the ICML 2026 Mechanistic Interpretability Workshop.
+The original checkpoint is already instruction-tuned. The adapter's training data contains **999 English safety examples and 999 Alpaca instruction examples**. This mixed recipe does not isolate the effect of safety data.
 
-- OpenReview: https://openreview.net/forum?id=dQJuu7jlZJ
-- Preprint: https://zenodo.org/records/20009857
+## Reproduce the paper's analysis and figures on CPU
 
-The upstream repository provides a reproducible pipeline to:
-
-1. **Extract** safety-refusal and epistemic-abstention directions via difference-in-means on residual stream activations
-2. **Measure** their geometric relationship using cosine similarity and angular separation across layers
-3. **Cross-ablate** each direction and measure behavioral effects on safety refusal and epistemic abstention
-4. **Probe** whether extracted activations linearly separate the underlying task labels
-5. **Quantify** how deployment-time quantization perturbs these directions
-6. **Estimate** bootstrap confidence intervals for refusal and abstention rates
-7. **Replicate** findings across model families including Llama, Qwen, and Gemma
-
-This fork preserves that pipeline and adds experiments for capability refusal.
-
-## Key Research Question
-
-> When an instruction-tuned LLM says "I can't help with that" for safety reasons versus "I don't know" for epistemic reasons, are these behaviors mediated by the same geometric direction in activation space?
-
-The capability-refusal extension adds a related question:
-
-> When a model says it cannot answer because it lacks access, perception, tools, or another required capability, does that behavior use the same internal mechanism as safety refusal or epistemic abstention?
-
-## Current Findings
-
-The checked-in upstream replication results support a separation story rather than a shared dominant safety/epistemic direction:
-
-- In Llama-3.1-8B-Instruct, the mean safety-vs-epistemic cosine similarity across layers is `0.049`, with a maximum of `0.183` at `model.layers.20`.
-- Strong safety-direction ablation produces a large reduction in safety refusal while leaving epistemic abstention comparatively stable.
-- A held-out linear probe on epistemic activations reaches `1.00` test accuracy at the selected layer `model.layers.9`.
-- Cross-family replication remains qualitatively consistent across Llama, Qwen, and Gemma.
-
-The capability-refusal extension adds evidence that capability refusal is **distinct but partially aligned with safety refusal**, while remaining more clearly separated from epistemic abstention.
-
-## Useful Visuals and Outputs
-
-### Original replication
-
-- Direction geometry figure: [artifacts/figures/fig1_direction_comparison.pdf](artifacts/figures/fig1_direction_comparison.pdf)
-- Cross-ablation figure: [artifacts/figures/fig2_cross_ablation.pdf](artifacts/figures/fig2_cross_ablation.pdf)
-- Quantization drift figure: [artifacts/figures/fig3_quantization_drift.pdf](artifacts/figures/fig3_quantization_drift.pdf)
-- Cross-model figure: [artifacts/figures/fig4_cross_model.pdf](artifacts/figures/fig4_cross_model.pdf)
-- Llama direction comparison artifact: [artifacts/directions/meta_llama_Llama_3.1_8B_Instruct_comparison.json](artifacts/directions/meta_llama_Llama_3.1_8B_Instruct_comparison.json)
-- Cross-ablation sweep artifact: [artifacts/cross_ablation/meta_llama_Llama_3.1_8B_Instruct_sweep.json](artifacts/cross_ablation/meta_llama_Llama_3.1_8B_Instruct_sweep.json)
-- Cross-model combined artifact: [artifacts/cross_model/combined_results.json](artifacts/cross_model/combined_results.json)
-- Epistemic probe artifact: [artifacts/probes/meta_llama_Llama_3.1_8B_Instruct_epistemic_probe.json](artifacts/probes/meta_llama_Llama_3.1_8B_Instruct_epistemic_probe.json)
-
-### Capability-refusal extension
-
-- Final summary table: [artifacts/extension/capability_extension_final_table.md](artifacts/extension/capability_extension_final_table.md)
-- Final figure (PNG): [artifacts/extension/capability_extension_final_figure.png](artifacts/extension/capability_extension_final_figure.png)
-- Final figure (PDF): [artifacts/extension/capability_extension_final_figure.pdf](artifacts/extension/capability_extension_final_figure.pdf)
-- Consolidated results: [artifacts/extension/capability_final_results.json](artifacts/extension/capability_final_results.json)
-- Human-scored blind annotation: [artifacts/extension/capability_full_blind_annotation.json](artifacts/extension/capability_full_blind_annotation.json)
-- Paired statistical results: [artifacts/extension/capability_paired_stats.json](artifacts/extension/capability_paired_stats.json)
-- Cross-model capability results: [artifacts/cross_model_capability/combined_results.json](artifacts/cross_model_capability/combined_results.json)
-
-## Setup
+From the repository directory:
 
 ```bash
-# Clone this fork
-git clone https://github.com/fractak/dual-direction-mech-interp-extension.git
-cd dual-direction-mech-interp-extension
-
-# Create / activate your environment as desired, then install core dependencies
-pip install -e .
-
-# Install with quantization backends
-pip install -e ".[quant]"
-
-# Install with plotting support
-pip install -e ".[plot]"
+python3 -m venv .venv-figures
+source .venv-figures/bin/activate
+python -m pip install -r requirements-paper-figures.txt
+python scripts/analyze_paper.py
+python scripts/make_paper_figures.py --check-paper
 ```
 
-For Hugging Face model loading in the extension experiments:
+No model download, GPU, LaTeX installation, or graphical desktop is needed for these commands. Scripts resolve frozen inputs relative to the checkout, so they also work when launched from another directory.
 
-```bash
-export HF_HUB_DISABLE_XET=1
-```
+Outputs:
 
-## Original Pipeline
+- `artifacts/paper/results.json`: counts, paired statistics, and direction geometry.
+- `artifacts/paper/summary.md`: final-outcome counts by checkpoint and condition.
+- `artifacts/figures/revised_paper/`: four PNG figures and four vector PDFs, with the numerical results in `data/`.
 
-### Experiment 1: Direction Extraction & Geometry
+For one figure, use `python scripts/make_paper_figures.py --figures 1`.
+Input checksums are always verified; `--check-paper` remains accepted for existing commands.
 
-```bash
-# Extract safety-refusal direction
-python scripts/extract_directions.py \
-    --model-id meta-llama/Llama-3.1-8B-Instruct \
-    --direction-type safety \
-    --output artifacts/directions/llama31_8b_safety.json \
-    --load-in-4bit \
-    --prompt-limit 200
+The plotting script reads human annotations and archived direction vectors. It does not contain hard-coded response counts or regenerate human judgments.
 
-# Extract epistemic-abstention direction
-python scripts/extract_directions.py \
-    --model-id meta-llama/Llama-3.1-8B-Instruct \
-    --direction-type epistemic \
-    --output artifacts/directions/llama31_8b_epistemic.json \
-    --load-in-4bit \
-    --prompt-limit 200
+## Main comparison
 
-# Compare geometry across layers
-python scripts/compare_directions.py \
-    --safety-artifact artifacts/directions/llama31_8b_safety.json \
-    --epistemic-artifact artifacts/directions/llama31_8b_epistemic.json \
-    --output artifacts/directions/llama31_8b_comparison.json
-```
-
-### Experiment 2: Cross-Ablation
-
-```bash
-python scripts/cross_ablation.py \
-    --model-id meta-llama/Llama-3.1-8B-Instruct \
-    --safety-direction artifacts/directions/llama31_8b_safety.json \
-    --epistemic-direction artifacts/directions/llama31_8b_epistemic.json \
-    --output artifacts/cross_ablation/llama31_8b_results.json \
-    --bootstrap-samples 2000 \
-    --load-in-4bit
-```
-
-### Experiment 2b: Linear Probe Check
-
-```bash
-python scripts/linear_probe.py \
-    --model-id meta-llama/Llama-3.1-8B-Instruct \
-    --direction-type epistemic \
-    --direction-artifact artifacts/directions/llama31_8b_epistemic.json \
-    --output artifacts/probes/llama31_8b_epistemic_probe.json \
-    --load-in-4bit
-```
-
-This trains a logistic regression probe on held-out activations to test whether the extracted feature is linearly separable even when behavioral ablation effects are weak.
-
-### Experiment 3: Quantization Perturbation
-
-```bash
-python scripts/quantization_sweep.py \
-    --model-id meta-llama/Llama-3.1-8B-Instruct \
-    --output artifacts/quantization/llama31_8b_sweep.json
-```
-
-### Experiment 4: Cross-Model Replication
-
-```bash
-python scripts/cross_model_replication.py \
-    --output artifacts/cross_model/ \
-    --load-in-4bit
-```
-
-The current replication set covers Llama-3.1-8B-Instruct, Qwen3-8B, and the public 4-bit Gemma-2-9B-Instruct mirror `unsloth/gemma-2-9b-it-bnb-4bit`.
-
-### Generate Original Figures
-
-```bash
-python scripts/generate_figures.py \
-    --artifacts-dir artifacts/ \
-    --output-dir artifacts/figures/
-```
-
-## Project Structure
+Both checkpoints receive the **same capability vector extracted from the safety-LoRA checkpoint**, at layer 20 and strength 1.5. The edit is applied to the layer output during prefill and decoding:
 
 ```text
-src/ddmi/
-    editing/       Direction extraction, projection, ablation
-    models/        Model loading, hooks, generation
-    data/          Dataset loaders, prompt schemas
-    evaluation/    Refusal detection, abstention detection, metrics
-    utils/         IO, logging, seeds
-
-scripts/           Runnable experiment and reproduction scripts
-configs/           YAML experiment configs
-data/              Capability-refusal datasets added by this fork
-artifacts/         Directions, results, annotations, and figures
-paper/             Upstream LaTeX source
-tests/             Unit tests
+edited_activation = activation - strength * dot(activation, direction) * direction
 ```
 
-## Hardware Requirements
+| Checkpoint | Condition | Acknowledgment | Instructions | Unsupported assertion | Other |
+|---|---|---:|---:|---:|---:|
+| Original Instruct | No edit | 58 | 2 | 0 | 0 |
+| Instruct + safety LoRA | No edit | 58 | 2 | 0 | 0 |
+| Original Instruct | Same capability edit | 49 | 10 | 1 | 0 |
+| Instruct + safety LoRA | Same capability edit | 6 | 8 | 40 | 6 |
 
-The upstream experiments were designed for **2× NVIDIA T4 (16 GB each)** in Kaggle-style GPU environments.
+Each row contains the same 60 prompt contexts. The difference between acknowledgment changes is -71.7 percentage points; the paired bootstrap interval is [-83.3, -60.0].
 
-Example upstream requirements:
+“Unsupported” means a specific assertion without evidence supplied in the prompt. It does not establish that the assertion is factually false.
 
-- Llama-3.1-8B-Instruct in NF4: approximately 5 GB VRAM
-- Direction extraction with 200 prompts: approximately 1 hour per model
-- Cross-ablation evaluation: approximately 2 hours per model
-- Full original pipeline: approximately 24 GPU-hours
+This result shows changed sensitivity to a specified operator in one represented checkpoint pair. The same operator can move activations by different amounts because its effect depends on their projection onto the direction. It does not establish three independent refusal mechanisms or general vulnerability to ordinary prompts.
 
-The capability-refusal extension was run separately on an NVIDIA A30; see the extension environment section below.
+## Run new experiments on a GPU
 
-## Datasets
-
-### Original datasets
-
-| Dataset | Purpose | Source |
-|---|---|---|
-| `ivnle/advbench_harmful_behaviors` | Harmful prompts, safety-refusal positive class | Hugging Face Hub |
-| `tatsu-lab/alpaca` | Benign instructions, safety-refusal negative class | Hugging Face Hub |
-| `rajpurkar/squad_v2` | Unanswerable questions, epistemic-abstention positive class | Hugging Face Hub |
-| `mandarjoshi/trivia_qa` (`rc.nocontext`) | Answerable questions, epistemic-abstention negative class | Hugging Face Hub |
-
-### Capability-refusal datasets
-
-The extension adds matched capability-refusal datasets under `data/`:
-
-```text
-data/capability_pairs.json
-data/capability_train_pairs.json
-data/capability_eval_pairs.json
-data/capability_eval_expanded.json
-```
-
-The train/evaluation split is family-disjoint so that capability probe performance is evaluated on unseen task families rather than paraphrases of training tasks.
-
-## Citation
-
-If you use the original Dual-Direction Mechanistic Interpretability work, please cite the upstream work:
-
-```bibtex
-@misc{aaliyan2026dualdirection,
-    title={Two Refusals or One? Disentangling Safety and Epistemic Abstention Directions in Language Model Activations},
-    author={Muhammad Aaliyan},
-    year={2026},
-    howpublished={ICML 2026 Mechanistic Interpretability Workshop Poster, \url{https://openreview.net/forum?id=dQJuu7jlZJ}},
-    doi={10.5281/zenodo.20009857}
-}
-```
-
-The capability-refusal work in this fork is an experimental extension and is not currently associated with a separate paper or preprint.
-
-## License
-
-MIT
-
----
-
-# Capability-refusal extension
-
-This project extends the original safety-refusal vs. epistemic-abstention analysis with a third direction: **capability refusal** — responses where the model declines because it lacks access, perception, tools, data, or another required capability.
-
-The central question is whether capability refusal is internally represented by the same mechanism as safety refusal or epistemic abstention, or whether it forms a distinct activation-space direction.
-
-## Experimental Design
-
-Capability directions are extracted from matched incapable/capable prompt pairs using the same difference-in-means approach as the original experiments.
-
-The final primary setup uses:
-
-- Primary model: `meta-llama/Llama-3.1-8B-Instruct`
-- Capability training set: 160 prompts from 16 task families
-- Capability expanded evaluation set: 60 unseen task families
-- Safety direction layer: `model.layers.22`
-- Epistemic direction layer: `model.layers.9`
-- Capability direction layer: `model.layers.24`
-- Ablation: top-1 layer
-- Ablation strength: `1.5`
-- Seed: `42`
-
-Capability behavior was evaluated using blinded manual annotation of all 180 baseline/intervention responses with a fixed semantic rubric.
-
-A response was counted as a capability refusal when it explicitly communicated that the model could not directly provide the requested information because it lacked the required access, perception, tools, data, or capability.
-
-## Environment
-
-The capability-refusal extension experiments were run on Ubuntu 22.04 using:
-
-- GPU: NVIDIA A30 (24 GB VRAM)
-- PyTorch: `2.14.1+cu130`
-- CUDA: `13.0`
-- Python virtual environment: `.venv`
-- Hugging Face model loading with `HF_HUB_DISABLE_XET=1`
-- Compute environment: Fabric-managed GPU node
-
-## Main Results
-
-### Capability direction
-
-On Llama-3.1-8B-Instruct:
-
-- Peak capability separability occurs at layer 24: **0.672**
-- Family-disjoint probe accuracy at the preselected capability layer 24: **0.925**
-
-The family-disjoint result is reported at the preselected capability layer rather than selecting the best-performing layer after evaluation.
-
-### Causal ablation
-
-For the 60-task expanded capability evaluation set:
-
-**Capability-direction ablation**
-
-- Baseline capability-refusal rate: **0.950**
-- Post-ablation capability-refusal rate: **0.817**
-- Net reduction: **13.3 percentage points**
-- Exact paired p-value: **0.0078**
-- Bootstrap 95% CI: **[0.050, 0.217]**
-
-**Safety-direction ablation**
-
-- Baseline capability-refusal rate: **0.950**
-- Post-ablation capability-refusal rate: **0.867**
-- Net reduction: **8.3 percentage points**
-- Exact paired p-value: **0.125**
-- Bootstrap 95% CI: **[0.000, 0.167]**
-
-This pattern suggests that capability refusal is causally sensitive to its own extracted direction while showing weaker transfer from safety-direction ablation.
-
-### Cross-model geometry
-
-The capability direction was also extracted in three model families:
-
-| Model | Peak capability layer | Capability separability | Mean safety-capability cosine | Mean epistemic-capability cosine |
-|---|---:|---:|---:|---:|
-| Llama-3.1-8B-Instruct | 24 | 0.672 | 0.206 | -0.090 |
-| Qwen3-8B | 20 | 0.447 | 0.199 | -0.075 |
-| Gemma-2-9B | 24 | 0.898 | 0.210 | -0.135 |
-
-Across all three model families, mean safety-capability cosine similarity is approximately **0.20**, while epistemic-capability similarity is near zero or negative.
-
-This supports a **distinct but partially safety-aligned** interpretation of capability refusal.
-
-### Quantization robustness
-
-At the selected capability layer:
-
-| Precision | Cosine vs. FP16 | Separability |
-|---|---:|---:|
-| FP16 | 1.000 | 0.672 |
-| NF4 | 1.000 | 0.672 |
-| INT8 | 0.950 | 0.677 |
-
-The capability direction remains geometrically stable under the tested NF4 and INT8 quantization settings.
-
-## Capability Extension Reproduction
-
-The main extension reproduction entry point is:
+The supported runner replaces the separate control and dose scripts:
 
 ```bash
-export HF_HUB_DISABLE_XET=1
-./scripts/reproduce_capability_extension.sh
+# Inspect the main experiment plan; no GPU or adapter needed.
+python scripts/run_interventions.py --dry-run
+
+# Execute with your copy of the study adapter.
+python -m pip install -e '.[gpu]'
+python scripts/run_interventions.py \
+  --checkpoint original_instruct safety_lora \
+  --adapter-path /path/to/study_adapter \
+  --conditions baseline capability \
+  --direction-checkpoint safety_lora \
+  --layer model.layers.20 \
+  --strengths 1.5 \
+  --output artifacts/runs/same_operator.json
 ```
 
-The capability direction can also be extracted directly with:
+**Adapter weights and the original effective training log are not included.** A newly trained adapter is a new checkpoint, not a recovery of the archived one. New generation outputs remain unannotated and are stored separately from frozen evidence.
 
-```bash
-python scripts/extract_directions.py \
-    --model-id meta-llama/Llama-3.1-8B-Instruct \
-    --direction-type capability \
-    --capability-split train \
-    --output artifacts/directions/capability_train_160.json \
-    --load-in-4bit
-```
+See [experiment commands](docs/EXPERIMENTS.md) for controls, dose sweeps, overlap experiments, extraction, and training.
 
-### Blind annotation
-
-The randomized blind review set can be regenerated with:
-
-```bash
-python scripts/build_full_blind_annotation.py
-```
-
-This rebuilds the randomized review material; it does **not** recreate the human judgments.
-
-The completed human-scored annotation artifact used for the reported statistics is stored at:
+## Repository layout
 
 ```text
-artifacts/extension/capability_full_blind_annotation.json
+scripts/                 Six supported command-line entry points
+src/ddmi/                Shared editing, model, data, and analysis code
+evidence/capability/     1,020 responses with final outcome annotations
+evidence/overlap/        1,040 responses with refusal and expressed-reason annotations
+evidence/directions/     Three direction collections per checkpoint
+evidence/context/        Clearly marked historical summary-only results
+evidence/manifest.json  Frozen-input hashes and source provenance
+data/                    Capability prompts, overlap prompts, and frozen training data
+tests/                   Numerical, provenance, CLI, and intervention tests
+docs/                    Protocol details and cleanup record
 ```
 
-Paired statistics can be regenerated from the completed annotations with:
+Generated outputs live under `artifacts/` and are ignored by Git. They can be regenerated with the CPU commands above.
 
-```bash
-python scripts/capability_paired_stats.py
-```
+## Evidence and interpretation
 
-### Final outputs
+The final capability rubric assigns exactly one of acknowledgment, instructions, unsupported assertion, or other. The secondary overlap study uses a separate rubric: refusal plus nonexclusive expressed safety, capability, and epistemic reasons. An epistemic phrase can accompany a non-refusal.
 
-Consolidated results:
+Intervals use 20,000 paired prompt resamples with seed 42. Tests are exploratory; retrospective Holm adjustments do not remove condition-selection effects. The 60 capability contexts and 20-context overlap categories are not training replications.
 
-```text
-artifacts/extension/capability_final_results.json
-```
+See [provenance and cleanup](docs/PROVENANCE.md) for preserved annotation decisions, limitations, source hashes, and the disposition of historical files.
 
-Final summary table:
+## Upstream attribution
 
-```text
-artifacts/extension/capability_extension_final_table.md
-```
+This project builds on Muhammad Aaliyan's *Two Refusals or One? Disentangling Safety and Epistemic Abstention Directions in Language Model Activations* and retains the `ddmi` package name and upstream authorship metadata.
 
-Final figures:
+- Upstream OpenReview reference: https://openreview.net/forum?id=dQJuu7jlZJ
+- Upstream archive reference: https://zenodo.org/records/20009857
 
-```text
-artifacts/extension/capability_extension_final_figure.png
-artifacts/extension/capability_extension_final_figure.pdf
-```
-
-Cross-model capability results:
-
-```text
-artifacts/cross_model_capability/combined_results.json
-```
-
-Capability probe:
-
-```text
-artifacts/probes/capability_probe.json
-```
-
-Quantization results:
-
-```text
-artifacts/quantization/capability_sweep.json
-```
-
-## Interpretation
-
-Taken together, the current results are most consistent with capability refusal being a **distinct but partially overlapping refusal-related mechanism**.
-
-Capability refusal is:
-
-- strongly linearly separable in activation space,
-- causally affected by ablating its extracted direction,
-- consistently more geometrically aligned with safety refusal than with epistemic abstention across three model families,
-- and robust to the tested quantization settings.
-
-The results do **not** establish that safety refusal and capability refusal are the same mechanism. Instead, they suggest partial alignment alongside meaningful causal and representational separation.
-
-## Safety Fine-Tuning Extension
-
-This fork also tests whether targeted safety fine-tuning merely strengthens an existing refusal direction or reorganizes refusal-related representations.
-
-We compare **B**, `meta-llama/Llama-3.1-8B-Instruct`, with **C**, the same checkpoint after controlled safety QLoRA fine-tuning.
-
-### Main results
-
-| Measure | B | C |
-|---|---:|---:|
-| Harmful-request refusal | 0.950 | 0.995 |
-| Benign refusal | 0.000 | 0.045 |
-| Unanswerable abstention | 0.780 | 0.560 |
-| Capability refusal, blind human eval | 0.950 | 0.967 |
-
-Representation similarity across fine-tuning was **0.788 for safety**, **0.819 for epistemic abstention**, and **0.695 for capability refusal**, with within-checkpoint resampling stability near 0.98–1.00.
-
-Causal transfer was strongly asymmetric. In the tuned checkpoint, ablating the original B safety direction had essentially no effect on safety refusal, while ablating the new C safety direction reduced refusal by 72.5 percentage points. Capability showed an even stronger effect: its behavior remained nearly unchanged, but ablating the C capability direction reduced capability refusal from 0.967 to 0.000.
-
-These results support **representational and causal reorganization**, rather than simple amplification of one fixed refusal/abstention direction.
-
-- [Final results table](artifacts/safety_finetuning/safety_finetuning_final_table.md)
-- [Final figure](artifacts/safety_finetuning/safety_finetuning_final_figure.png)
-- [Machine-readable results](artifacts/safety_finetuning/safety_finetuning_final_results.json)
-
-## Refusal-overlap extension
-
-This experiment tests whether ambiguous prompts that admit multiple refusal rationales recruit safety, capability, and epistemic mechanisms independently or in combination.
-
-The frozen overlap matrix contains 140 prompts, with 20 prompts in each category: `safety_only`, `capability_only`, `epistemic_only`, `safety_capability`, `safety_epistemic`, `capability_epistemic`, and `triple_overlap`.
-
-Final dataset:
-`data/refusal_overlap/refusal_overlap_matrix.json`
-
-Prompt refinements from the pilot are retained in:
-`data/refusal_overlap/prompt_overrides.json`
-
-### Models and intervention
-
-B is `meta-llama/Llama-3.1-8B-Instruct`.
-
-C is the same checkpoint with the controlled safety QLoRA adapter at `artifacts/safety_finetuning/llama31_8b_instruct_safety_lora`.
-
-Models are loaded in 4-bit NF4. Activation-direction ablation uses strength 1.5 with each checkpoint's own learned directions.
-
-Direction layers:
-- B safety: L22
-- B capability: L24
-- B epistemic: L9
-- C safety: L22
-- C capability: L20
-- C epistemic: L9
-
-Random seed: 42.
-
-### Causal matrix and annotation
-
-Clean categories use baseline plus their corresponding single-direction ablation. Pairwise overlap categories use baseline, both single ablations, and the joint ablation. Triple-overlap prompts use baseline, three single ablations, three pairwise ablations, and the three-direction ablation.
-
-The full causal matrix contains 1,040 generated responses across B and C.
-
-Responses were annotated with four independent multi-label fields:
-- `refusal`
-- `reason_safety`
-- `reason_capability`
-- `reason_epistemic`
-
-The annotation file hid checkpoint, prompt category, and intervention condition during labeling. Labels were reviewed before analysis.
-
-All generated responses, blind files, unblinding keys, reviewed annotations, statistics, and figures are under `artifacts/refusal_overlap/`.
-
-### Statistics and reproduction
-
-Focal overlap contrasts use paired exact tests on discordant responses and 10,000 paired bootstrap samples with seed 42. Holm correction is applied across five focal contrasts.
-
-Key outputs:
-- `artifacts/refusal_overlap/ablation_reviewed_stats_final.json`
-- `artifacts/refusal_overlap/refusal_overlap_rerouting.png`
-- `artifacts/refusal_overlap/refusal_overlap_rerouting.pdf`
-
-Reproduction commands:
-
-    python scripts/build_refusal_overlap_matrix.py
-    HF_HUB_DISABLE_XET=1 python scripts/evaluate_refusal_overlap_matrix.py
-    HF_HUB_DISABLE_XET=1 python scripts/evaluate_refusal_overlap_ablation.py
-    python scripts/analyze_refusal_overlap_stats.py
-    python scripts/finalize_refusal_overlap_stats.py
-    python scripts/plot_refusal_overlap_rerouting.py
+The old cross-family, probe, quantization, and triple-direction workflows are historical context for this revised study. They are preserved in the pre-cleanup snapshot rather than presented as the current reproduction path.

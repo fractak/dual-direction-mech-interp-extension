@@ -158,14 +158,13 @@ def _format_qa_prompt_nocontext(question: str) -> str:
 def load_capability_prompts(
     limit: int = 200,
     seed: int = 42,
-    split: str = "all",
+    split: str = "train",
 ) -> Dict[str, List[PromptSample]]:
     """Load matched capability-impossible and capability-possible prompts.
 
     split:
         'train' -> 16 held-in task families / 80 pairs
-        'eval'  -> 4 held-out task families / 20 pairs
-        'all'   -> original full 100-pair dataset
+        'expanded_eval' -> 60 inaccessible-state evaluation contexts
 
     Returns: {'incapable': [...], 'capable': [...]}
     """
@@ -173,9 +172,7 @@ def load_capability_prompts(
     from pathlib import Path
 
     filenames = {
-        "all": "capability_pairs.json",
         "train": "capability_train_pairs.json",
-        "eval": "capability_eval_pairs.json",
         "expanded_eval": "capability_eval_expanded.json",
     }
 
@@ -243,22 +240,6 @@ def load_capability_prompts(
     }
 
 
-def load_all_prompts(
-    safety_limit: int = 200,
-    epistemic_limit: int = 200,
-    capability_limit: int = 50,
-    seed: int = 42,
-) -> Dict[str, List[PromptSample]]:
-    """Load all prompt groups for all direction types."""
-    safety = load_safety_prompts(limit=safety_limit, seed=seed)
-    epistemic = load_epistemic_prompts(limit=epistemic_limit, seed=seed)
-    capability = load_capability_prompts(limit=capability_limit, seed=seed)
-
-    return {
-        **safety,
-        **epistemic,
-        **capability,
-    }
 
 def prompts_to_text_list(samples: Sequence[PromptSample]) -> List[str]:
     """Extract plain text prompts from PromptSample list."""

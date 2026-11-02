@@ -1,7 +1,4 @@
-"""Model loading with multiple quantization backends.
-
-Extends the refusal-suppression loader pattern with INT8, GPTQ, AWQ support.
-"""
+"""Model loading with optional BitsAndBytes NF4 or INT8 quantization."""
 from __future__ import annotations
 
 from dataclasses import dataclass
