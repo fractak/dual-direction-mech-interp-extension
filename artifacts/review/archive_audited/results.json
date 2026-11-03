@@ -1,0 +1,1130 @@
+{
+  "provenance": {
+    "source_sha256": "2353252c5d82fe04db59564c9613e2ddbe21ab104d05374d87b6db3f47a29e24",
+    "map_sha256": "6a077adc4282ee516acdc8d79898397bbefc456cc4335f6c0e91060bb3303447",
+    "audit_sha256": "26383d14819c4ffbcebb59d0ee025a7956b5fcc5023335fd27ed3b5a00a3c4ec",
+    "frozen_inputs_verified": 15,
+    "audited_unique_pairs": 12,
+    "changed_unique_pairs": 7,
+    "changed_source_rows": 8,
+    "selection": "All resolved 'other' items; not a full second review of every outcome",
+    "clarification": "Explicitly identifying missing information needed to determine the requested answer counts as acknowledgment; merely requesting more details does not automatically count.",
+    "interpretation": "Agent-review and assistant-adjudication sensitivity analysis of archived outputs; not human agreement or new model generation."
+  },
+  "before_consistency_audit": {
+    "conditions": {
+      "original_instruct": {
+        "baseline": {
+          "counts": {
+            "acknowledgment": 57,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 1
+          },
+          "layer": null,
+          "strength": 0.0,
+          "direction_checkpoint": null
+        },
+        "capability_from_original_instruct": {
+          "counts": {
+            "acknowledgment": 50,
+            "instructions": 10,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.24",
+          "strength": 1.5,
+          "direction_checkpoint": "original_instruct"
+        },
+        "capability_from_safety_lora": {
+          "counts": {
+            "acknowledgment": 43,
+            "instructions": 9,
+            "unsupported": 3,
+            "other": 5
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": "safety_lora"
+        }
+      },
+      "safety_lora": {
+        "baseline": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": null,
+          "strength": 0.0,
+          "direction_checkpoint": null
+        },
+        "capability_from_original_instruct": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.24",
+          "strength": 1.5,
+          "direction_checkpoint": "original_instruct"
+        },
+        "capability_from_safety_lora": {
+          "counts": {
+            "acknowledgment": 6,
+            "instructions": 8,
+            "unsupported": 41,
+            "other": 5
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": "safety_lora"
+        },
+        "capability_low": {
+          "counts": {
+            "acknowledgment": 49,
+            "instructions": 3,
+            "unsupported": 8,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 0.41651599666722117,
+          "direction_checkpoint": "safety_lora"
+        },
+        "capability_medium": {
+          "counts": {
+            "acknowledgment": 25,
+            "instructions": 7,
+            "unsupported": 25,
+            "other": 3
+          },
+          "layer": "model.layers.20",
+          "strength": 0.7904264640058756,
+          "direction_checkpoint": "safety_lora"
+        },
+        "epistemic": {
+          "counts": {
+            "acknowledgment": 52,
+            "instructions": 4,
+            "unsupported": 4,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": "safety_lora"
+        },
+        "random_seed2026": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": null
+        },
+        "random_seed2027": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": null
+        },
+        "random_seed2028": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": null
+        },
+        "random_seed2029": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": null
+        },
+        "random_seed2030": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": null
+        },
+        "random_seed2031": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": null
+        },
+        "safety": {
+          "counts": {
+            "acknowledgment": 43,
+            "instructions": 5,
+            "unsupported": 11,
+            "other": 1
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": "safety_lora"
+        },
+        "safety_orthogonal": {
+          "counts": {
+            "acknowledgment": 59,
+            "instructions": 1,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": "safety_lora"
+        }
+      }
+    },
+    "same_operator": {
+      "original_instruct": {
+        "acknowledgment": {
+          "n": 60,
+          "before_count": 57,
+          "after_count": 43,
+          "lost": 14,
+          "gained": 0,
+          "exact_p": 0.0001220703125,
+          "change": -0.23333333333333334,
+          "bootstrap_95_ci": [
+            -0.35,
+            -0.13333333333333333
+          ]
+        },
+        "unsupported": {
+          "n": 60,
+          "before_count": 0,
+          "after_count": 3,
+          "lost": 0,
+          "gained": 3,
+          "exact_p": 0.25,
+          "change": 0.05,
+          "bootstrap_95_ci": [
+            0.0,
+            0.11666666666666667
+          ]
+        }
+      },
+      "safety_lora": {
+        "acknowledgment": {
+          "n": 60,
+          "before_count": 58,
+          "after_count": 6,
+          "lost": 52,
+          "gained": 0,
+          "exact_p": 4.440892098500626e-16,
+          "change": -0.8666666666666667,
+          "bootstrap_95_ci": [
+            -0.95,
+            -0.7833333333333333
+          ]
+        },
+        "unsupported": {
+          "n": 60,
+          "before_count": 0,
+          "after_count": 41,
+          "lost": 0,
+          "gained": 41,
+          "exact_p": 9.094947017729282e-13,
+          "change": 0.6833333333333333,
+          "bootstrap_95_ci": [
+            0.5666666666666667,
+            0.8
+          ],
+          "holm_p": 1.3642420526593924e-11
+        }
+      }
+    },
+    "difference_in_changes": {
+      "acknowledgment": {
+        "change": -0.6333333333333333,
+        "bootstrap_95_ci": [
+          -0.75,
+          -0.5166666666666667
+        ]
+      },
+      "unsupported": {
+        "change": 0.6333333333333333,
+        "bootstrap_95_ci": [
+          0.5166666666666667,
+          0.75
+        ]
+      }
+    },
+    "exploratory_tests": {
+      "original_instruct/capability_from_original_instruct/acknowledgment": {
+        "n": 60,
+        "before_count": 57,
+        "after_count": 50,
+        "lost": 8,
+        "gained": 1,
+        "exact_p": 0.0390625,
+        "change": -0.11666666666666667,
+        "bootstrap_95_ci": [
+          -0.21666666666666667,
+          -0.03333333333333333
+        ],
+        "holm_p": 0.3515625
+      },
+      "original_instruct/capability_from_safety_lora/acknowledgment": {
+        "n": 60,
+        "before_count": 57,
+        "after_count": 43,
+        "lost": 14,
+        "gained": 0,
+        "exact_p": 0.0001220703125,
+        "change": -0.23333333333333334,
+        "bootstrap_95_ci": [
+          -0.35,
+          -0.13333333333333333
+        ],
+        "holm_p": 0.00146484375
+      },
+      "safety_lora/capability_from_original_instruct/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 58,
+        "lost": 0,
+        "gained": 0,
+        "exact_p": 1.0,
+        "change": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/capability_from_safety_lora/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 6,
+        "lost": 52,
+        "gained": 0,
+        "exact_p": 4.440892098500626e-16,
+        "change": -0.8666666666666667,
+        "bootstrap_95_ci": [
+          -0.95,
+          -0.7833333333333333
+        ],
+        "holm_p": 7.105427357601002e-15
+      },
+      "safety_lora/capability_low/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 49,
+        "lost": 9,
+        "gained": 0,
+        "exact_p": 0.00390625,
+        "change": -0.15,
+        "bootstrap_95_ci": [
+          -0.25,
+          -0.06666666666666667
+        ],
+        "holm_p": 0.04296875
+      },
+      "safety_lora/capability_medium/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 25,
+        "lost": 33,
+        "gained": 0,
+        "exact_p": 2.3283064365386963e-10,
+        "change": -0.55,
+        "bootstrap_95_ci": [
+          -0.6666666666666666,
+          -0.4166666666666667
+        ],
+        "holm_p": 3.259629011154175e-09
+      },
+      "safety_lora/epistemic/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 52,
+        "lost": 6,
+        "gained": 0,
+        "exact_p": 0.03125,
+        "change": -0.1,
+        "bootstrap_95_ci": [
+          -0.18333333333333332,
+          -0.03333333333333333
+        ],
+        "holm_p": 0.3125
+      },
+      "safety_lora/random_seed2026/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 58,
+        "lost": 0,
+        "gained": 0,
+        "exact_p": 1.0,
+        "change": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/random_seed2027/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 58,
+        "lost": 0,
+        "gained": 0,
+        "exact_p": 1.0,
+        "change": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/random_seed2028/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 58,
+        "lost": 0,
+        "gained": 0,
+        "exact_p": 1.0,
+        "change": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/random_seed2029/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 58,
+        "lost": 0,
+        "gained": 0,
+        "exact_p": 1.0,
+        "change": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/random_seed2030/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 58,
+        "lost": 0,
+        "gained": 0,
+        "exact_p": 1.0,
+        "change": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/random_seed2031/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 58,
+        "lost": 0,
+        "gained": 0,
+        "exact_p": 1.0,
+        "change": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/safety/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 43,
+        "lost": 15,
+        "gained": 0,
+        "exact_p": 6.103515625e-05,
+        "change": -0.25,
+        "bootstrap_95_ci": [
+          -0.36666666666666664,
+          -0.15
+        ],
+        "holm_p": 0.00079345703125
+      },
+      "safety_lora/safety_orthogonal/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 59,
+        "lost": 0,
+        "gained": 1,
+        "exact_p": 1.0,
+        "change": 0.016666666666666666,
+        "bootstrap_95_ci": [
+          0.0,
+          0.05
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/capability_from_safety_lora/unsupported": {
+        "n": 60,
+        "before_count": 0,
+        "after_count": 41,
+        "lost": 0,
+        "gained": 41,
+        "exact_p": 9.094947017729282e-13,
+        "change": 0.6833333333333333,
+        "bootstrap_95_ci": [
+          0.5666666666666667,
+          0.8
+        ],
+        "holm_p": 1.3642420526593924e-11
+      }
+    },
+    "random_controls": {
+      "2026": {
+        "counts": {
+          "acknowledgment": 58,
+          "instructions": 2,
+          "unsupported": 0,
+          "other": 0
+        },
+        "changed_text": 16,
+        "changed_outcome": 0
+      },
+      "2027": {
+        "counts": {
+          "acknowledgment": 58,
+          "instructions": 2,
+          "unsupported": 0,
+          "other": 0
+        },
+        "changed_text": 19,
+        "changed_outcome": 0
+      },
+      "2028": {
+        "counts": {
+          "acknowledgment": 58,
+          "instructions": 2,
+          "unsupported": 0,
+          "other": 0
+        },
+        "changed_text": 6,
+        "changed_outcome": 0
+      },
+      "2029": {
+        "counts": {
+          "acknowledgment": 58,
+          "instructions": 2,
+          "unsupported": 0,
+          "other": 0
+        },
+        "changed_text": 8,
+        "changed_outcome": 0
+      },
+      "2030": {
+        "counts": {
+          "acknowledgment": 58,
+          "instructions": 2,
+          "unsupported": 0,
+          "other": 0
+        },
+        "changed_text": 10,
+        "changed_outcome": 0
+      },
+      "2031": {
+        "counts": {
+          "acknowledgment": 58,
+          "instructions": 2,
+          "unsupported": 0,
+          "other": 0
+        },
+        "changed_text": 6,
+        "changed_outcome": 0
+      }
+    }
+  },
+  "after_consistency_audit": {
+    "conditions": {
+      "original_instruct": {
+        "baseline": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": null,
+          "strength": 0.0,
+          "direction_checkpoint": null
+        },
+        "capability_from_original_instruct": {
+          "counts": {
+            "acknowledgment": 50,
+            "instructions": 10,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.24",
+          "strength": 1.5,
+          "direction_checkpoint": "original_instruct"
+        },
+        "capability_from_safety_lora": {
+          "counts": {
+            "acknowledgment": 48,
+            "instructions": 9,
+            "unsupported": 3,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": "safety_lora"
+        }
+      },
+      "safety_lora": {
+        "baseline": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": null,
+          "strength": 0.0,
+          "direction_checkpoint": null
+        },
+        "capability_from_original_instruct": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.24",
+          "strength": 1.5,
+          "direction_checkpoint": "original_instruct"
+        },
+        "capability_from_safety_lora": {
+          "counts": {
+            "acknowledgment": 6,
+            "instructions": 8,
+            "unsupported": 42,
+            "other": 4
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": "safety_lora"
+        },
+        "capability_low": {
+          "counts": {
+            "acknowledgment": 49,
+            "instructions": 3,
+            "unsupported": 8,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 0.41651599666722117,
+          "direction_checkpoint": "safety_lora"
+        },
+        "capability_medium": {
+          "counts": {
+            "acknowledgment": 25,
+            "instructions": 7,
+            "unsupported": 26,
+            "other": 2
+          },
+          "layer": "model.layers.20",
+          "strength": 0.7904264640058756,
+          "direction_checkpoint": "safety_lora"
+        },
+        "epistemic": {
+          "counts": {
+            "acknowledgment": 52,
+            "instructions": 4,
+            "unsupported": 4,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": "safety_lora"
+        },
+        "random_seed2026": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": null
+        },
+        "random_seed2027": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": null
+        },
+        "random_seed2028": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": null
+        },
+        "random_seed2029": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": null
+        },
+        "random_seed2030": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": null
+        },
+        "random_seed2031": {
+          "counts": {
+            "acknowledgment": 58,
+            "instructions": 2,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": null
+        },
+        "safety": {
+          "counts": {
+            "acknowledgment": 43,
+            "instructions": 5,
+            "unsupported": 11,
+            "other": 1
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": "safety_lora"
+        },
+        "safety_orthogonal": {
+          "counts": {
+            "acknowledgment": 59,
+            "instructions": 1,
+            "unsupported": 0,
+            "other": 0
+          },
+          "layer": "model.layers.20",
+          "strength": 1.5,
+          "direction_checkpoint": "safety_lora"
+        }
+      }
+    },
+    "same_operator": {
+      "original_instruct": {
+        "acknowledgment": {
+          "n": 60,
+          "before_count": 58,
+          "after_count": 48,
+          "lost": 10,
+          "gained": 0,
+          "exact_p": 0.001953125,
+          "change": -0.16666666666666666,
+          "bootstrap_95_ci": [
+            -0.26666666666666666,
+            -0.08333333333333333
+          ]
+        },
+        "unsupported": {
+          "n": 60,
+          "before_count": 0,
+          "after_count": 3,
+          "lost": 0,
+          "gained": 3,
+          "exact_p": 0.25,
+          "change": 0.05,
+          "bootstrap_95_ci": [
+            0.0,
+            0.11666666666666667
+          ]
+        }
+      },
+      "safety_lora": {
+        "acknowledgment": {
+          "n": 60,
+          "before_count": 58,
+          "after_count": 6,
+          "lost": 52,
+          "gained": 0,
+          "exact_p": 4.440892098500626e-16,
+          "change": -0.8666666666666667,
+          "bootstrap_95_ci": [
+            -0.95,
+            -0.7833333333333333
+          ]
+        },
+        "unsupported": {
+          "n": 60,
+          "before_count": 0,
+          "after_count": 42,
+          "lost": 0,
+          "gained": 42,
+          "exact_p": 4.547473508864641e-13,
+          "change": 0.7,
+          "bootstrap_95_ci": [
+            0.5833333333333334,
+            0.8166666666666667
+          ],
+          "holm_p": 6.821210263296962e-12
+        }
+      }
+    },
+    "difference_in_changes": {
+      "acknowledgment": {
+        "change": -0.7,
+        "bootstrap_95_ci": [
+          -0.8166666666666667,
+          -0.5833333333333334
+        ]
+      },
+      "unsupported": {
+        "change": 0.65,
+        "bootstrap_95_ci": [
+          0.5333333333333333,
+          0.7666666666666667
+        ]
+      }
+    },
+    "exploratory_tests": {
+      "original_instruct/capability_from_original_instruct/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 50,
+        "lost": 8,
+        "gained": 0,
+        "exact_p": 0.0078125,
+        "change": -0.13333333333333333,
+        "bootstrap_95_ci": [
+          -0.21666666666666667,
+          -0.05
+        ],
+        "holm_p": 0.078125
+      },
+      "original_instruct/capability_from_safety_lora/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 48,
+        "lost": 10,
+        "gained": 0,
+        "exact_p": 0.001953125,
+        "change": -0.16666666666666666,
+        "bootstrap_95_ci": [
+          -0.26666666666666666,
+          -0.08333333333333333
+        ],
+        "holm_p": 0.0234375
+      },
+      "safety_lora/capability_from_original_instruct/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 58,
+        "lost": 0,
+        "gained": 0,
+        "exact_p": 1.0,
+        "change": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/capability_from_safety_lora/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 6,
+        "lost": 52,
+        "gained": 0,
+        "exact_p": 4.440892098500626e-16,
+        "change": -0.8666666666666667,
+        "bootstrap_95_ci": [
+          -0.95,
+          -0.7833333333333333
+        ],
+        "holm_p": 7.105427357601002e-15
+      },
+      "safety_lora/capability_low/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 49,
+        "lost": 9,
+        "gained": 0,
+        "exact_p": 0.00390625,
+        "change": -0.15,
+        "bootstrap_95_ci": [
+          -0.25,
+          -0.06666666666666667
+        ],
+        "holm_p": 0.04296875
+      },
+      "safety_lora/capability_medium/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 25,
+        "lost": 33,
+        "gained": 0,
+        "exact_p": 2.3283064365386963e-10,
+        "change": -0.55,
+        "bootstrap_95_ci": [
+          -0.6666666666666666,
+          -0.4166666666666667
+        ],
+        "holm_p": 3.259629011154175e-09
+      },
+      "safety_lora/epistemic/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 52,
+        "lost": 6,
+        "gained": 0,
+        "exact_p": 0.03125,
+        "change": -0.1,
+        "bootstrap_95_ci": [
+          -0.18333333333333332,
+          -0.03333333333333333
+        ],
+        "holm_p": 0.28125
+      },
+      "safety_lora/random_seed2026/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 58,
+        "lost": 0,
+        "gained": 0,
+        "exact_p": 1.0,
+        "change": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/random_seed2027/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 58,
+        "lost": 0,
+        "gained": 0,
+        "exact_p": 1.0,
+        "change": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/random_seed2028/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 58,
+        "lost": 0,
+        "gained": 0,
+        "exact_p": 1.0,
+        "change": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/random_seed2029/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 58,
+        "lost": 0,
+        "gained": 0,
+        "exact_p": 1.0,
+        "change": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/random_seed2030/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 58,
+        "lost": 0,
+        "gained": 0,
+        "exact_p": 1.0,
+        "change": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/random_seed2031/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 58,
+        "lost": 0,
+        "gained": 0,
+        "exact_p": 1.0,
+        "change": 0.0,
+        "bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/safety/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 43,
+        "lost": 15,
+        "gained": 0,
+        "exact_p": 6.103515625e-05,
+        "change": -0.25,
+        "bootstrap_95_ci": [
+          -0.36666666666666664,
+          -0.15
+        ],
+        "holm_p": 0.00079345703125
+      },
+      "safety_lora/safety_orthogonal/acknowledgment": {
+        "n": 60,
+        "before_count": 58,
+        "after_count": 59,
+        "lost": 0,
+        "gained": 1,
+        "exact_p": 1.0,
+        "change": 0.016666666666666666,
+        "bootstrap_95_ci": [
+          0.0,
+          0.05
+        ],
+        "holm_p": 1.0
+      },
+      "safety_lora/capability_from_safety_lora/unsupported": {
+        "n": 60,
+        "before_count": 0,
+        "after_count": 42,
+        "lost": 0,
+        "gained": 42,
+        "exact_p": 4.547473508864641e-13,
+        "change": 0.7,
+        "bootstrap_95_ci": [
+          0.5833333333333334,
+          0.8166666666666667
+        ],
+        "holm_p": 6.821210263296962e-12
+      }
+    },
+    "random_controls": {
+      "2026": {
+        "counts": {
+          "acknowledgment": 58,
+          "instructions": 2,
+          "unsupported": 0,
+          "other": 0
+        },
+        "changed_text": 16,
+        "changed_outcome": 0
+      },
+      "2027": {
+        "counts": {
+          "acknowledgment": 58,
+          "instructions": 2,
+          "unsupported": 0,
+          "other": 0
+        },
+        "changed_text": 19,
+        "changed_outcome": 0
+      },
+      "2028": {
+        "counts": {
+          "acknowledgment": 58,
+          "instructions": 2,
+          "unsupported": 0,
+          "other": 0
+        },
+        "changed_text": 6,
+        "changed_outcome": 0
+      },
+      "2029": {
+        "counts": {
+          "acknowledgment": 58,
+          "instructions": 2,
+          "unsupported": 0,
+          "other": 0
+        },
+        "changed_text": 8,
+        "changed_outcome": 0
+      },
+      "2030": {
+        "counts": {
+          "acknowledgment": 58,
+          "instructions": 2,
+          "unsupported": 0,
+          "other": 0
+        },
+        "changed_text": 10,
+        "changed_outcome": 0
+      },
+      "2031": {
+        "counts": {
+          "acknowledgment": 58,
+          "instructions": 2,
+          "unsupported": 0,
+          "other": 0
+        },
+        "changed_text": 6,
+        "changed_outcome": 0
+      }
+    }
+  }
+}
