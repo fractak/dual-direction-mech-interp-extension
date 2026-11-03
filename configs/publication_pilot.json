@@ -1,0 +1,10 @@
+{
+  "purpose": "pilot",
+  "model_revision": "REPLACE_WITH_40_CHARACTER_MODEL_COMMIT_SHA",
+  "precision": "nf4",
+  "seed": 42,
+  "layers": [20, 24],
+  "projection_strengths": [0.5, 1.0, 1.5],
+  "relative_budgets": [0.01, 0.03, 0.1],
+  "random_seeds": [2026, 2027, 2028, 2029, 2030, 2031]
+}

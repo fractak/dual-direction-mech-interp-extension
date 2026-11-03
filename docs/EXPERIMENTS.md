@@ -1,6 +1,6 @@
 # Supported experiment commands
 
-All examples assume a checkout, `python -m pip install -e '.[gpu]'`, and the necessary model access. Inspect `--help` before running. The GPU workflow has been tested with synthetic models on CPU; a full model or training rerun was not performed during the cleanup.
+All examples assume a checkout, `python -m pip install -e '.[gpu]'`, and the necessary model access. Inspect `--help` before running. The GPU workflow has been tested with synthetic models on CPU; a full model or training rerun was not performed in the recorded validation.
 
 ## Fixed operator
 

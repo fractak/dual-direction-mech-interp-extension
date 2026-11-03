@@ -1,8 +1,12 @@
-# Acknowledgment of access limits before and after LoRA adaptation
+# Equal baseline acknowledgment, different intervention sensitivity after LoRA adaptation
 
 This repository supports a directional-intervention study of **Llama 3.1 8B Instruct** before and after an additional safety-oriented LoRA adaptation.
 
-The main question is whether two checkpoints that acknowledge their access limits equally often without an edit can respond differently to the same activation operator.
+Both checkpoints acknowledge access limits on 58 of 60 unedited prompts. Applying the same capability-direction operator leaves acknowledgment on 49 prompts in Original Instruct and 6 in the adapted checkpoint, with unsupported assertions on 1 and 40 prompts respectively. The finding is differential response to a specified operator in this checkpoint pair; actual activation displacement is not matched.
+
+## Study workflow
+
+Start with [the experiment protocol](docs/EXPERIMENT_PROTOCOL.md). The prospective runner measures actual activation displacement, crosses vector sources and receivers at the same layers, and adds relative-distance-matched random controls. Blinded independent review and prospective analysis are separate from frozen historical evidence. The reported findings come from the archived responses; prospective runs are stored separately.
 
 ## Checkpoints
 
@@ -13,7 +17,7 @@ The main question is whether two checkpoints that acknowledge their access limit
 
 The original checkpoint is already instruction-tuned. The adapter's training data contains **999 English safety examples and 999 Alpaca instruction examples**. This mixed recipe does not isolate the effect of safety data.
 
-## Reproduce the paper's analysis and figures on CPU
+## Reproduce the analysis and figures on CPU
 
 From the repository directory:
 
@@ -31,7 +35,7 @@ Outputs:
 
 - `artifacts/paper/results.json`: counts, paired statistics, and direction geometry.
 - `artifacts/paper/summary.md`: final-outcome counts by checkpoint and condition.
-- `artifacts/figures/revised_paper/`: four PNG figures and four vector PDFs, with the numerical results in `data/`.
+- `artifacts/figures/`: four PNG figures and four vector PDFs, with the numerical results in `data/`.
 
 For one figure, use `python scripts/make_paper_figures.py --figures 1`.
 Input checksums are always verified; `--check-paper` remains accepted for existing commands.
@@ -86,7 +90,7 @@ See [experiment commands](docs/EXPERIMENTS.md) for controls, dose sweeps, overla
 ## Repository layout
 
 ```text
-scripts/                 Six supported command-line entry points
+scripts/                 Historical reproduction and prospective-study commands
 src/ddmi/                Shared editing, model, data, and analysis code
 evidence/capability/     1,020 responses with final outcome annotations
 evidence/overlap/        1,040 responses with refusal and expressed-reason annotations
@@ -95,7 +99,7 @@ evidence/context/        Clearly marked historical summary-only results
 evidence/manifest.json  Frozen-input hashes and source provenance
 data/                    Capability prompts, overlap prompts, and frozen training data
 tests/                   Numerical, provenance, CLI, and intervention tests
-docs/                    Protocol details and cleanup record
+docs/                    Experiment protocols and evidence provenance
 ```
 
 Generated outputs live under `artifacts/` and are ignored by Git. They can be regenerated with the CPU commands above.
@@ -106,7 +110,7 @@ The final capability rubric assigns exactly one of acknowledgment, instructions,
 
 Intervals use 20,000 paired prompt resamples with seed 42. Tests are exploratory; retrospective Holm adjustments do not remove condition-selection effects. The 60 capability contexts and 20-context overlap categories are not training replications.
 
-See [provenance and cleanup](docs/PROVENANCE.md) for preserved annotation decisions, limitations, source hashes, and the disposition of historical files.
+See [evidence provenance](docs/PROVENANCE.md) for preserved annotation decisions, limitations, source hashes, and the disposition of historical files.
 
 ## Upstream attribution
 
@@ -115,4 +119,4 @@ This project builds on Muhammad Aaliyan's *Two Refusals or One? Disentangling Sa
 - Upstream OpenReview reference: https://openreview.net/forum?id=dQJuu7jlZJ
 - Upstream archive reference: https://zenodo.org/records/20009857
 
-The old cross-family, probe, quantization, and triple-direction workflows are historical context for this revised study. They are preserved in the pre-cleanup snapshot rather than presented as the current reproduction path.
+The old cross-family, probe, quantization, and triple-direction workflows are historical context outside this study's supported reproduction workflow.

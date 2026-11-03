@@ -57,12 +57,17 @@ def main() -> None:
     parser.add_argument("--load-in-8bit", action="store_true", help="Load in BnB INT8")
     parser.add_argument("--max-input-length", type=int, default=512)
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--revision", help="Immutable model Hub commit SHA for prospective studies")
     args = parser.parse_args()
 
     if (args.checkpoint == "safety_lora") != bool(args.adapter_path):
         parser.error(
             "safety_lora requires --adapter-path; original_instruct must not use an adapter"
         )
+
+    output_path = Path(args.output).resolve()
+    if output_path.exists() or output_path.is_relative_to((ROOT / "evidence").resolve()):
+        parser.error("New direction output must be new and outside frozen evidence")
 
     from ddmi.data.loaders import (
         load_capability_prompts,
@@ -86,6 +91,7 @@ def main() -> None:
     # Load model
     config = ModelLoadConfig(
         model_id=args.model_id,
+        revision=args.revision,
         load_in_4bit=args.load_in_4bit,
         load_in_8bit=args.load_in_8bit,
         torch_dtype="float16",
@@ -215,9 +221,14 @@ def main() -> None:
     for name, score in ranked[:5]:
         logger.info("  %s: %.4f", name, score)
 
+    from ddmi.provenance import adapter_manifest, runtime_metadata
+
     # Save artifact
     artifact = {
         "artifact_type": "direction_collection",
+        "model_revision": args.revision,
+        "runtime": runtime_metadata(),
+        "adapter_manifest": adapter_manifest(args.adapter_path),
         "checkpoint": args.checkpoint,
         "capability_split": args.capability_split if args.direction_type == "capability" else None,
         "prompt_sha256": {

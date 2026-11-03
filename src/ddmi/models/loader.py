@@ -12,6 +12,7 @@ class ModelLoadConfig:
     """Configuration for loading a model with optional quantization."""
 
     model_id: str
+    revision: Optional[str] = None
     load_in_4bit: bool = False       # BitsAndBytes NF4
     load_in_8bit: bool = False       # BitsAndBytes INT8
     torch_dtype: str = "auto"        # 'auto', 'float16', 'bfloat16', 'float32'
@@ -39,6 +40,9 @@ def load_model_and_tokenizer(
         "device_map": config.device_map,
         "trust_remote_code": config.trust_remote_code,
     }
+
+    if config.revision:
+        kwargs["revision"] = config.revision
 
     # Resolve dtype
     dtype = resolve_torch_dtype(config.torch_dtype)
@@ -70,6 +74,7 @@ def load_model_and_tokenizer(
     tokenizer = AutoTokenizer.from_pretrained(
         config.model_id,
         trust_remote_code=config.trust_remote_code,
+        revision=config.revision,
     )
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token

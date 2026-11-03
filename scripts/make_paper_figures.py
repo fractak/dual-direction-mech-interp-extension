@@ -12,7 +12,7 @@ sys.path.insert(0, str(ROOT / "src"))
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo-root", type=Path, default=ROOT)
-    parser.add_argument("--output-dir", type=Path, default=ROOT / "artifacts/figures/revised_paper")
+    parser.add_argument("--output-dir", type=Path, default=ROOT / "artifacts/figures")
     parser.add_argument(
         "--figures", type=int, nargs="+", choices=(1, 2, 3, 4), default=(1, 2, 3, 4)
     )

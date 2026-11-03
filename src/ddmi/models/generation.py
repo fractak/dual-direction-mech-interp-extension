@@ -23,7 +23,8 @@ def generate_text(
     prompt: str,
     config: Optional[TextGenerationConfig] = None,
     chat_template: bool = True,
-) -> str:
+    return_metadata: bool = False,
+):
     """Generate text from a prompt. Returns only the generated portion."""
     if config is None:
         config = TextGenerationConfig()
@@ -46,6 +47,9 @@ def generate_text(
     inputs = {k: v.to(device) for k, v in inputs.items()}
 
     input_len = inputs["input_ids"].shape[1]
+    full_input_len = None
+    if return_metadata:
+        full_input_len = tokenizer(text, return_tensors="pt", truncation=False)["input_ids"].shape[1]
 
     with torch.no_grad():
         output = model.generate(
@@ -54,10 +58,21 @@ def generate_text(
             temperature=config.temperature if config.do_sample else None,
             do_sample=config.do_sample,
             pad_token_id=tokenizer.pad_token_id,
+            use_cache=True,
         )
 
     generated = output[0, input_len:]
-    return tokenizer.decode(generated, skip_special_tokens=True)
+    decoded = tokenizer.decode(generated, skip_special_tokens=True)
+    if return_metadata:
+        return {
+            "response": decoded,
+            "input_tokens": input_len,
+            "untruncated_input_tokens": full_input_len,
+            "input_truncated": full_input_len > input_len,
+            "generated_tokens": len(generated),
+            "hit_token_limit": len(generated) == config.max_new_tokens,
+        }
+    return decoded
 
 
 def generate_batch(

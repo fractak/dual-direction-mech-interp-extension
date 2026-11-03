@@ -37,16 +37,21 @@ ddmi_kaggle_export.zip
 .env
 
 
-*_PLAN.md
-/paper/
 .venv-figures/
 
 # Reproducible derived outputs and new model runs
 artifacts/paper/
-artifacts/figures/revised_paper/
+artifacts/figures/
 artifacts/runs/
 artifacts/adapters/
 artifacts/datasets/
 artifacts/directions/
 .pytest_cache/
 .ruff_cache/
+
+# Keep experiment protocols; exclude manuscript files
+/paper/
+/artifacts/plans/
+/artifacts/new_directions/
+
+/pytest-of-root/

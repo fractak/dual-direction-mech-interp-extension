@@ -3,7 +3,11 @@
 import argparse
 import hashlib
 import json
+import sys
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))
 
 
 def parse_args():
@@ -21,23 +25,30 @@ def parse_args():
         default=str(Path(__file__).resolve().parents[1] / "artifacts/adapters/safety_lora"),
     )
     p.add_argument("--seed", type=int, default=42)
+    p.add_argument("--revision", help="Immutable model Hub commit SHA")
+    p.add_argument("--kind", choices=("all", "benign", "safety"), default="all")
     p.add_argument("--epochs", type=float, default=1.0)
     p.add_argument("--lr", type=float, default=1e-4)
     p.add_argument("--max-steps", type=int, default=-1)
     return p.parse_args()
 
 
-def load_training_dataset(path):
+def load_training_dataset(path, kind="all"):
     raw = json.loads(Path(path).read_text())
 
     rows = []
     for row in raw["rows"]:
+        if kind != "all" and row["kind"] != kind:
+            continue
         rows.append(
             {
                 "prompt": [{"role": "user", "content": row["prompt"]}],
                 "completion": [{"role": "assistant", "content": row["response"]}],
             }
         )
+
+    if not rows:
+        raise ValueError("No training rows selected")
 
     from datasets import Dataset
 
@@ -47,6 +58,8 @@ def load_training_dataset(path):
 def main():
     args = parse_args()
     output = Path(args.output_dir)
+    if output.resolve().is_relative_to((ROOT / "evidence").resolve()):
+        raise ValueError("Training output cannot replace frozen evidence")
     if output.exists() and any(output.iterdir()):
         raise ValueError("Adapter output is not empty; choose a new --output-dir")
 
@@ -55,9 +68,9 @@ def main():
     from transformers import AutoTokenizer, BitsAndBytesConfig
     from trl import SFTConfig, SFTTrainer
 
-    dataset, dataset_config = load_training_dataset(args.dataset)
+    dataset, dataset_config = load_training_dataset(args.dataset, args.kind)
 
-    tokenizer = AutoTokenizer.from_pretrained(args.model_id)
+    tokenizer = AutoTokenizer.from_pretrained(args.model_id, revision=args.revision)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
@@ -103,6 +116,7 @@ def main():
         packing=False,
         completion_only_loss=True,
         model_init_kwargs={
+            "revision": args.revision,
             "quantization_config": quant_config,
             "device_map": "auto",
             "torch_dtype": torch.bfloat16,
@@ -119,12 +133,22 @@ def main():
 
     trainer.train()
 
+    trainer.save_state()
     trainer.save_model(args.output_dir)
     tokenizer.save_pretrained(args.output_dir)
+
+    from ddmi.provenance import adapter_manifest, runtime_metadata
 
     metadata = {
         "checkpoint": "safety_lora",
         "base_model": args.model_id,
+        "model_revision": args.revision,
+        "runtime": runtime_metadata(),
+        "training_subset": args.kind,
+        "selected_rows": len(dataset),
+        "selected_rows_sha256": hashlib.sha256(json.dumps(list(dataset), sort_keys=True).encode()).hexdigest(),
+        "trainer_log_history": trainer.state.log_history,
+        "adapter_manifest": adapter_manifest(args.output_dir),
         "dataset_sha256": hashlib.sha256(Path(args.dataset).read_bytes()).hexdigest(),
         "effective_global_steps": trainer.state.global_step,
         "effective_training_args": training_args.to_dict(),

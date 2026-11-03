@@ -1,4 +1,4 @@
-"""Recompute the revised paper's results from normalized human annotations."""
+"""Recompute the study's results from normalized human annotations."""
 
 from __future__ import annotations
 

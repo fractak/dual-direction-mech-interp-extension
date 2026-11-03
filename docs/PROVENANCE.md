@@ -1,8 +1,8 @@
-# Provenance and cleanup
+# Evidence provenance
 
 ## Scope
 
-The active repository now supports the revised access-limit acknowledgment paper: the fixed activation operator, checkpoint-specific controls and doses, direction geometry, and the secondary refusal/reason overlap study.
+This repository supports the access-limit acknowledgment study: the fixed activation operator, checkpoint-specific controls and doses, direction geometry, and the secondary refusal/reason overlap study.
 
 Names are descriptive throughout active code, filenames, commands, figures, and recomputed output. Source filenames and blind IDs in provenance retain historical spelling so they can be matched to the original snapshot. In that snapshot, `B`/`B_instruct` meant `original_instruct`; `C`/`C_safety_lora` meant `safety_lora`. A single `C` also sometimes meant the capability contrast, which is why broad text replacement would have been unsafe.
 
@@ -25,13 +25,11 @@ The original training manifest's exclusion flag is retained byte-for-byte. See t
 | Five root-level control scripts and source-editing random-seed shell loop | Replaced by parameterized `scripts/run_interventions.py` |
 | Overlapping statistical builders and legacy detector-based summaries | Replaced by `scripts/analyze_paper.py` and shared paired statistics |
 | Three old figure generators and hard-coded paper plotting counts | Replaced by one evidence-driven four-figure generator |
-| Old cross-family replication, quantization, probes, triple-direction pipeline, notebook, and experiment configs | Preserved in the pre-cleanup backup; outside this paper's supported workflow |
-| Unused combined/evaluation pair variants and overlap prompt overrides | Preserved in the pre-cleanup backup; frozen training/evaluation inputs remain |
-| Duplicate blind review templates, superseded results, and generated figures | Preserved in the pre-cleanup backup; normalized final evidence remains |
-| Machine-specific export manifest and old design document | Preserved in the pre-cleanup backup; replaced by current protocol/provenance documentation |
-| Detector/probe/legacy metrics modules and their tests | Preserved in the pre-cleanup backup; no longer imported by the active workflow |
-
-The terminal installer creates a backup before changing tracked paths. It does not remove unrecognized files, local virtual environments, model weights, Git history, or credentials. It does not commit or push.
+| Old cross-family replication, quantization, probes, triple-direction pipeline, notebook, and experiment configs | Preserved in the historical backup; outside this study's supported workflow |
+| Unused combined/evaluation pair variants and overlap prompt overrides | Preserved in the historical backup; frozen training/evaluation inputs remain |
+| Duplicate blind review templates, superseded results, and generated figures | Preserved in the historical backup; normalized final evidence remains |
+| Machine-specific export manifest and old design document | Preserved in the historical backup; replaced by current protocol/provenance documentation |
+| Detector/probe/legacy metrics modules and their tests | Preserved in the historical backup; no longer imported by the active workflow |
 
 ## Limitations retained
 
