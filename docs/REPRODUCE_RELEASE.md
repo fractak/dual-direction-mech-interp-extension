@@ -7,6 +7,7 @@ the experiment code, numerical references, and figure generators.
 
 From the repository root, in the CPU environment:
 
+    git lfs pull
     python -m pip install -r requirements-paper-figures.txt
     python scripts/reproduce_release.py --check-inputs cpu
     python scripts/reproduce_release.py
@@ -17,13 +18,7 @@ resolved labels and telemetry, then rebuild the measured dose and
 learned-direction figures. Swap intervals use per-prompt continuation
 scores. A preexisting output directory must be moved aside before a rerun.
 
-reproduction/inputs.json lists exact relative paths and sizes from the GPU
-checkout audit. A clean checkout needs the saved input files at those paths.
-If publishing the code, distribute those files as a companion evidence
-archive or through a suitable large-file store, with a SHA-256 manifest.
-The numerical references alone cannot reproduce the paired intervals.
-The expected resolved run hashes and frozen plan identifiers are recorded
-in the numerical references where available.
+The CPU inputs are versioned in Git LFS. reproduction/inputs.json lists their required paths and sizes. The optional companion archive can serve as a backup. The numerical references alone cannot reproduce the paired intervals.
 
 The resolved review JSONs reproduce the analysis conditional on the
 saved labels. To independently audit labeling, retain the original reviewer
