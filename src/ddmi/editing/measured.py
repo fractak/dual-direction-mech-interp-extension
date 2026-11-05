@@ -1,7 +1,7 @@
 """Measured single-direction interventions for prospective experiments.
 
 Relative mode is a new intervention, not a calibrated projection ablation.
-It matches requested per-token relative L2 displacement along a direction.
+Relative and absolute modes match per-token L2 displacement along a direction.
 Statistics measure the actual cast-back tensor, including rounding error.
 """
 
@@ -14,7 +14,11 @@ import torch
 
 class MeasuredIntervention:
     def __init__(self, module_name, direction, mode, amount):
-        if mode not in ("observe", "projection", "relative_l2"):
+        if mode not in (
+            "observe", "projection", "relative_l2", "absolute_l2",
+            "absolute_l2_add", "absolute_l2_subtract",
+            "adaptive_prefill_fixed_decode", "fixed_prefill_adaptive_decode",
+        ):
             raise ValueError(f"Unknown intervention mode: {mode}")
         if not math.isfinite(amount) or amount < 0:
             raise ValueError("Intervention amount must be finite and nonnegative")
@@ -48,14 +52,24 @@ class MeasuredIntervention:
         d = self.direction.to(h.device)
         projection = h @ d
         norm = h.norm(dim=-1)
+        crossover = self.mode in ("adaptive_prefill_fixed_decode", "fixed_prefill_adaptive_decode")
         if self.mode == "observe" or self.amount == 0:
             edited = tensor
         elif self.mode == "projection":
             edited = (h - self.amount * projection.unsqueeze(-1) * d).to(tensor.dtype)
+        elif self.mode == "absolute_l2_add":
+            edited = (h + self.amount * d).to(tensor.dtype)
+        elif self.mode == "absolute_l2_subtract":
+            edited = (h - self.amount * d).to(tensor.dtype)
         else:
             # A zero projection uses the positive direction; record these cases.
             sign = torch.where(projection < 0, -torch.ones_like(projection), 1.0)
-            step = self.amount * norm * sign
+            magnitude = self.amount * norm if self.mode == "relative_l2" else self.amount
+            if crossover:
+                adaptive = (self.mode == "adaptive_prefill_fixed_decode") == (not self.calls)
+                if not adaptive:
+                    sign = torch.ones_like(projection)
+            step = magnitude * sign
             edited = (h - step.unsqueeze(-1) * d).to(tensor.dtype)
         displacement = (edited.float() - h).norm(dim=-1)
         relative = displacement / norm.clamp_min(1e-12)
@@ -85,6 +99,20 @@ class MeasuredIntervention:
                 "zero_norm_tokens": int((norm == 0).sum()),
             }
         )
+        if self.mode in ("absolute_l2_add", "absolute_l2_subtract"):
+            self.calls[-1]["signed_projection"] = summary(projection)
+            self.calls[-1]["signed_displacement"] = summary((edited.float() - h) @ d)
+        if crossover and self.amount > 0:
+            adaptive_sign = torch.where(projection < 0, -torch.ones_like(projection), 1.0)
+            expected_sign = adaptive_sign if adaptive else torch.ones_like(projection)
+            signed_displacement = (edited.float() - h) @ d
+            error = (signed_displacement + self.amount * expected_sign).abs()
+            self.calls[-1].update(
+                sign_rule="adaptive" if adaptive else "fixed_subtract",
+                signed_error_max=float(error.max()),
+                positive_step_tokens=int((signed_displacement > 0).sum()),
+                negative_projection_tokens=int((projection < 0).sum()),
+            )
         return (edited, *output[1:]) if isinstance(output, tuple) else edited
 
     def close(self):

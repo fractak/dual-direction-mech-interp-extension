@@ -1,0 +1,17 @@
+[
+  "artifacts/runs/absolute_l2/smoke",
+  "artifacts/runs/activation_swap/smoke",
+  "artifacts/runs/fixed_sign/smoke",
+  "artifacts/runs/fresh_absolute/seed42_smoke",
+  "artifacts/runs/fresh_absolute/seed43_smoke",
+  "artifacts/runs/fresh_absolute/seed44_smoke",
+  "artifacts/runs/learned_controls/seed42_smoke",
+  "artifacts/runs/learned_controls/seed43_smoke",
+  "artifacts/runs/learned_controls/seed44_smoke",
+  "artifacts/runs/measurement_pilot/resume_backups/20261103T063433Z_591cb3d4",
+  "artifacts/runs/measurement_smoke",
+  "artifacts/runs/phase_crossover/smoke",
+  "artifacts/runs/reextract/seed42_smoke",
+  "artifacts/runs/reextract/seed43_smoke",
+  "artifacts/runs/reextract/seed44_smoke"
+]

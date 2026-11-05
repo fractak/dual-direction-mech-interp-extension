@@ -1,0 +1,327 @@
+{
+  "llama": {
+    "sha256": "3b50457e159d3d69c35bf3612353a4463af2f0b2c9cccd0c7e11890709e115ed",
+    "plan_sha256": "91e135156ef98804eebc472da61e39801095d3d066c46bd30486fade3b32d008",
+    "caps": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "input_truncated": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "n_uncapped": 60,
+    "unique_pairs": 240,
+    "disagreements": 5,
+    "all_counts": [
+      {
+        "acknowledgment": 58,
+        "instructions": 2
+      },
+      {
+        "acknowledgment": 46,
+        "instructions": 12,
+        "other": 1,
+        "unsupported": 1
+      },
+      {
+        "acknowledgment": 58,
+        "instructions": 2
+      },
+      {
+        "unsupported": 14,
+        "acknowledgment": 35,
+        "other": 3,
+        "instructions": 8
+      }
+    ],
+    "all": {
+      "acknowledgment": {
+        "counts_512": [
+          58,
+          46,
+          58,
+          35
+        ],
+        "contrast_512": [
+          -18.3333,
+          -31.6667,
+          -5.0
+        ],
+        "counts_256": [
+          58,
+          48,
+          58,
+          35
+        ],
+        "contrast_256": [
+          -21.6667,
+          -35.0,
+          -8.3333
+        ],
+        "contrast_difference": [
+          3.3333,
+          0.0,
+          8.3333
+        ]
+      },
+      "unsupported": {
+        "counts_512": [
+          0,
+          1,
+          0,
+          14
+        ],
+        "contrast_512": [
+          21.6667,
+          10.0,
+          33.3333
+        ],
+        "counts_256": [
+          0,
+          1,
+          0,
+          15
+        ],
+        "contrast_256": [
+          23.3333,
+          11.6667,
+          35.0
+        ],
+        "contrast_difference": [
+          -1.6667,
+          -5.0,
+          0.0
+        ]
+      }
+    },
+    "uncapped_512": {
+      "acknowledgment": {
+        "counts_512": [
+          58,
+          46,
+          58,
+          35
+        ],
+        "contrast_512": [
+          -18.3333,
+          -31.6667,
+          -5.0
+        ],
+        "counts_256": [
+          58,
+          48,
+          58,
+          35
+        ],
+        "contrast_256": [
+          -21.6667,
+          -35.0,
+          -8.3333
+        ],
+        "contrast_difference": [
+          3.3333,
+          0.0,
+          8.3333
+        ]
+      },
+      "unsupported": {
+        "counts_512": [
+          0,
+          1,
+          0,
+          14
+        ],
+        "contrast_512": [
+          21.6667,
+          10.0,
+          33.3333
+        ],
+        "counts_256": [
+          0,
+          1,
+          0,
+          15
+        ],
+        "contrast_256": [
+          23.3333,
+          11.6667,
+          35.0
+        ],
+        "contrast_difference": [
+          -1.6667,
+          -5.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "qwen": {
+    "sha256": "865cf530ce9555a4e118ff5887606ad0a888d334604f298b569db678bc94b67d",
+    "plan_sha256": "839b7b2047dd4e52079a5c186feb2778e932d2f557ba234262f7a5dccc0a7144",
+    "caps": [
+      10,
+      12,
+      0,
+      0
+    ],
+    "input_truncated": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "n_uncapped": 44,
+    "unique_pairs": 238,
+    "disagreements": 5,
+    "all_counts": [
+      {
+        "instructions": 49,
+        "other": 1,
+        "acknowledgment": 10
+      },
+      {
+        "instructions": 45,
+        "unsupported": 9,
+        "acknowledgment": 3,
+        "other": 3
+      },
+      {
+        "acknowledgment": 28,
+        "instructions": 17,
+        "unsupported": 10,
+        "other": 5
+      },
+      {
+        "instructions": 19,
+        "unsupported": 34,
+        "other": 6,
+        "acknowledgment": 1
+      }
+    ],
+    "all": {
+      "acknowledgment": {
+        "counts_512": [
+          10,
+          3,
+          28,
+          1
+        ],
+        "contrast_512": [
+          -33.3333,
+          -48.3333,
+          -18.3333
+        ],
+        "counts_256": [
+          9,
+          3,
+          28,
+          1
+        ],
+        "contrast_256": [
+          -35.0,
+          -50.0,
+          -20.0
+        ],
+        "contrast_difference": [
+          1.6667,
+          0.0,
+          5.0
+        ]
+      },
+      "unsupported": {
+        "counts_512": [
+          0,
+          9,
+          10,
+          34
+        ],
+        "contrast_512": [
+          25.0,
+          10.0,
+          40.0
+        ],
+        "counts_256": [
+          0,
+          9,
+          10,
+          34
+        ],
+        "contrast_256": [
+          25.0,
+          8.3333,
+          40.0
+        ],
+        "contrast_difference": [
+          0.0,
+          -6.6667,
+          6.6667
+        ]
+      }
+    },
+    "uncapped_512": {
+      "acknowledgment": {
+        "counts_512": [
+          10,
+          3,
+          26,
+          0
+        ],
+        "contrast_512": [
+          -43.1818,
+          -59.0909,
+          -25.0
+        ],
+        "counts_256": [
+          9,
+          3,
+          26,
+          0
+        ],
+        "contrast_256": [
+          -45.4545,
+          -61.3636,
+          -27.2727
+        ],
+        "contrast_difference": [
+          2.2727,
+          0.0,
+          6.8182
+        ]
+      },
+      "unsupported": {
+        "counts_512": [
+          0,
+          9,
+          7,
+          28
+        ],
+        "contrast_512": [
+          27.2727,
+          9.0909,
+          45.4545
+        ],
+        "counts_256": [
+          0,
+          9,
+          6,
+          28
+        ],
+        "contrast_256": [
+          29.5455,
+          11.3636,
+          47.7273
+        ],
+        "contrast_difference": [
+          -2.2727,
+          -9.0909,
+          4.5455
+        ]
+      }
+    }
+  }
+}

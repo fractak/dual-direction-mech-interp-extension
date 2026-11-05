@@ -1,4 +1,4 @@
-# Validation record
+# Historical CPU validation record
 
 Validation date: November 2, 2026 (America/Chicago).
 
@@ -10,4 +10,4 @@ Validation date: November 2, 2026 (America/Chicago).
 - New modules and prospective/review entry points pass the configured Ruff checks. Existing unrelated code was not reformatted.
 - Synthetic tests cover equal relative movement despite different projections, projection sign reversal, tuple preservation, cache-phase assumptions, zero-projection policy, hook cleanup on failure, successful instrumented generation, plan checksums, receiver/source planning, label deduplication, reviewer disagreement/adjudication, source-mutation detection, prompt pairing and domain-cluster intervals.
 
-Limits: no GPU, full Llama model, model authentication or historical adapter was available. There is no new adapter training, full-model extraction, measured Llama response generation, independent human labeling, confirmatory dataset, or cross-seed replication in this release. Dependency versions used for CPU validation are in `artifacts/validation/environment.json`; they are not a certified GPU environment or a full dependency lock.
+Limits: no GPU, full Llama model, model authentication or historical adapter was available. There is no new adapter training, full-model extraction, measured Llama response generation, independent human labeling, confirmatory dataset, or cross-seed replication in that validation run. Dependency versions used for CPU validation are in `artifacts/validation/environment.json`; they are not a certified GPU environment or a full dependency lock.

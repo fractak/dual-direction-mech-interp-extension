@@ -1,0 +1,75 @@
+{
+  "plan_sha256": "24f5dfa42ddeab83c39b34da90b2791c1b0b35f790ba46d8cf6d028f6d987383",
+  "config": {
+    "purpose": "pilot",
+    "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "precision": "nf4",
+    "seed": 42,
+    "layers": [
+      20
+    ],
+    "projection_strengths": [
+      1.0,
+      1.5
+    ],
+    "relative_budgets": [
+      0.03,
+      0.1,
+      0.3
+    ],
+    "random_seeds": [
+      2026,
+      2027,
+      2028,
+      2029,
+      2030,
+      2031
+    ]
+  },
+  "direction_hashes": {
+    "original_instruct": "febdac8336242463ffaae54e31b27207839560d734d866d8c4cee03f80dc9cb2",
+    "safety_lora": "ed27ff9e386ba24451fb98bd157f72358377ddcbefa1e990fc24d19ec5f3f274"
+  },
+  "adapter": {
+    "files": {
+      "adapter_config.json": "bcb8646d45714bfaffaabac0a9e16f245ab34563e5308238867e1fe9ffb2bf53",
+      "adapter_model.safetensors": "7ffc254bc164e5ed86b069a2e300568b61baf1b8b7532c2597081305dce67d71"
+    }
+  },
+  "runtime": {
+    "torch_backend": {
+      "cuda_build": "13.0",
+      "cuda_available": true,
+      "cudnn_version": 92400,
+      "devices": [
+        "NVIDIA A30"
+      ],
+      "deterministic_algorithms": false
+    },
+    "python": "3.10.12",
+    "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.35",
+    "packages": {
+      "numpy": "2.2.6",
+      "torch": "2.14.1",
+      "transformers": "5.19.0",
+      "accelerate": "1.15.0",
+      "bitsandbytes": "0.50.2",
+      "peft": "0.21.2",
+      "trl": "1.14.2"
+    }
+  },
+  "resume_history": [
+    {
+      "utc": "2026-11-03T06:34:33.682191+00:00",
+      "recovery_protocol": "journal_resume_v1",
+      "backup": "resume_backups/20261103T063433Z_591cb3d4",
+      "checkpoint_responses": 660,
+      "valid_journal_events": 687,
+      "recovered_responses": 687,
+      "remaining_responses": 2793,
+      "complete_conditions": 11,
+      "trim_offset": null,
+      "needs_newline": false
+    }
+  ]
+}

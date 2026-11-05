@@ -6,7 +6,11 @@ Both checkpoints acknowledge access limits on 58 of 60 unedited prompts. Applyin
 
 ## Study workflow
 
-Start with [the experiment protocol](docs/EXPERIMENT_PROTOCOL.md). The prospective runner measures actual activation displacement, crosses vector sources and receivers at the same layers, and adds relative-distance-matched random controls. Blinded independent review and prospective analysis are separate from frozen historical evidence. The reported findings come from the archived responses; prospective runs are stored separately.
+Start with [the experiment protocol](docs/EXPERIMENT_PROTOCOL.md). The prospective runner measures actual activation displacement, crosses vector sources and receivers at the same layers, and adds relative-distance-matched random controls. Blinded independent review and prospective analysis are separate from frozen historical evidence. The archived results and later measured experiments have separate provenance.
+
+## Reproduce the current results
+
+See [the release reproduction guide](docs/REPRODUCE_RELEASE.md) for the six-figure CPU rebuild, required saved inputs, and GPU reruns. The manuscript is distributed separately. The commands below describe the archived workflow.
 
 ## Checkpoints
 

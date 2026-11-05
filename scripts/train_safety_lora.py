@@ -166,7 +166,7 @@ def main():
     }
 
     Path(args.output_dir, "training_metadata.json").write_text(
-        json.dumps(metadata, indent=2) + "\n"
+        json.dumps(metadata, indent=2, default=str) + "\n"
     )
 
     print("Saved adapter:", args.output_dir)

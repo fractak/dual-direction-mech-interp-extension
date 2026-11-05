@@ -1,0 +1,10 @@
+{
+  "study_bundle": "fresh_absolute.zip",
+  "study_bundle_sha256": "370c75fc6939bf1b96c37aed9910d2054a67aa0ebab06348ef7571fe83b27dc8",
+  "component_plan_sha256": {
+    "seed42": "0bef470a188eb16c7e6c0e83b269564677dd079beef50856c67196420062b784",
+    "seed43": "2276af93980d8709ed266ad98f1274779f31b2bbc8e689ba11661ad8b66747f7",
+    "seed44": "3665e23c16f0d0b9b99f118b8416ffd7c4ee6cea26d18f26704a4e7dc1e30118"
+  },
+  "timestamp_status": "No independently verified public preregistration timestamp."
+}

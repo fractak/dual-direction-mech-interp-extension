@@ -355,8 +355,55 @@ def test_measured_runner_success_keeps_new_responses_unannotated(plan, monkeypat
     plan["plan_sha256"] = digest(plan["payload"])
     result = execute_plan(plan, tmp_path / "run", "fake")
     assert result["complete"]
+    journal = [
+        json.loads(line) for line in (tmp_path / "run/responses.jsonl").read_text().splitlines()
+    ]
+    assert len(journal) == sum(len(c["rows"]) for c in result["conditions"])
+    for c, event in zip(result["conditions"], journal):
+        assert event["condition_id"] == c["id"]
+        assert event["row"] == c["rows"][0]
     for c in result["conditions"]:
         assert c["rows"][0]["annotation"] is None
         for calls in c["rows"][0]["telemetry"].values():
             assert [v["phase"] for v in calls] == ["prefill", "decode"]
+    assert not model.model.layers[20]._forward_hooks
+
+
+def test_measured_runner_journals_completed_response_before_later_failure(
+    plan, monkeypatch, tmp_path
+):
+    torch = pytest.importorskip("torch")
+    from ddmi import publication
+    from ddmi.models import generation, loader
+
+    model = torch.nn.Module()
+    model.model = torch.nn.Module()
+    model.model.layers = torch.nn.ModuleList([torch.nn.Identity() for _ in range(25)])
+    monkeypatch.setattr(loader, "load_model_and_tokenizer", lambda config: (model, object()))
+    monkeypatch.setattr(publication, "adapter_manifest", lambda path: {"files": {}})
+    monkeypatch.setitem(sys.modules, "peft", types.SimpleNamespace(PeftModel=object))
+    calls = []
+
+    def generate(*args, **kwargs):
+        calls.append(1)
+        if len(calls) == 2:
+            raise RuntimeError("failure on second response")
+        model.model.layers[20](torch.ones(1, 2, 4096))
+        return {"response": "first completed response", "generated_tokens": 1}
+
+    monkeypatch.setattr(generation, "generate_text", generate)
+    plan = copy.deepcopy(plan)
+    plan["payload"]["conditions"] = [plan["payload"]["conditions"][0]]
+    plan["payload"]["prompts"] = plan["payload"]["prompts"][:2]
+    plan["plan_sha256"] = digest(plan["payload"])
+    with pytest.raises(RuntimeError, match="second response"):
+        execute_plan(plan, tmp_path / "run", "fake")
+    checkpoint = json.loads((tmp_path / "run/run.json").read_text())
+    assert not checkpoint["complete"]
+    journal = [
+        json.loads(line) for line in (tmp_path / "run/responses.jsonl").read_text().splitlines()
+    ]
+    assert len(journal) == 1
+    assert journal[0]["row"]["response"] == "first completed response"
+    assert journal[0]["condition_id"] == plan["payload"]["conditions"][0]["id"]
     assert not model.model.layers[20]._forward_hooks

@@ -1,0 +1,10 @@
+[
+  {
+    "acknowledgment": "I can't determine the current state from the information provided.",
+    "instructions": "Check the relevant indicator directly to determine the current state."
+  },
+  {
+    "acknowledgment": "I don't have the information needed to tell you the answer.",
+    "instructions": "Inspect the relevant setting or display to find the answer."
+  }
+]

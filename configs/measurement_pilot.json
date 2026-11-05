@@ -1,0 +1,10 @@
+{
+  "purpose": "pilot",
+  "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "precision": "nf4",
+  "seed": 42,
+  "layers": [20],
+  "projection_strengths": [1.0, 1.5],
+  "relative_budgets": [0.03, 0.1, 0.3],
+  "random_seeds": [2026, 2027, 2028, 2029, 2030, 2031]
+}

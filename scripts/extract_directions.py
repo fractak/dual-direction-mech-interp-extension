@@ -58,6 +58,7 @@ def main() -> None:
     parser.add_argument("--max-input-length", type=int, default=512)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--revision", help="Immutable model Hub commit SHA for prospective studies")
+    parser.add_argument("--disable-thinking", action="store_true")
     args = parser.parse_args()
 
     if (args.checkpoint == "safety_lora") != bool(args.adapter_path):
@@ -113,6 +114,18 @@ def main() -> None:
         model.eval()
 
     logger.info("Model loaded in %.1fs", time.time() - t0)
+
+    non_thinking_calls = 0
+    if args.disable_thinking:
+        original_template = tokenizer.apply_chat_template
+
+        def non_thinking_template(*args, **kwargs):
+            nonlocal non_thinking_calls
+            non_thinking_calls += 1
+            kwargs["enable_thinking"] = False
+            return original_template(*args, **kwargs)
+
+        tokenizer.apply_chat_template = non_thinking_template
 
     # Discover residual stream layers
     layer_names = get_residual_stream_names(model)
@@ -173,6 +186,9 @@ def main() -> None:
         max_input_length=args.max_input_length,
     )
     logger.info("Negative-contrast activations collected in %.1fs", time.time() - t0)
+
+    if args.disable_thinking and non_thinking_calls != len(group_a_texts) + len(group_b_texts):
+        parser.error("Could not verify non-thinking chat formatting for each extraction prompt")
 
     # Compute directions and separability at each layer
     directions = {}
@@ -249,6 +265,8 @@ def main() -> None:
         "ranked_layers": [{"name": n, "score": s} for n, s in ranked],
     }
 
+    if args.disable_thinking:
+        artifact["enable_thinking"] = False
     write_json(args.output, artifact)
     logger.info("Direction artifact saved to %s", args.output)
 

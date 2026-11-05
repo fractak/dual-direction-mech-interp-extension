@@ -26,6 +26,9 @@ def normalized(text):
 
 def create_plan(root, config, prompt_file=None, direction_root=None):
     root = Path(root)
+    model_id = config.get("model_id", MODEL_ID)
+    width = config.get("hidden_size", 4096)
+    layer_count = config.get("num_hidden_layers", 32)
     verify_checksums(root)
     if not re.fullmatch(r"[0-9a-f]{40}", config["model_revision"]):
         raise ValueError("model_revision must be an immutable 40-character Hub commit SHA")
@@ -67,8 +70,8 @@ def create_plan(root, config, prompt_file=None, direction_root=None):
     if not config["layers"] or len(set(config["layers"])) != len(config["layers"]):
         raise ValueError("layers must be nonempty and unique")
     for layer in config["layers"]:
-        if type(layer) is not int or not 0 <= layer < 32:
-            raise ValueError("Layer indices must be integers in [0, 31]")
+        if type(layer) is not int or not 0 <= layer < layer_count:
+            raise ValueError(f"Layer indices must be integers in [0, {layer_count - 1}]")
     for key in ("projection_strengths", "relative_budgets"):
         values = config[key]
         if (
@@ -97,7 +100,8 @@ def create_plan(root, config, prompt_file=None, direction_root=None):
         if config["purpose"] == "confirmatory":
             if (
                 artifact.get("checkpoint") != source
-                or artifact.get("model_id") != MODEL_ID
+                or artifact.get("model_id") != model_id
+                or artifact.get("enable_thinking") != config.get("enable_thinking")
                 or artifact.get("model_revision") != config["model_revision"]
             ):
                 raise ValueError("Direction checkpoint/model revision does not match plan")
@@ -113,8 +117,8 @@ def create_plan(root, config, prompt_file=None, direction_root=None):
                 raise ValueError("Evaluation prompts overlap direction extraction prompts")
         for layer in config["layers"]:
             vector = artifact["directions"][f"model.layers.{layer}"]["direction"]
-            if len(vector) != 4096 or not all(math.isfinite(x) for x in vector):
-                raise ValueError("Expected finite 4096-dimensional Llama directions")
+            if len(vector) != width or not all(math.isfinite(x) for x in vector):
+                raise ValueError("Expected finite directions matching model hidden size")
             norm = math.sqrt(sum(x * x for x in vector))
             if norm <= 0:
                 raise ValueError("Zero direction")
@@ -161,12 +165,20 @@ def create_plan(root, config, prompt_file=None, direction_root=None):
                             "random_seed": seed,
                         }
                     )
+    if "fixed_direction_receiver_files" in config:
+        conditions = [
+            c for c in conditions
+            if (c["receiver"] == "safety_lora" or config["include_original_receiver"])
+            and (c["mode"] == "observe" or (
+                c["mode"] == "relative_l2" and c["source"] == "safety_lora"
+            ))
+        ]
     for index, condition in enumerate(conditions):
         condition["id"] = f"c{index:04d}"
     payload = {
         "schema_version": 1,
         "config": config,
-        "model_id": MODEL_ID,
+        "model_id": model_id,
         "prompt_file_sha256": sha256_file(prompt_path),
         "exact_frozen_prompt_overlap": overlap,
         "direction_file_sha256": source_hashes,
@@ -179,7 +191,9 @@ def create_plan(root, config, prompt_file=None, direction_root=None):
         "interpretation": "Prospective only if frozen before inspecting new outcomes; "
         "exact-string guards do not exclude paraphrases or prior exposure.",
     }
-    return {"plan_sha256": digest(payload), "payload": payload}
+    plan = {"plan_sha256": digest(payload), "payload": payload}
+    validate_plan(plan)
+    return plan
 
 
 def validate_plan(plan):
@@ -187,9 +201,50 @@ def validate_plan(plan):
         raise ValueError("Plan checksum mismatch")
     if plan["payload"]["schema_version"] != 1:
         raise ValueError("Unsupported plan schema")
+    config = plan["payload"]["config"]
+    if "fixed_direction_receiver_files" in config:
+        receiver_files = config["fixed_direction_receiver_files"]
+        if (
+            config["purpose"] != "confirmatory"
+            or type(config.get("include_original_receiver")) is not bool
+            or not isinstance(receiver_files, dict)
+            or set(receiver_files) != {"adapter_config.json", "adapter_model.safetensors"}
+            or any(not isinstance(v, str) or not re.fullmatch(r"[0-9a-f]{64}", v)
+                   for v in receiver_files.values())
+        ):
+            raise ValueError("Fixed-direction plans require a pinned receiver adapter")
+    token_limit = config.get("max_new_tokens", 128)
+    if type(token_limit) is not int or token_limit < 1:
+        raise ValueError("max_new_tokens must be a positive integer")
 
 
-def execute_plan(plan, output, adapter_path):
+def execute_plan(plan, output, adapter_path, resume=False, check_only=False):
+    """Run or resume under an OS-released exclusive directory lock (Linux/Unix)."""
+    import fcntl
+
+    validate_plan(plan)
+    output = Path(output)
+    if check_only and not resume:
+        raise ValueError("--check-only requires --resume")
+    if resume:
+        if not output.is_dir():
+            raise ValueError("Resume output directory does not exist")
+    else:
+        if output.exists():
+            raise ValueError("Output exists; use --resume for this frozen run")
+        output.mkdir(parents=True)
+    with (output / ".run.lock").open("a+") as lock:
+        try:
+            fcntl.flock(lock.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError as exc:
+            raise ValueError("Another process holds this run's lock") from exc
+        try:
+            return _execute_plan(plan, output, adapter_path, resume, check_only)
+        finally:
+            fcntl.flock(lock.fileno(), fcntl.LOCK_UN)
+
+
+def _execute_plan(plan, output, adapter_path, resume, check_only):
     import gc
 
     import torch
@@ -203,32 +258,61 @@ def execute_plan(plan, output, adapter_path):
 
     validate_plan(plan)
     output = Path(output)
-    if output.exists():
-        raise ValueError("Output exists; choose a new output directory")
     payload, records = plan["payload"], []
     config = payload["config"]
     adapter = adapter_manifest(adapter_path)
     if config["purpose"] == "confirmatory":
         extraction_files = payload["direction_metadata"]["safety_lora"]["adapter_manifest"]["files"]
-        if extraction_files != adapter["files"]:
+        receiver_files = config.get("fixed_direction_receiver_files", extraction_files)
+        if receiver_files != adapter["files"]:
+            if "fixed_direction_receiver_files" in config:
+                raise ValueError("Inference adapter differs from the frozen receiver adapter")
             raise ValueError("Inference adapter differs from direction-extraction adapter")
     set_seed(config["seed"])
-    result = {
-        "schema_version": 2,
-        "plan_sha256": plan["plan_sha256"],
-        "annotation_status": "unreviewed",
-        "runtime": runtime_metadata(),
-        "adapter": adapter,
-        "complete": False,
-        "conditions": records,
-    }
-    output.mkdir(parents=True)
-    write_atomic(output / "plan.json", plan)
-    write_atomic(output / "run.json", result)
+    current_runtime = runtime_metadata()
+    journal_path = output / "responses.jsonl"
+    if resume:
+        from ddmi.recovery import commit_recovery, recover_run
+
+        result, details = recover_run(plan, output, adapter, current_runtime)
+        print("Validated resume state: " + json.dumps(details, sort_keys=True), flush=True)
+        if check_only:
+            print("Check only: no model generation or progress files changed.", flush=True)
+            return result
+        backup = commit_recovery(output, result, details)
+        print(f"Original progress backed up to {backup}", flush=True)
+        records = result["conditions"]
+        if result["complete"]:
+            print("All planned responses are already saved; no generation needed.", flush=True)
+            return result
+    else:
+        result = {
+            "schema_version": 2,
+            "plan_sha256": plan["plan_sha256"],
+            "annotation_status": "unreviewed",
+            "runtime": current_runtime,
+            "adapter": adapter,
+            "complete": False,
+            "conditions": records,
+            "response_journal": "responses.jsonl",
+        }
+        write_atomic(output / "plan.json", plan)
+        write_atomic(output / "run.json", result)
+        journal_path.touch(exist_ok=False)
+    by_condition = {condition["id"]: condition for condition in records}
+    prompt_count = len(payload["prompts"])
     for receiver in ("original_instruct", "safety_lora"):
+        pending = [
+            c
+            for c in payload["conditions"]
+            if c["receiver"] == receiver
+            and len(by_condition.get(c["id"], {}).get("rows", [])) < prompt_count
+        ]
+        if not pending:
+            continue
         model, tokenizer = load_model_and_tokenizer(
             ModelLoadConfig(
-                model_id=MODEL_ID,
+                model_id=payload["model_id"],
                 revision=config["model_revision"],
                 load_in_4bit=config["precision"] == "nf4",
                 torch_dtype="bfloat16" if config["precision"] == "bf16" else "float16",
@@ -244,6 +328,15 @@ def execute_plan(plan, output, adapter_path):
             for condition in payload["conditions"]:
                 if condition["receiver"] != receiver:
                     continue
+                record = by_condition.get(condition["id"])
+                if record is not None and len(record["rows"]) == prompt_count:
+                    continue
+                saved_indices = {row["source_index"] for row in record["rows"]} if record else set()
+                print(
+                    f"Saved {len(saved_indices)}/{prompt_count} prompts; "
+                    f"generating {prompt_count - len(saved_indices)}",
+                    flush=True,
+                )
                 print(
                     f"{condition['id']}: {receiver} {condition['mode']} {condition['amount']}",
                     flush=True,
@@ -259,7 +352,7 @@ def execute_plan(plan, output, adapter_path):
                     for source in sources:
                         if source == "random":
                             vector = torch.randn(
-                                4096,
+                                len(payload["vectors"][f"safety_lora:L{layer}"]),
                                 generator=torch.Generator().manual_seed(condition["random_seed"]),
                             ).tolist()
                         else:
@@ -268,16 +361,25 @@ def execute_plan(plan, output, adapter_path):
                             f"model.layers.{layer}", vector, condition["mode"], condition["amount"]
                         ).attach(model)
                         hooks.append((source, hook))
-                    record = {**condition, "rows": []}
-                    records.append(record)
+                    if record is None:
+                        record = {**condition, "rows": []}
+                        records.append(record)
+                        by_condition[condition["id"]] = record
+                        order = {c["id"]: i for i, c in enumerate(payload["conditions"])}
+                        records.sort(key=lambda c: order[c["id"]])
                     for index, row in enumerate(payload["prompts"]):
+                        if index in saved_indices:
+                            continue
                         for _, hook in hooks:
                             hook.reset()
                         generated = generate_text(
                             model,
                             tokenizer,
                             row["prompt"],
-                            TextGenerationConfig(),
+                            TextGenerationConfig(
+                                max_new_tokens=config.get("max_new_tokens", 128),
+                                enable_thinking=config.get("enable_thinking"),
+                            ),
                             return_metadata=True,
                         )
                         telemetry = {source: hook.calls for source, hook in hooks}
@@ -294,10 +396,25 @@ def execute_plan(plan, output, adapter_path):
                                 "annotation": None,
                             }
                         )
-                        write_atomic(output / "run.json", result)
+                        # Append one completed response instead of serializing the growing
+                        # full telemetry collection after every prompt.
+                        with journal_path.open("a", encoding="utf-8") as journal:
+                            json.dump(
+                                {
+                                    "condition_id": condition["id"],
+                                    "row": record["rows"][-1],
+                                    "plan_sha256": plan["plan_sha256"],
+                                },
+                                journal,
+                                ensure_ascii=False,
+                                allow_nan=False,
+                            )
+                            journal.write("\n")
+                    record["rows"].sort(key=lambda row: row["source_index"])
                 finally:
                     for _, hook in reversed(hooks):
                         hook.close()
+                write_atomic(output / "run.json", result)
         finally:
             del model, tokenizer
             gc.collect()

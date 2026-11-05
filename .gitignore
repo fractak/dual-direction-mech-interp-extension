@@ -55,3 +55,9 @@ artifacts/directions/
 /artifacts/new_directions/
 
 /pytest-of-root/
+
+# Derived release outputs and local experiment records
+/artifacts/reproduced/
+/artifacts/review/
+/artifacts/analysis/
+/artifacts/safety_finetuning/

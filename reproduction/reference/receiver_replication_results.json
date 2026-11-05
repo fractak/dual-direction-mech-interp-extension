@@ -1,0 +1,266 @@
+{
+  "reviewed_source_sha256": "a03a6a8f045b656064a79892f75b06528376270a1b5f5453b27a031c6501bde5",
+  "component_plan_sha256": {
+    "safety42": "3ea9a207d06aa84d25ef3a828ab0df92f77c27f4c7883eb6b3522f5141960698",
+    "safety43": "7c2fc89d3533c26da6a788cb279cb6e2182abae42e08ccd925f6b12c396f632e",
+    "safety44": "7f49fcae152204ec9cb812df9be0bab8f8b97c057330abdacf877c43162c7b0e",
+    "alpaca42": "b57d5a8f415129eb03be4a74d00f5caee14d7514905d259d69c71ab989836994"
+  },
+  "review": {
+    "unique_pairs": 510,
+    "adjudicated": 33,
+    "agreement": 0.9352941176470588,
+    "kappa": 0.9002962085308057
+  },
+  "bootstrap": {
+    "unit": "paired prompt",
+    "draws": 20000,
+    "seed": 42
+  },
+  "conditions": {
+    "original_instruct": {
+      "observe": {
+        "counts": {
+          "acknowledgment": 47,
+          "instructions": 13
+        },
+        "hit_token_limit": 21,
+        "input_truncated": 0
+      },
+      "relative_l2": {
+        "counts": {
+          "acknowledgment": 30,
+          "instructions": 30
+        },
+        "hit_token_limit": 23,
+        "input_truncated": 0
+      }
+    },
+    "safety42": {
+      "observe": {
+        "counts": {
+          "acknowledgment": 51,
+          "instructions": 5,
+          "unsupported": 2,
+          "other": 2
+        },
+        "hit_token_limit": 0,
+        "input_truncated": 0
+      },
+      "relative_l2": {
+        "counts": {
+          "other": 8,
+          "instructions": 19,
+          "acknowledgment": 26,
+          "unsupported": 7
+        },
+        "hit_token_limit": 0,
+        "input_truncated": 0
+      }
+    },
+    "safety43": {
+      "observe": {
+        "counts": {
+          "acknowledgment": 46,
+          "instructions": 7,
+          "unsupported": 5,
+          "other": 2
+        },
+        "hit_token_limit": 0,
+        "input_truncated": 0
+      },
+      "relative_l2": {
+        "counts": {
+          "instructions": 21,
+          "acknowledgment": 19,
+          "unsupported": 11,
+          "other": 9
+        },
+        "hit_token_limit": 0,
+        "input_truncated": 0
+      }
+    },
+    "safety44": {
+      "observe": {
+        "counts": {
+          "acknowledgment": 49,
+          "instructions": 6,
+          "unsupported": 3,
+          "other": 2
+        },
+        "hit_token_limit": 0,
+        "input_truncated": 0
+      },
+      "relative_l2": {
+        "counts": {
+          "unsupported": 11,
+          "instructions": 21,
+          "acknowledgment": 24,
+          "other": 4
+        },
+        "hit_token_limit": 0,
+        "input_truncated": 0
+      }
+    },
+    "alpaca42": {
+      "observe": {
+        "counts": {
+          "unsupported": 32,
+          "instructions": 8,
+          "acknowledgment": 7,
+          "other": 13
+        },
+        "hit_token_limit": 0,
+        "input_truncated": 0
+      },
+      "relative_l2": {
+        "counts": {
+          "other": 10,
+          "instructions": 7,
+          "unsupported": 39,
+          "acknowledgment": 4
+        },
+        "hit_token_limit": 1,
+        "input_truncated": 0
+      }
+    }
+  },
+  "contrasts": {
+    "acknowledgment": {
+      "change": {
+        "original_instruct": [
+          -28.3333,
+          -40.0,
+          -16.6667
+        ],
+        "safety42": [
+          -41.6667,
+          -55.0,
+          -28.3333
+        ],
+        "safety43": [
+          -45.0,
+          -60.0,
+          -30.0
+        ],
+        "safety44": [
+          -41.6667,
+          -55.0,
+          -30.0
+        ],
+        "alpaca42": [
+          -5.0,
+          -13.3333,
+          3.3333
+        ]
+      },
+      "minus_original": {
+        "safety42": [
+          -13.3333,
+          -26.6667,
+          0.0
+        ],
+        "safety43": [
+          -16.6667,
+          -35.0,
+          1.6667
+        ],
+        "safety44": [
+          -13.3333,
+          -28.3333,
+          1.6667
+        ],
+        "alpaca42": [
+          23.3333,
+          8.3333,
+          38.3333
+        ]
+      },
+      "minus_alpaca": {
+        "safety42": [
+          -36.6667,
+          -51.6667,
+          -20.0
+        ],
+        "safety43": [
+          -40.0,
+          -56.6667,
+          -23.3333
+        ],
+        "safety44": [
+          -36.6667,
+          -51.6667,
+          -21.6667
+        ]
+      }
+    },
+    "unsupported": {
+      "change": {
+        "original_instruct": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "safety42": [
+          8.3333,
+          -1.6667,
+          18.3333
+        ],
+        "safety43": [
+          10.0,
+          -1.6667,
+          21.6667
+        ],
+        "safety44": [
+          13.3333,
+          3.3333,
+          23.3333
+        ],
+        "alpaca42": [
+          11.6667,
+          -1.6667,
+          25.0
+        ]
+      },
+      "minus_original": {
+        "safety42": [
+          8.3333,
+          -1.6667,
+          18.3333
+        ],
+        "safety43": [
+          10.0,
+          -1.6667,
+          21.6667
+        ],
+        "safety44": [
+          13.3333,
+          3.3333,
+          23.3333
+        ],
+        "alpaca42": [
+          11.6667,
+          -1.6667,
+          25.0
+        ]
+      },
+      "minus_alpaca": {
+        "safety42": [
+          -3.3333,
+          -20.0,
+          13.3333
+        ],
+        "safety43": [
+          -1.6667,
+          -18.3333,
+          15.0
+        ],
+        "safety44": [
+          1.6667,
+          -15.0,
+          18.3333
+        ]
+      }
+    }
+  }
+}

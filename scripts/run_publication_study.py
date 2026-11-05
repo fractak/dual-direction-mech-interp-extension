@@ -24,6 +24,12 @@ def main():
     run.add_argument("--plan", type=Path, required=True)
     run.add_argument("--adapter-path", type=Path, required=True)
     run.add_argument("--output-dir", type=Path, required=True)
+    run.add_argument("--resume", action="store_true", help="Recover and skip saved responses")
+    run.add_argument(
+        "--check-only",
+        action="store_true",
+        help="With --resume, validate progress without generating",
+    )
     args = parser.parse_args()
     from ddmi.publication import create_plan, execute_plan
 
@@ -44,7 +50,13 @@ def main():
                 f"plan SHA-256 {value['plan_sha256']}"
             )
         else:
-            execute_plan(json.loads(args.plan.read_text()), args.output_dir, args.adapter_path)
+            execute_plan(
+                json.loads(args.plan.read_text()),
+                args.output_dir,
+                args.adapter_path,
+                resume=args.resume,
+                check_only=args.check_only,
+            )
     except (ValueError, KeyError, OSError) as exc:
         parser.exit(2, f"Study error: {exc}\n")
 

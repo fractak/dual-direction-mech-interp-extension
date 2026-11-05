@@ -15,6 +15,7 @@ class TextGenerationConfig:
     temperature: float = 0.0
     do_sample: bool = False
     max_input_length: Optional[int] = 512
+    enable_thinking: Optional[bool] = None
 
 
 def generate_text(
@@ -31,8 +32,11 @@ def generate_text(
 
     if chat_template and hasattr(tokenizer, "apply_chat_template"):
         messages = [{"role": "user", "content": prompt}]
+        template_options = {}
+        if config.enable_thinking is not None:
+            template_options["enable_thinking"] = config.enable_thinking
         text = tokenizer.apply_chat_template(
-            messages, tokenize=False, add_generation_prompt=True
+            messages, tokenize=False, add_generation_prompt=True, **template_options
         )
     else:
         text = prompt
