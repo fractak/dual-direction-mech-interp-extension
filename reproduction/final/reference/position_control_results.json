@@ -1,0 +1,924 @@
+{
+  "study": "position_control",
+  "source_sha256": "d21e4724beb709c0e768019f3131fae7c3fdd7799115f4490df06479f1a3f046",
+  "component_plans": {
+    "full": "80ba502f153480e991cb01a4d232a589766a241238ae8f0493e256883719182a"
+  },
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 42,
+    "unit": "paired prompt family",
+    "position_primary_intervals": "97.5% marginal percentile intervals for two Bonferroni comparisons"
+  },
+  "review": {
+    "unique_pairs": 460,
+    "disagreements": 92,
+    "agreement": 0.8,
+    "cohen_kappa": 0.6936707394753605
+  },
+  "conditions": {
+    "original_instruct/baseline": {
+      "counts": {
+        "acknowledgment": 69,
+        "other": 14,
+        "instructions": 35,
+        "unsupported": 2
+      },
+      "cap_hits": 0
+    },
+    "original_instruct/position_final_fixed": {
+      "counts": {
+        "acknowledgment": 54,
+        "other": 17,
+        "instructions": 47,
+        "unsupported": 2
+      },
+      "cap_hits": 0
+    },
+    "original_instruct/position_previous_fixed": {
+      "counts": {
+        "acknowledgment": 61,
+        "other": 16,
+        "instructions": 41,
+        "unsupported": 2
+      },
+      "cap_hits": 0
+    },
+    "original_instruct/position_two_back_fixed": {
+      "counts": {
+        "acknowledgment": 65,
+        "other": 17,
+        "instructions": 36,
+        "unsupported": 2
+      },
+      "cap_hits": 0
+    },
+    "original_instruct/position_user_last_fixed": {
+      "counts": {
+        "acknowledgment": 68,
+        "other": 15,
+        "instructions": 35,
+        "unsupported": 2
+      },
+      "cap_hits": 0
+    },
+    "safety_lora/baseline": {
+      "counts": {
+        "acknowledgment": 86,
+        "other": 22,
+        "unsupported": 10,
+        "instructions": 2
+      },
+      "cap_hits": 0
+    },
+    "safety_lora/position_final_fixed": {
+      "counts": {
+        "acknowledgment": 40,
+        "other": 47,
+        "unsupported": 25,
+        "instructions": 8
+      },
+      "cap_hits": 0
+    },
+    "safety_lora/position_previous_fixed": {
+      "counts": {
+        "acknowledgment": 81,
+        "other": 25,
+        "unsupported": 10,
+        "instructions": 4
+      },
+      "cap_hits": 0
+    },
+    "safety_lora/position_two_back_fixed": {
+      "counts": {
+        "acknowledgment": 86,
+        "other": 21,
+        "unsupported": 10,
+        "instructions": 3
+      },
+      "cap_hits": 0
+    },
+    "safety_lora/position_user_last_fixed": {
+      "counts": {
+        "acknowledgment": 86,
+        "other": 22,
+        "unsupported": 10,
+        "instructions": 2
+      },
+      "cap_hits": 0
+    }
+  },
+  "analyses": {
+    "all/acknowledgment/outcome": {
+      "receiver_contrasts": {
+        "position_final_fixed": [
+          -25.833333333333336,
+          -42.5,
+          -10.0
+        ],
+        "position_previous_fixed": [
+          2.5,
+          -3.3333333333333335,
+          8.333333333333334
+        ],
+        "position_two_back_fixed": [
+          3.3333333333333335,
+          0.8333333333333334,
+          6.666666666666667
+        ],
+        "position_user_last_fixed": [
+          0.8333333333333334,
+          0.0,
+          2.5
+        ]
+      },
+      "final_minus_other_pointwise95": {
+        "position_previous_fixed": [
+          -28.333333333333332,
+          -45.833333333333336,
+          -11.666666666666666
+        ],
+        "position_two_back_fixed": [
+          -29.166666666666668,
+          -45.0,
+          -13.333333333333334
+        ],
+        "position_user_last_fixed": [
+          -26.666666666666668,
+          -42.5,
+          -10.833333333333334
+        ]
+      },
+      "primary_position_simultaneous95": {
+        "position_user_last_fixed": [
+          -26.666666666666668,
+          -45.0,
+          -8.333333333333334
+        ],
+        "position_previous_fixed": [
+          -28.333333333333332,
+          -47.5,
+          -10.0
+        ]
+      },
+      "prompts": 120,
+      "families": 30
+    },
+    "all/acknowledgment/a": {
+      "receiver_contrasts": {
+        "position_final_fixed": [
+          -30.0,
+          -45.0,
+          -15.833333333333334
+        ],
+        "position_previous_fixed": [
+          2.5,
+          -4.166666666666667,
+          8.333333333333334
+        ],
+        "position_two_back_fixed": [
+          2.5,
+          -0.8333333333333334,
+          5.833333333333333
+        ],
+        "position_user_last_fixed": [
+          0.8333333333333334,
+          0.0,
+          2.5
+        ]
+      },
+      "final_minus_other_pointwise95": {
+        "position_previous_fixed": [
+          -32.5,
+          -47.5,
+          -18.333333333333332
+        ],
+        "position_two_back_fixed": [
+          -32.5,
+          -47.5,
+          -18.333333333333332
+        ],
+        "position_user_last_fixed": [
+          -30.833333333333336,
+          -45.833333333333336,
+          -16.666666666666668
+        ]
+      },
+      "primary_position_simultaneous95": {
+        "position_user_last_fixed": [
+          -30.833333333333336,
+          -47.5,
+          -15.0
+        ],
+        "position_previous_fixed": [
+          -32.5,
+          -50.0,
+          -16.666666666666668
+        ]
+      },
+      "prompts": 120,
+      "families": 30
+    },
+    "all/acknowledgment/b": {
+      "receiver_contrasts": {
+        "position_final_fixed": [
+          -16.666666666666664,
+          -32.5,
+          -0.8333333333333334
+        ],
+        "position_previous_fixed": [
+          4.166666666666666,
+          -2.5,
+          10.833333333333334
+        ],
+        "position_two_back_fixed": [
+          5.833333333333333,
+          1.6666666666666667,
+          10.833333333333334
+        ],
+        "position_user_last_fixed": [
+          0.8333333333333334,
+          0.0,
+          2.5
+        ]
+      },
+      "final_minus_other_pointwise95": {
+        "position_previous_fixed": [
+          -20.833333333333336,
+          -36.666666666666664,
+          -5.0
+        ],
+        "position_two_back_fixed": [
+          -22.5,
+          -38.333333333333336,
+          -6.666666666666667
+        ],
+        "position_user_last_fixed": [
+          -17.5,
+          -33.333333333333336,
+          -1.6666666666666667
+        ]
+      },
+      "primary_position_simultaneous95": {
+        "position_user_last_fixed": [
+          -17.5,
+          -35.0,
+          0.8333333333333334
+        ],
+        "position_previous_fixed": [
+          -20.833333333333336,
+          -39.166666666666664,
+          -3.3333333333333335
+        ]
+      },
+      "prompts": 120,
+      "families": 30
+    },
+    "all/unsupported/outcome": {
+      "receiver_contrasts": {
+        "position_final_fixed": [
+          12.5,
+          3.3333333333333335,
+          23.333333333333332
+        ],
+        "position_previous_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_two_back_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_user_last_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "final_minus_other_pointwise95": {
+        "position_previous_fixed": [
+          12.5,
+          3.3333333333333335,
+          23.333333333333332
+        ],
+        "position_two_back_fixed": [
+          12.5,
+          3.3333333333333335,
+          23.333333333333332
+        ],
+        "position_user_last_fixed": [
+          12.5,
+          3.3333333333333335,
+          23.333333333333332
+        ]
+      },
+      "primary_position_simultaneous95": {
+        "position_user_last_fixed": [
+          12.5,
+          2.5,
+          25.0
+        ],
+        "position_previous_fixed": [
+          12.5,
+          2.5,
+          25.0
+        ]
+      },
+      "prompts": 120,
+      "families": 30
+    },
+    "all/unsupported/a": {
+      "receiver_contrasts": {
+        "position_final_fixed": [
+          10.833333333333334,
+          4.166666666666667,
+          19.166666666666668
+        ],
+        "position_previous_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_two_back_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_user_last_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "final_minus_other_pointwise95": {
+        "position_previous_fixed": [
+          10.833333333333334,
+          4.166666666666667,
+          19.166666666666668
+        ],
+        "position_two_back_fixed": [
+          10.833333333333334,
+          4.166666666666667,
+          19.166666666666668
+        ],
+        "position_user_last_fixed": [
+          10.833333333333334,
+          4.166666666666667,
+          19.166666666666668
+        ]
+      },
+      "primary_position_simultaneous95": {
+        "position_user_last_fixed": [
+          10.833333333333334,
+          2.5,
+          20.833333333333332
+        ],
+        "position_previous_fixed": [
+          10.833333333333334,
+          2.5,
+          20.833333333333332
+        ]
+      },
+      "prompts": 120,
+      "families": 30
+    },
+    "all/unsupported/b": {
+      "receiver_contrasts": {
+        "position_final_fixed": [
+          13.333333333333334,
+          4.166666666666667,
+          24.166666666666668
+        ],
+        "position_previous_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_two_back_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_user_last_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "final_minus_other_pointwise95": {
+        "position_previous_fixed": [
+          13.333333333333334,
+          4.166666666666667,
+          24.166666666666668
+        ],
+        "position_two_back_fixed": [
+          13.333333333333334,
+          4.166666666666667,
+          24.166666666666668
+        ],
+        "position_user_last_fixed": [
+          13.333333333333334,
+          4.166666666666667,
+          24.166666666666668
+        ]
+      },
+      "primary_position_simultaneous95": {
+        "position_user_last_fixed": [
+          13.333333333333334,
+          3.3333333333333335,
+          25.833333333333332
+        ],
+        "position_previous_fixed": [
+          13.333333333333334,
+          3.3333333333333335,
+          25.833333333333332
+        ]
+      },
+      "prompts": 120,
+      "families": 30
+    },
+    "uncapped/acknowledgment/outcome": {
+      "receiver_contrasts": {
+        "position_final_fixed": [
+          -25.833333333333336,
+          -42.5,
+          -10.0
+        ],
+        "position_previous_fixed": [
+          2.5,
+          -3.3333333333333335,
+          8.333333333333334
+        ],
+        "position_two_back_fixed": [
+          3.3333333333333335,
+          0.8333333333333334,
+          6.666666666666667
+        ],
+        "position_user_last_fixed": [
+          0.8333333333333334,
+          0.0,
+          2.5
+        ]
+      },
+      "final_minus_other_pointwise95": {
+        "position_previous_fixed": [
+          -28.333333333333332,
+          -45.833333333333336,
+          -11.666666666666666
+        ],
+        "position_two_back_fixed": [
+          -29.166666666666668,
+          -45.0,
+          -13.333333333333334
+        ],
+        "position_user_last_fixed": [
+          -26.666666666666668,
+          -42.5,
+          -10.833333333333334
+        ]
+      },
+      "primary_position_simultaneous95": {
+        "position_user_last_fixed": [
+          -26.666666666666668,
+          -45.0,
+          -8.333333333333334
+        ],
+        "position_previous_fixed": [
+          -28.333333333333332,
+          -47.5,
+          -10.0
+        ]
+      },
+      "prompts": 120,
+      "families": 30
+    },
+    "uncapped/acknowledgment/a": {
+      "receiver_contrasts": {
+        "position_final_fixed": [
+          -30.0,
+          -45.0,
+          -15.833333333333334
+        ],
+        "position_previous_fixed": [
+          2.5,
+          -4.166666666666667,
+          8.333333333333334
+        ],
+        "position_two_back_fixed": [
+          2.5,
+          -0.8333333333333334,
+          5.833333333333333
+        ],
+        "position_user_last_fixed": [
+          0.8333333333333334,
+          0.0,
+          2.5
+        ]
+      },
+      "final_minus_other_pointwise95": {
+        "position_previous_fixed": [
+          -32.5,
+          -47.5,
+          -18.333333333333332
+        ],
+        "position_two_back_fixed": [
+          -32.5,
+          -47.5,
+          -18.333333333333332
+        ],
+        "position_user_last_fixed": [
+          -30.833333333333336,
+          -45.833333333333336,
+          -16.666666666666668
+        ]
+      },
+      "primary_position_simultaneous95": {
+        "position_user_last_fixed": [
+          -30.833333333333336,
+          -47.5,
+          -15.0
+        ],
+        "position_previous_fixed": [
+          -32.5,
+          -50.0,
+          -16.666666666666668
+        ]
+      },
+      "prompts": 120,
+      "families": 30
+    },
+    "uncapped/acknowledgment/b": {
+      "receiver_contrasts": {
+        "position_final_fixed": [
+          -16.666666666666664,
+          -32.5,
+          -0.8333333333333334
+        ],
+        "position_previous_fixed": [
+          4.166666666666666,
+          -2.5,
+          10.833333333333334
+        ],
+        "position_two_back_fixed": [
+          5.833333333333333,
+          1.6666666666666667,
+          10.833333333333334
+        ],
+        "position_user_last_fixed": [
+          0.8333333333333334,
+          0.0,
+          2.5
+        ]
+      },
+      "final_minus_other_pointwise95": {
+        "position_previous_fixed": [
+          -20.833333333333336,
+          -36.666666666666664,
+          -5.0
+        ],
+        "position_two_back_fixed": [
+          -22.5,
+          -38.333333333333336,
+          -6.666666666666667
+        ],
+        "position_user_last_fixed": [
+          -17.5,
+          -33.333333333333336,
+          -1.6666666666666667
+        ]
+      },
+      "primary_position_simultaneous95": {
+        "position_user_last_fixed": [
+          -17.5,
+          -35.0,
+          0.8333333333333334
+        ],
+        "position_previous_fixed": [
+          -20.833333333333336,
+          -39.166666666666664,
+          -3.3333333333333335
+        ]
+      },
+      "prompts": 120,
+      "families": 30
+    },
+    "uncapped/unsupported/outcome": {
+      "receiver_contrasts": {
+        "position_final_fixed": [
+          12.5,
+          3.3333333333333335,
+          23.333333333333332
+        ],
+        "position_previous_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_two_back_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_user_last_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "final_minus_other_pointwise95": {
+        "position_previous_fixed": [
+          12.5,
+          3.3333333333333335,
+          23.333333333333332
+        ],
+        "position_two_back_fixed": [
+          12.5,
+          3.3333333333333335,
+          23.333333333333332
+        ],
+        "position_user_last_fixed": [
+          12.5,
+          3.3333333333333335,
+          23.333333333333332
+        ]
+      },
+      "primary_position_simultaneous95": {
+        "position_user_last_fixed": [
+          12.5,
+          2.5,
+          25.0
+        ],
+        "position_previous_fixed": [
+          12.5,
+          2.5,
+          25.0
+        ]
+      },
+      "prompts": 120,
+      "families": 30
+    },
+    "uncapped/unsupported/a": {
+      "receiver_contrasts": {
+        "position_final_fixed": [
+          10.833333333333334,
+          4.166666666666667,
+          19.166666666666668
+        ],
+        "position_previous_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_two_back_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_user_last_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "final_minus_other_pointwise95": {
+        "position_previous_fixed": [
+          10.833333333333334,
+          4.166666666666667,
+          19.166666666666668
+        ],
+        "position_two_back_fixed": [
+          10.833333333333334,
+          4.166666666666667,
+          19.166666666666668
+        ],
+        "position_user_last_fixed": [
+          10.833333333333334,
+          4.166666666666667,
+          19.166666666666668
+        ]
+      },
+      "primary_position_simultaneous95": {
+        "position_user_last_fixed": [
+          10.833333333333334,
+          2.5,
+          20.833333333333332
+        ],
+        "position_previous_fixed": [
+          10.833333333333334,
+          2.5,
+          20.833333333333332
+        ]
+      },
+      "prompts": 120,
+      "families": 30
+    },
+    "uncapped/unsupported/b": {
+      "receiver_contrasts": {
+        "position_final_fixed": [
+          13.333333333333334,
+          4.166666666666667,
+          24.166666666666668
+        ],
+        "position_previous_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_two_back_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_user_last_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "final_minus_other_pointwise95": {
+        "position_previous_fixed": [
+          13.333333333333334,
+          4.166666666666667,
+          24.166666666666668
+        ],
+        "position_two_back_fixed": [
+          13.333333333333334,
+          4.166666666666667,
+          24.166666666666668
+        ],
+        "position_user_last_fixed": [
+          13.333333333333334,
+          4.166666666666667,
+          24.166666666666668
+        ]
+      },
+      "primary_position_simultaneous95": {
+        "position_user_last_fixed": [
+          13.333333333333334,
+          3.3333333333333335,
+          25.833333333333332
+        ],
+        "position_previous_fixed": [
+          13.333333333333334,
+          3.3333333333333335,
+          25.833333333333332
+        ]
+      },
+      "prompts": 120,
+      "families": 30
+    }
+  },
+  "merge_verified_against_reviewers_and_adjudications": true,
+  "prior_primary_overlap": {
+    "normalized_exact_prompts": 120,
+    "exact_prompt_response_pairs": 258,
+    "conflicting_outcomes": 23
+  },
+  "position_telemetry_audit": {
+    "positions_checked": 219566,
+    "edited_positions": 960,
+    "max_displacement_error": 0.00042819976806640625,
+    "tokens": {
+      "final_prefill": [
+        [
+          271,
+          "\u010a\u010a"
+        ]
+      ],
+      "previous_prefill": [
+        [
+          128007,
+          "<|end_header_id|>"
+        ]
+      ],
+      "two_back_prefill": [
+        [
+          78191,
+          "assistant"
+        ]
+      ],
+      "last_user_content": [
+        [
+          30,
+          "?"
+        ]
+      ]
+    }
+  },
+  "earlier_primary_label_sensitivity": {
+    "policy": "Use the earlier primary-study adjudicated outcome for exact duplicate prompt-response pairs only.",
+    "changed_rows": 89,
+    "acknowledgment": {
+      "receiver_contrasts": {
+        "position_final_fixed": [
+          -26.666666666666668,
+          -43.333333333333336,
+          -10.0
+        ],
+        "position_previous_fixed": [
+          1.6666666666666667,
+          -5.833333333333333,
+          8.333333333333334
+        ],
+        "position_two_back_fixed": [
+          3.3333333333333335,
+          0.8333333333333334,
+          6.666666666666667
+        ],
+        "position_user_last_fixed": [
+          0.8333333333333334,
+          0.0,
+          2.5
+        ]
+      },
+      "final_minus_other_pointwise95": {
+        "position_previous_fixed": [
+          -28.333333333333332,
+          -45.833333333333336,
+          -11.666666666666666
+        ],
+        "position_two_back_fixed": [
+          -30.0,
+          -45.833333333333336,
+          -14.166666666666666
+        ],
+        "position_user_last_fixed": [
+          -27.500000000000004,
+          -43.333333333333336,
+          -11.666666666666666
+        ]
+      },
+      "primary_position_simultaneous95": {
+        "position_user_last_fixed": [
+          -27.500000000000004,
+          -45.833333333333336,
+          -9.166666666666666
+        ],
+        "position_previous_fixed": [
+          -28.333333333333332,
+          -48.333333333333336,
+          -10.0
+        ]
+      },
+      "prompts": 120,
+      "families": 30
+    },
+    "unsupported": {
+      "receiver_contrasts": {
+        "position_final_fixed": [
+          12.5,
+          3.3333333333333335,
+          23.333333333333332
+        ],
+        "position_previous_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_two_back_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "position_user_last_fixed": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "final_minus_other_pointwise95": {
+        "position_previous_fixed": [
+          12.5,
+          3.3333333333333335,
+          23.333333333333332
+        ],
+        "position_two_back_fixed": [
+          12.5,
+          3.3333333333333335,
+          23.333333333333332
+        ],
+        "position_user_last_fixed": [
+          12.5,
+          3.3333333333333335,
+          23.333333333333332
+        ]
+      },
+      "primary_position_simultaneous95": {
+        "position_user_last_fixed": [
+          12.5,
+          2.5,
+          25.0
+        ],
+        "position_previous_fixed": [
+          12.5,
+          2.5,
+          25.0
+        ]
+      },
+      "prompts": 120,
+      "families": 30
+    }
+  }
+}

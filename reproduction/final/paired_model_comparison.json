@@ -1,0 +1,47 @@
+{
+  "format": "[estimate, lower, upper], percentage points",
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 42,
+    "unit": "shared prompt family, sampled separately within each bank"
+  },
+  "llama_seed42": {
+    "original": [
+      -50.833333333333336,
+      -69.16666666666667,
+      -32.5
+    ],
+    "fresh": [
+      -13.333333333333334,
+      -26.666666666666668,
+      0.0
+    ],
+    "fresh_minus_original": [
+      37.5,
+      15.0,
+      60.833333333333336
+    ]
+  },
+  "qwen_seed42": {
+    "original": [
+      -15.0,
+      -25.833333333333332,
+      -5.833333333333333
+    ],
+    "fresh": [
+      -24.166666666666668,
+      -39.166666666666664,
+      -10.0
+    ],
+    "fresh_minus_original": [
+      -9.166666666666668,
+      -26.666666666666668,
+      8.333333333333332
+    ]
+  },
+  "shift_gap_llama_minus_qwen": [
+    46.66666666666667,
+    17.479166666666682,
+    75.83333333333334
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "n_families": 10,
+  "comparisons": {
+    "outcome": {
+      "model_subset": {
+        "sweep_4": [
+          -20.0,
+          -50.0,
+          0.0
+        ],
+        "mixed_minus_benign": [
+          20.0,
+          -20.0,
+          60.0
+        ]
+      },
+      "human_subset": {
+        "sweep_4": [
+          -20.0,
+          -50.0,
+          0.0
+        ],
+        "mixed_minus_benign": [
+          20.0,
+          -20.0,
+          60.0
+        ]
+      },
+      "paired_human_minus_model": {
+        "sweep_4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mixed_minus_benign": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "a": {
+      "model_subset": {
+        "sweep_4": [
+          -20.0,
+          -50.0,
+          0.0
+        ],
+        "mixed_minus_benign": [
+          20.0,
+          -20.0,
+          60.0
+        ]
+      },
+      "human_subset": {
+        "sweep_4": [
+          -20.0,
+          -50.0,
+          0.0
+        ],
+        "mixed_minus_benign": [
+          20.0,
+          -20.0,
+          60.0
+        ]
+      },
+      "paired_human_minus_model": {
+        "sweep_4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mixed_minus_benign": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "b": {
+      "model_subset": {
+        "sweep_4": [
+          -20.0,
+          -50.0,
+          0.0
+        ],
+        "mixed_minus_benign": [
+          20.0,
+          -20.0,
+          60.0
+        ]
+      },
+      "human_subset": {
+        "sweep_4": [
+          -20.0,
+          -50.0,
+          0.0
+        ],
+        "mixed_minus_benign": [
+          20.0,
+          -20.0,
+          60.0
+        ]
+      },
+      "paired_human_minus_model": {
+        "sweep_4": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mixed_minus_benign": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "agreement": {
+    "sweep": {
+      "n": 200,
+      "same": 199,
+      "acknowledgment_same": 200
+    },
+    "mixed": {
+      "n": 90,
+      "same": 90,
+      "acknowledgment_same": 90
+    },
+    "benign": {
+      "n": 90,
+      "same": 90,
+      "acknowledgment_same": 90
+    },
+    "safety": {
+      "n": 90,
+      "same": 90,
+      "acknowledgment_same": 90
+    }
+  },
+  "human_source_sha256": "86286b6ae581e07636181983dec4f77d5f9d2ec86cbec3642180023f8295a442",
+  "model_labels_sha256": "4fb0f98875c54975a8dc8b42c7195377656239b0f86a817d16c9a642b90f94c3"
+}

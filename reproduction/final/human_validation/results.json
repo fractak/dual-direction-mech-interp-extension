@@ -1,0 +1,597 @@
+{
+  "reviewed_source_sha256": "1bd4e45ac0bcdc4c5406b2bfee9710698bf38aa0ccf18bb5ab6690b2f7e7ba7a",
+  "sampling_seed": 20261105,
+  "responses": 720,
+  "materiality_margin_pp": 10.0,
+  "intervals": "paired family bootstrap, 20,000 draws, seed 42",
+  "human_agreement_unique_pairs": {
+    "n": 540,
+    "agreement": 0.9574074074074074,
+    "cohen_kappa": 0.9257847279072128,
+    "confusion": {
+      "acknowledgment": {
+        "acknowledgment": 326,
+        "instructions": 0,
+        "unsupported": 0,
+        "other": 2
+      },
+      "instructions": {
+        "acknowledgment": 0,
+        "instructions": 81,
+        "unsupported": 0,
+        "other": 15
+      },
+      "unsupported": {
+        "acknowledgment": 0,
+        "instructions": 0,
+        "unsupported": 30,
+        "other": 1
+      },
+      "other": {
+        "acknowledgment": 0,
+        "instructions": 2,
+        "unsupported": 3,
+        "other": 80
+      }
+    }
+  },
+  "human_agreement_by_cohort_unique_pairs": {
+    "original": {
+      "n": 289,
+      "agreement": 0.9653979238754326,
+      "cohen_kappa": 0.9430148871142661,
+      "confusion": {
+        "acknowledgment": {
+          "acknowledgment": 163,
+          "instructions": 0,
+          "unsupported": 0,
+          "other": 1
+        },
+        "instructions": {
+          "acknowledgment": 0,
+          "instructions": 57,
+          "unsupported": 0,
+          "other": 6
+        },
+        "unsupported": {
+          "acknowledgment": 0,
+          "instructions": 0,
+          "unsupported": 19,
+          "other": 0
+        },
+        "other": {
+          "acknowledgment": 0,
+          "instructions": 1,
+          "unsupported": 2,
+          "other": 40
+        }
+      }
+    },
+    "fresh": {
+      "n": 251,
+      "agreement": 0.9482071713147411,
+      "cohen_kappa": 0.9015923758972194,
+      "confusion": {
+        "acknowledgment": {
+          "acknowledgment": 163,
+          "instructions": 0,
+          "unsupported": 0,
+          "other": 1
+        },
+        "instructions": {
+          "acknowledgment": 0,
+          "instructions": 24,
+          "unsupported": 0,
+          "other": 9
+        },
+        "unsupported": {
+          "acknowledgment": 0,
+          "instructions": 0,
+          "unsupported": 11,
+          "other": 1
+        },
+        "other": {
+          "acknowledgment": 0,
+          "instructions": 1,
+          "unsupported": 1,
+          "other": 40
+        }
+      }
+    }
+  },
+  "human_agreement_by_condition_unique_pairs": {
+    "baseline": {
+      "n": 207,
+      "agreement": 0.961352657004831,
+      "cohen_kappa": 0.9205069124423965,
+      "confusion": {
+        "acknowledgment": {
+          "acknowledgment": 143,
+          "instructions": 0,
+          "unsupported": 0,
+          "other": 0
+        },
+        "instructions": {
+          "acknowledgment": 0,
+          "instructions": 21,
+          "unsupported": 0,
+          "other": 5
+        },
+        "unsupported": {
+          "acknowledgment": 0,
+          "instructions": 0,
+          "unsupported": 9,
+          "other": 1
+        },
+        "other": {
+          "acknowledgment": 0,
+          "instructions": 1,
+          "unsupported": 1,
+          "other": 26
+        }
+      }
+    },
+    "evidence": {
+      "n": 196,
+      "agreement": 0.9285714285714286,
+      "cohen_kappa": 0.8969583176868194,
+      "confusion": {
+        "acknowledgment": {
+          "acknowledgment": 84,
+          "instructions": 0,
+          "unsupported": 0,
+          "other": 2
+        },
+        "instructions": {
+          "acknowledgment": 0,
+          "instructions": 37,
+          "unsupported": 0,
+          "other": 7
+        },
+        "unsupported": {
+          "acknowledgment": 0,
+          "instructions": 0,
+          "unsupported": 18,
+          "other": 1
+        },
+        "other": {
+          "acknowledgment": 0,
+          "instructions": 1,
+          "unsupported": 3,
+          "other": 43
+        }
+      }
+    },
+    "format": {
+      "n": 205,
+      "agreement": 0.975609756097561,
+      "cohen_kappa": 0.9524229483847011,
+      "confusion": {
+        "acknowledgment": {
+          "acknowledgment": 137,
+          "instructions": 0,
+          "unsupported": 0,
+          "other": 0
+        },
+        "instructions": {
+          "acknowledgment": 0,
+          "instructions": 28,
+          "unsupported": 0,
+          "other": 5
+        },
+        "unsupported": {
+          "acknowledgment": 0,
+          "instructions": 0,
+          "unsupported": 12,
+          "other": 0
+        },
+        "other": {
+          "acknowledgment": 0,
+          "instructions": 0,
+          "unsupported": 0,
+          "other": 23
+        }
+      }
+    }
+  },
+  "model_vs_human_adjudicated_response_rows": {
+    "initial": {
+      "n": 720,
+      "agreement": 0.9597222222222223,
+      "cohen_kappa": 0.9343024353407589,
+      "confusion": {
+        "acknowledgment": {
+          "acknowledgment": 400,
+          "instructions": 0,
+          "unsupported": 0,
+          "other": 0
+        },
+        "instructions": {
+          "acknowledgment": 3,
+          "instructions": 98,
+          "unsupported": 0,
+          "other": 5
+        },
+        "unsupported": {
+          "acknowledgment": 0,
+          "instructions": 0,
+          "unsupported": 67,
+          "other": 1
+        },
+        "other": {
+          "acknowledgment": 11,
+          "instructions": 4,
+          "unsupported": 5,
+          "other": 126
+        }
+      }
+    },
+    "joint": {
+      "n": 480,
+      "agreement": 0.9791666666666666,
+      "cohen_kappa": 0.967653242762413,
+      "confusion": {
+        "acknowledgment": {
+          "acknowledgment": 250,
+          "instructions": 0,
+          "unsupported": 0,
+          "other": 1
+        },
+        "instructions": {
+          "acknowledgment": 0,
+          "instructions": 75,
+          "unsupported": 0,
+          "other": 0
+        },
+        "unsupported": {
+          "acknowledgment": 0,
+          "instructions": 0,
+          "unsupported": 52,
+          "other": 1
+        },
+        "other": {
+          "acknowledgment": 4,
+          "instructions": 3,
+          "unsupported": 1,
+          "other": 93
+        }
+      }
+    }
+  },
+  "cap_hits": 2,
+  "audit_subset_human": {
+    "outcome": {
+      "original_pp": [
+        -58.88888888888888,
+        -81.11111111111111,
+        -38.88888888888888
+      ],
+      "fresh_pp": [
+        -9.999999999999996,
+        -30.0,
+        10.000000000000004
+      ],
+      "fresh_minus_original_pp": [
+        48.88888888888888,
+        20.0,
+        78.88888888888887
+      ]
+    },
+    "a": {
+      "original_pp": [
+        -62.222222222222214,
+        -84.44444444444444,
+        -41.11111111111111
+      ],
+      "fresh_pp": [
+        -13.33333333333333,
+        -32.22222222222222,
+        6.666666666666667
+      ],
+      "fresh_minus_original_pp": [
+        48.88888888888888,
+        20.0,
+        77.77777777777779
+      ]
+    },
+    "b": {
+      "original_pp": [
+        -58.88888888888888,
+        -81.11111111111111,
+        -38.88888888888888
+      ],
+      "fresh_pp": [
+        -9.999999999999996,
+        -30.0,
+        10.000000000000004
+      ],
+      "fresh_minus_original_pp": [
+        48.88888888888888,
+        20.0,
+        78.88888888888887
+      ]
+    }
+  },
+  "correction_analysis": {
+    "initial": {
+      "outcome": {
+        "audit_subset_model": {
+          "original_pp": [
+            -45.55555555555555,
+            -62.22222222222222,
+            -28.888888888888886
+          ],
+          "fresh_pp": [
+            -6.666666666666667,
+            -26.666666666666668,
+            13.333333333333336
+          ],
+          "fresh_minus_original_pp": [
+            38.888888888888886,
+            12.222222222222225,
+            65.55555555555554
+          ]
+        },
+        "correction_pp": {
+          "original_pp": [
+            -13.333333333333334,
+            -26.666666666666668,
+            -3.3333333333333335
+          ],
+          "fresh_pp": [
+            -3.3333333333333335,
+            -13.333333333333334,
+            6.666666666666667
+          ],
+          "fresh_minus_original_pp": [
+            10.0,
+            -6.666666666666667,
+            26.666666666666668
+          ]
+        },
+        "full_estimate_plus_correction_pp": {
+          "original_pp": -58.33333333333333,
+          "fresh_pp": -16.388888888888886,
+          "fresh_minus_original_pp": 41.94444444444444
+        },
+        "materiality": {
+          "original_pp": "inconclusive at the prespecified margin",
+          "fresh_pp": "inconclusive at the prespecified margin",
+          "fresh_minus_original_pp": "inconclusive at the prespecified margin"
+        }
+      },
+      "a": {
+        "audit_subset_model": {
+          "original_pp": [
+            -45.55555555555555,
+            -62.22222222222222,
+            -28.888888888888886
+          ],
+          "fresh_pp": [
+            -6.666666666666667,
+            -26.666666666666668,
+            13.333333333333336
+          ],
+          "fresh_minus_original_pp": [
+            38.888888888888886,
+            12.222222222222225,
+            65.55555555555554
+          ]
+        },
+        "correction_pp": {
+          "original_pp": [
+            -16.666666666666664,
+            -30.0,
+            -3.3333333333333335
+          ],
+          "fresh_pp": [
+            -6.666666666666667,
+            -20.0,
+            6.666666666666667
+          ],
+          "fresh_minus_original_pp": [
+            10.0,
+            -6.666666666666668,
+            30.0
+          ]
+        },
+        "full_estimate_plus_correction_pp": {
+          "original_pp": -61.66666666666666,
+          "fresh_pp": -19.72222222222222,
+          "fresh_minus_original_pp": 41.94444444444444
+        },
+        "materiality": {
+          "original_pp": "inconclusive at the prespecified margin",
+          "fresh_pp": "inconclusive at the prespecified margin",
+          "fresh_minus_original_pp": "inconclusive at the prespecified margin"
+        }
+      },
+      "b": {
+        "audit_subset_model": {
+          "original_pp": [
+            -45.55555555555555,
+            -62.22222222222222,
+            -28.888888888888886
+          ],
+          "fresh_pp": [
+            -6.666666666666667,
+            -26.666666666666668,
+            13.333333333333336
+          ],
+          "fresh_minus_original_pp": [
+            38.888888888888886,
+            12.222222222222225,
+            65.55555555555554
+          ]
+        },
+        "correction_pp": {
+          "original_pp": [
+            -13.333333333333334,
+            -26.666666666666668,
+            -3.3333333333333335
+          ],
+          "fresh_pp": [
+            -3.3333333333333335,
+            -13.333333333333334,
+            6.666666666666667
+          ],
+          "fresh_minus_original_pp": [
+            10.0,
+            -6.666666666666667,
+            26.666666666666668
+          ]
+        },
+        "full_estimate_plus_correction_pp": {
+          "original_pp": -58.33333333333333,
+          "fresh_pp": -16.388888888888886,
+          "fresh_minus_original_pp": 41.94444444444444
+        },
+        "materiality": {
+          "original_pp": "inconclusive at the prespecified margin",
+          "fresh_pp": "inconclusive at the prespecified margin",
+          "fresh_minus_original_pp": "inconclusive at the prespecified margin"
+        }
+      }
+    },
+    "joint": {
+      "outcome": {
+        "audit_subset_model": {
+          "original_pp": [
+            -55.555555555555536,
+            -74.44444444444446,
+            -36.66666666666666
+          ],
+          "fresh_pp": [
+            -9.999999999999996,
+            -27.777777777777775,
+            7.7777777777777795
+          ],
+          "fresh_minus_original_pp": [
+            45.555555555555536,
+            19.999999999999986,
+            72.22222222222221
+          ]
+        },
+        "correction_pp": {
+          "original_pp": [
+            -3.3333333333333335,
+            -10.0,
+            0.0
+          ],
+          "fresh_pp": [
+            0.0,
+            -13.333333333333334,
+            13.333333333333334
+          ],
+          "fresh_minus_original_pp": [
+            3.3333333333333335,
+            -10.0,
+            16.666666666666668
+          ]
+        },
+        "full_estimate_plus_correction_pp": {
+          "original_pp": -50.83333333333333,
+          "fresh_pp": -18.055555555555554,
+          "fresh_minus_original_pp": 32.77777777777777
+        },
+        "materiality": {
+          "original_pp": "inconclusive at the prespecified margin",
+          "fresh_pp": "inconclusive at the prespecified margin",
+          "fresh_minus_original_pp": "inconclusive at the prespecified margin"
+        }
+      },
+      "a": {
+        "audit_subset_model": {
+          "original_pp": [
+            -55.555555555555536,
+            -74.44444444444446,
+            -36.66666666666666
+          ],
+          "fresh_pp": [
+            -9.999999999999996,
+            -27.777777777777775,
+            7.7777777777777795
+          ],
+          "fresh_minus_original_pp": [
+            45.555555555555536,
+            19.999999999999986,
+            72.22222222222221
+          ]
+        },
+        "correction_pp": {
+          "original_pp": [
+            -6.666666666666667,
+            -16.666666666666664,
+            0.0
+          ],
+          "fresh_pp": [
+            -3.3333333333333335,
+            -16.666666666666664,
+            10.0
+          ],
+          "fresh_minus_original_pp": [
+            3.3333333333333335,
+            -13.333333333333334,
+            20.0
+          ]
+        },
+        "full_estimate_plus_correction_pp": {
+          "original_pp": -54.16666666666666,
+          "fresh_pp": -21.388888888888886,
+          "fresh_minus_original_pp": 32.77777777777777
+        },
+        "materiality": {
+          "original_pp": "inconclusive at the prespecified margin",
+          "fresh_pp": "inconclusive at the prespecified margin",
+          "fresh_minus_original_pp": "inconclusive at the prespecified margin"
+        }
+      },
+      "b": {
+        "audit_subset_model": {
+          "original_pp": [
+            -55.555555555555536,
+            -74.44444444444446,
+            -36.66666666666666
+          ],
+          "fresh_pp": [
+            -9.999999999999996,
+            -27.777777777777775,
+            7.7777777777777795
+          ],
+          "fresh_minus_original_pp": [
+            45.555555555555536,
+            19.999999999999986,
+            72.22222222222221
+          ]
+        },
+        "correction_pp": {
+          "original_pp": [
+            -3.3333333333333335,
+            -10.0,
+            0.0
+          ],
+          "fresh_pp": [
+            0.0,
+            -13.333333333333334,
+            13.333333333333334
+          ],
+          "fresh_minus_original_pp": [
+            3.3333333333333335,
+            -10.0,
+            16.666666666666668
+          ]
+        },
+        "full_estimate_plus_correction_pp": {
+          "original_pp": -50.83333333333333,
+          "fresh_pp": -18.055555555555554,
+          "fresh_minus_original_pp": 32.77777777777777
+        },
+        "materiality": {
+          "original_pp": "inconclusive at the prespecified margin",
+          "fresh_pp": "inconclusive at the prespecified margin",
+          "fresh_minus_original_pp": "inconclusive at the prespecified margin"
+        }
+      }
+    }
+  }
+}

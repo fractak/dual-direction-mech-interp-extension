@@ -12,12 +12,27 @@ import math
 import torch
 
 
+TOKEN_LOCALIZATION_MODES = {
+    "position_final_fixed": ("selected", "fixed", None),
+    "position_previous_fixed": ("selected", "fixed", None),
+    "position_two_back_fixed": ("selected", "fixed", None),
+    "position_user_last_fixed": ("selected", "fixed", None),
+    "last_prefill_fixed": ("last", "fixed", None),
+    "early_prefill_adaptive": ("early", "adaptive", None),
+    "early_prefill_fixed": ("early", "fixed", None),
+    "decode_only_adaptive": (None, None, "adaptive"),
+    "decode_only_fixed": (None, None, "fixed"),
+    "early_fixed_else_adaptive": ("early_fixed_else_adaptive", None, "adaptive"),
+}
+
+
 class MeasuredIntervention:
     def __init__(self, module_name, direction, mode, amount):
         if mode not in (
             "observe", "projection", "relative_l2", "absolute_l2",
             "absolute_l2_add", "absolute_l2_subtract",
             "adaptive_prefill_fixed_decode", "fixed_prefill_adaptive_decode",
+            *TOKEN_LOCALIZATION_MODES,
         ):
             raise ValueError(f"Unknown intervention mode: {mode}")
         if not math.isfinite(amount) or amount < 0:
@@ -32,6 +47,12 @@ class MeasuredIntervention:
 
     def reset(self):
         self.calls = []
+        self.prefill_position = None
+
+    def set_prefill_position(self, index):
+        if self.calls or type(index) is not int or index < 0:
+            raise ValueError("Position must be a nonnegative index set before prefill")
+        self.prefill_position = index
 
     def attach(self, model):
         if self._handle is not None:
@@ -52,9 +73,35 @@ class MeasuredIntervention:
         d = self.direction.to(h.device)
         projection = h @ d
         norm = h.norm(dim=-1)
+        localization = TOKEN_LOCALIZATION_MODES.get(self.mode)
+        if localization:
+            mask, prefill_rule, decode_rule = localization
+            adaptive = torch.where(projection < 0, 1.0, -1.0)
+            signs = torch.zeros_like(projection)
+            if self.calls:
+                if decode_rule == "adaptive":
+                    signs = adaptive
+                elif decode_rule == "fixed":
+                    signs.fill_(-1)
+            elif mask == "early_fixed_else_adaptive":
+                signs.fill_(-1)
+                signs[:, -1] = adaptive[:, -1]
+            elif mask == "selected":
+                if self.prefill_position is None or self.prefill_position >= h.shape[1]:
+                    raise ValueError("Selected prefill position is missing or out of range")
+                signs[:, self.prefill_position] = -1
+            elif mask == "last":
+                signs[:, -1] = -1
+            elif mask == "early":
+                signs[:, :-1] = adaptive[:, :-1] if prefill_rule == "adaptive" else -1
+            if self.amount == 0:
+                signs.zero_()
+            edited = (h + self.amount * signs.unsqueeze(-1) * d).to(tensor.dtype)
         crossover = self.mode in ("adaptive_prefill_fixed_decode", "fixed_prefill_adaptive_decode")
         if self.mode == "observe" or self.amount == 0:
             edited = tensor
+        elif localization:
+            pass
         elif self.mode == "projection":
             edited = (h - self.amount * projection.unsqueeze(-1) * d).to(tensor.dtype)
         elif self.mode == "absolute_l2_add":
@@ -113,6 +160,14 @@ class MeasuredIntervention:
                 positive_step_tokens=int((signed_displacement > 0).sum()),
                 negative_projection_tokens=int((projection < 0).sum()),
             )
+        if localization:
+            delta = (edited.float() - h) @ d
+            self.calls[-1]["token_localization"] = {
+                "projection": projection[0].tolist(),
+                "sign": signs[0].to(torch.int8).tolist(),
+                "signed_displacement": delta[0].tolist(),
+                "displacement_l2": displacement[0].tolist(),
+            }
         return (edited, *output[1:]) if isinstance(output, tuple) else edited
 
     def close(self):

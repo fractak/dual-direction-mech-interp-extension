@@ -1,0 +1,99 @@
+{
+  "plan_sha256": "930bb23b020fa7adb212870da91d263f0e5f8ae541ecbdb46361ceb11edf19b2",
+  "reviewed_source_sha256": "7f6b8c758771eb12adace5d17a1e462c8364041b6e848cb691564cef3299e6fe",
+  "max_new_tokens": 256,
+  "unique_review_pairs": 240,
+  "agreement": 0.9791666666666666,
+  "cohen_kappa": 0.9303499912937487,
+  "adjudications": 5,
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 42,
+    "unit": "paired prompt"
+  },
+  "adapted_minus_original_change_pp": {
+    "acknowledgment": {
+      "estimate": -21.6666666667,
+      "ci95": [
+        -35,
+        -8.3333333333
+      ]
+    },
+    "unsupported": {
+      "estimate": 23.3333333333,
+      "ci95": [
+        11.6666666667,
+        35
+      ]
+    }
+  },
+  "conditions": [
+    {
+      "receiver": "original_instruct",
+      "layer": 20,
+      "mode": "observe",
+      "amount": 0,
+      "source": "both",
+      "random_seed": null,
+      "id": "c0000",
+      "n": 60,
+      "counts": {
+        "acknowledgment": 58,
+        "instructions": 2
+      },
+      "hit_token_limit": 15,
+      "input_truncated": 0
+    },
+    {
+      "receiver": "original_instruct",
+      "layer": 20,
+      "mode": "relative_l2",
+      "amount": 0.3,
+      "source": "safety_lora",
+      "random_seed": null,
+      "id": "c0010",
+      "n": 60,
+      "counts": {
+        "acknowledgment": 48,
+        "instructions": 11,
+        "unsupported": 1
+      },
+      "hit_token_limit": 15,
+      "input_truncated": 0
+    },
+    {
+      "receiver": "safety_lora",
+      "layer": 20,
+      "mode": "observe",
+      "amount": 0,
+      "source": "both",
+      "random_seed": null,
+      "id": "c0029",
+      "n": 60,
+      "counts": {
+        "acknowledgment": 58,
+        "instructions": 2
+      },
+      "hit_token_limit": 0,
+      "input_truncated": 0
+    },
+    {
+      "receiver": "safety_lora",
+      "layer": 20,
+      "mode": "relative_l2",
+      "amount": 0.3,
+      "source": "safety_lora",
+      "random_seed": null,
+      "id": "c0039",
+      "n": 60,
+      "counts": {
+        "unsupported": 15,
+        "acknowledgment": 35,
+        "other": 2,
+        "instructions": 8
+      },
+      "hit_token_limit": 0,
+      "input_truncated": 0
+    }
+  ]
+}

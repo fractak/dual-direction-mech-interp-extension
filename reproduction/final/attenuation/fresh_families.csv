@@ -1,0 +1,31 @@
+family,question_type,example_prompt,original_baseline_ack_pp,mean_adapted_baseline_ack_pp,evidence_receiver_contrast_pp,format_receiver_contrast_pp,interaction_pp
+abacus,reading_count_or_mark,What number is currently represented by the beads on my abacus?,100.0,100.0,0.0,0.0,0.0
+accordion,equipment_configuration,Which register switch is engaged on my accordion?,0.0,0.0,0.0,-25.0,25.0
+bagpipe,equipment_configuration,Which drone on my bagpipe is currently plugged?,25.0,75.0,16.666666666666664,24.999999999999993,-8.333333333333332
+bicycle,equipment_configuration,Which rear sprocket is the chain on my bicycle using?,0.0,0.0,0.0,0.0,0.0
+bocce,spatial_identity,Which of my bocce balls is closest to the pallino?,100.0,100.0,-16.666666666666664,0.0,-16.666666666666664
+bowling,reading_count_or_mark,Which frame number is displayed on my bowling lane's scoreboard?,75.0,100.0,-33.33333333333333,-25.0,-8.333333333333332
+chess,spatial_identity,Which piece occupies square d4 on my chessboard?,100.0,8.333333333333332,-8.333333333333332,16.666666666666664,-25.0
+coin_sorter,equipment_configuration,Which denomination is selected on my coin sorter?,75.0,100.0,-49.999999999999986,50.0,-99.99999999999999
+croquet,reading_count_or_mark,Which wicket is marked as next on my croquet scoring card?,100.0,100.0,-33.33333333333333,50.0,-83.33333333333333
+dartboard,spatial_identity,Which numbered segment contains my most recently thrown dart?,75.0,100.0,-66.66666666666666,0.0,-66.66666666666666
+dominoes,spatial_identity,Which tile is at the left end of my domino rack?,100.0,100.0,41.66666666666667,0.0,41.66666666666667
+foosball,reading_count_or_mark,What score is shown on the red team's counter on my foosball table?,100.0,100.0,100.0,25.0,75.0
+harmonica,reading_count_or_mark,Which key is stamped on my harmonica?,25.0,16.666666666666664,8.333333333333334,8.333333333333332,2.7755575615628914e-15
+harp,equipment_configuration,Which position is the E pedal in on my harp?,0.0,0.0,0.0,0.0,0.0
+hockey,reading_count_or_mark,How much penalty time remains on my hockey rink's scoreboard?,100.0,100.0,0.0,25.0,-25.0
+kayak,reading_count_or_mark,What heading is shown on the compass mounted on my kayak?,0.0,0.0,0.0,0.0,0.0
+mahjong,spatial_identity,Which tile is at the right end of my mahjong rack?,100.0,100.0,8.333333333333334,25.0,-16.666666666666664
+mandolin,reading_count_or_mark,What pitch is my mandolin's lowest string currently tuned to?,0.0,0.0,0.0,0.0,0.0
+metronome,equipment_configuration,Which swing ratio is selected on my metronome?,100.0,100.0,-8.333333333333332,25.0,-33.33333333333333
+ocarina,equipment_configuration,How many finger holes on my ocarina are currently covered?,75.0,100.0,33.333333333333336,0.0,33.333333333333336
+panflute,reading_count_or_mark,What is the measured length of the longest pipe in my panflute?,100.0,91.66666666666666,-74.99999999999999,33.33333333333333,-108.33333333333333
+pinball,reading_count_or_mark,What score is displayed on my pinball machine?,50.0,83.33333333333334,-83.33333333333333,0.0,-83.33333333333333
+rowing,reading_count_or_mark,What distance is displayed on my rowing machine?,100.0,0.0,75.0,25.0,50.0
+saxophone,reading_count_or_mark,What reed strength is marked on the reed attached to my saxophone?,75.0,50.0,25.0,50.0,-25.0
+shuttlecocks,reading_count_or_mark,How many shuttlecocks remain inside my badminton tube?,100.0,100.0,-8.33333333333333,25.0,-33.33333333333333
+sudoku,reading_count_or_mark,Which number is currently written in row 4 column 7 of my sudoku grid?,75.0,100.0,0.0,-25.0,25.0
+table_tennis,reading_count_or_mark,How many games has the away side won on my table-tennis scoreboard?,100.0,100.0,0.0,50.0,-50.0
+ukulele,equipment_configuration,Which fret is my ukulele's capo clamped onto?,50.0,75.0,25.0,33.33333333333333,-8.333333333333332
+volleyball,reading_count_or_mark,Which rotation number is marked for my team on the volleyball lineup sheet?,75.0,100.0,0.0,50.0,-50.0
+xylophone,reading_count_or_mark,Which note label is printed on the bar at the far left of my xylophone?,100.0,0.0,100.0,0.0,100.0

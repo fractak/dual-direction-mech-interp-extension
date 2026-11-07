@@ -1,0 +1,32 @@
+{
+  "repository_commit": "07f7daf61766c7228e938c7735153409a4b08220",
+  "repository_snapshot_sha256": "8f0d876372a0ef557533e44ba86c6948e81ae589ba2890b1ed6bf5f8d02ae326",
+  "verified_frozen_inputs": 15,
+  "numpy_version": "2.3.5",
+  "matplotlib_version": "3.10.8",
+  "python_version": "3.12.14",
+  "source_files": {
+    "src/ddmi/__init__.py": "65ee82161250ec9806964453b1f137b0b474d4105eb6b121fcfee20689be9d19",
+    "src/ddmi/checkpoints.py": "59c9da747d67ca78ab85fc97e463897da79a1fb17caa624ed5da96ded9d9e019",
+    "src/ddmi/data/__init__.py": "02d8de351f987c53448295274875fb2c8b4d8c9e2acf479beac5ce548a4c41bc",
+    "src/ddmi/data/loaders.py": "58326dd478f670e783f3a6e9bcdd7bf227244d158bb4fa9e7d837e0202627fd3",
+    "src/ddmi/editing/__init__.py": "9e668b4a64b69f0be1e44eb8b3ac5d6b8a742f0b93f3a4d1178c4c976cae054a",
+    "src/ddmi/editing/apply_edit.py": "d0cfb5930a1d94c7401b6d90900191276ab34eb728c7750ba3464a118045ccae",
+    "src/ddmi/editing/directions.py": "85ab709e830d8d1176e68ab4803b1da7b3cddae62763dd7b79553a1fcde3ffe5",
+    "src/ddmi/editing/projection.py": "8864893971c92509bac50047a5c6992ec88641033ab4769064a1a024d7cbc23f",
+    "src/ddmi/evaluation/__init__.py": "612cb8e92099671900958c14ed8b4ebb685a2d928bc7da254a62d36c8bd5aaef",
+    "src/ddmi/experiments.py": "f657426621843e82ddfc818021155bcdbe0e42a51ab67ea9b3c9ee80ca8b4ec2",
+    "src/ddmi/models/__init__.py": "38c28ba0f4282bbebd8025c730d506f2636cc0d7de2a083f27b1953d265f801c",
+    "src/ddmi/models/generation.py": "4bada027cb2cc1517a7efa0977df906c1b11586125cc185eb6a7a23d217ea457",
+    "src/ddmi/models/hooks.py": "fc4ad2553489b9ce94282d4dd5bfb0e373006321ec4ee7b2d290823cbabb81d1",
+    "src/ddmi/models/loader.py": "0fedd129a7b48837c55a8bcb100e80a2adfdd4b180c908bc913d8eec69b9be71",
+    "src/ddmi/paper/__init__.py": "727ffab5834317be5fa49e592a98d13393f3287fe8b02c2b74e04f2601754ce5",
+    "src/ddmi/paper/analysis.py": "5a74e0b8ba96cbb4d8acc4f98a049422809a31ac06ce7941e0bd41e8ba95e669",
+    "src/ddmi/paper/evidence.py": "3b6e3ccf150639966a955f2d040a829ce1d080ea5e8782b12f32c515f729092c",
+    "src/ddmi/paper/figures.py": "68ab4e5ac87c45a49681e3f31d8095b57806331aff8e75613a4ad2ee45b8fc4b",
+    "src/ddmi/paper/stats.py": "11ebf1575ff28ffbff3c35fafd7d1d0e490b8ec48894792535218671e479ee43",
+    "src/ddmi/utils/__init__.py": "e51fa71ee49020e1dc315ade6a335dde03bfc6a211e865234d1e6c37b18fa1b6",
+    "src/ddmi/utils/io.py": "099254cc0cd5134de1533fa3ea4b3f1b4248b4d5147a8fae9f6fc321a8b9158c"
+  },
+  "analysis_type": "reanalysis of frozen responses, annotations, and directions; no model inference or training"
+}

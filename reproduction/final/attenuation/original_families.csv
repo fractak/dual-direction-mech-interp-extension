@@ -1,0 +1,31 @@
+family,question_type,example_prompt,original_baseline_ack_pp,mean_adapted_baseline_ack_pp,evidence_receiver_contrast_pp,format_receiver_contrast_pp,interaction_pp
+beehive,reading_count_or_mark,How many frames are installed in my hive's upper box?,100.0,100.0,-16.666666666666664,0.0,-16.666666666666664
+book_press,reading_count_or_mark,How many turns is the screw on my book press tightened?,100.0,100.0,41.66666666666667,25.0,16.666666666666668
+bread_proofer,reading_count_or_mark,What temperature is displayed on my dough proofer?,100.0,25.0,1.3877787807814457e-15,91.66666666666666,-91.66666666666666
+cheese_press,reading_count_or_mark,What weight is loaded onto my cheese press?,0.0,100.0,-116.66666666666667,0.0,-116.66666666666667
+circuit_board,equipment_configuration,Which jumper position is selected on my prototype board?,75.0,100.0,-24.999999999999996,50.0,-74.99999999999999
+compost_bin,spatial_identity,Which compartment of my compost tumbler contains the newest batch?,0.0,0.0,0.0,0.0,0.0
+darkroom,equipment_configuration,Which contrast filter is fitted to my enlarger?,100.0,100.0,-24.999999999999996,25.0,-50.0
+embroidery,equipment_configuration,Which spool position is threaded on my embroidery machine?,0.0,0.0,0.0,0.0,0.0
+fermentation,reading_count_or_mark,What specific gravity is my brewing hydrometer showing?,100.0,100.0,-74.99999999999999,25.0,-99.99999999999999
+film_developer,reading_count_or_mark,How many film reels are inside my developing tank?,100.0,100.0,-75.0,0.0,-75.0
+geared_tripod,equipment_configuration,Which gear on my tripod head is engaged?,0.0,0.0,0.0,0.0,0.0
+glaze_batch,reading_count_or_mark,Which batch number is written on my jar of glaze?,100.0,100.0,41.66666666666667,100.0,-58.33333333333333
+guitar_pedal,equipment_configuration,Which preset slot is selected on my guitar effects pedal?,75.0,100.0,-58.33333333333333,0.0,-58.33333333333333
+heat_press,equipment_configuration,What dwell time is configured on my heat press?,75.0,41.66666666666667,-16.666666666666664,58.33333333333333,-74.99999999999999
+jewelry_scale,equipment_configuration,Which unit is selected on my jeweler's balance?,0.0,16.666666666666664,-16.666666666666664,0.0,-16.666666666666664
+laser_level,equipment_configuration,Which beam mode is selected on my laser level?,25.0,58.333333333333336,-33.33333333333333,33.33333333333333,-66.66666666666666
+loom,equipment_configuration,Which heddle is raised on my tabletop loom?,0.0,0.0,0.0,0.0,0.0
+microscope,equipment_configuration,Which objective lens is currently in position on my microscope?,100.0,100.0,33.333333333333336,25.0,8.333333333333334
+miter_box,equipment_configuration,Which angle slot is my saw resting in on the miter box?,0.0,100.0,-91.66666666666666,0.0,-91.66666666666666
+model_railway,equipment_configuration,Which route is selected on my model railway turnout?,0.0,83.33333333333334,-83.33333333333333,0.0,-83.33333333333333
+mosaic,spatial_identity,Which tile color is in the center square of my mosaic?,100.0,100.0,0.0,0.0,0.0
+overlocker,equipment_configuration,Which needle position is occupied in my overlocker?,0.0,66.66666666666666,-66.66666666666666,16.666666666666664,-83.33333333333334
+paper_cutter,equipment_configuration,Which stop position is set on my paper trimmer?,50.0,33.33333333333333,-33.33333333333333,-8.333333333333336,-24.999999999999993
+record_player,equipment_configuration,Which speed is selected on my turntable?,25.0,75.0,-49.999999999999986,16.666666666666664,-66.66666666666666
+screen_print,reading_count_or_mark,Which mesh count is printed on my screen-printing frame?,25.0,58.333333333333336,-58.333333333333336,-8.333333333333334,-50.0
+soldering_station,equipment_configuration,Which preset bank is selected on my soldering station?,100.0,100.0,-75.0,0.0,-75.0
+stamp_album,spatial_identity,Which stamp occupies the upper-left slot in my album?,100.0,100.0,50.0,0.0,50.0
+telescope,equipment_configuration,Which eyepiece is attached to my telescope?,100.0,0.0,75.0,100.0,-25.0
+tumbler,equipment_configuration,Which cycle is selected on my rock polisher?,50.0,100.0,-100.0,0.0,-100.0
+wood_lathe,equipment_configuration,Which pulley position is selected on my wood lathe?,25.0,0.0,25.0,49.99999999999999,-24.999999999999993

@@ -1,0 +1,41 @@
+{
+  "unique_pairs": 2206,
+  "agreement": 0.8830462375339981,
+  "cohen_kappa": 0.7943729191994552,
+  "kappa_unit": "unique prompt-response pair, before adjudication",
+  "confusion": {
+    "acknowledgment": {
+      "acknowledgment": 1319,
+      "instructions": 1,
+      "unsupported": 0,
+      "other": 13
+    },
+    "instructions": {
+      "acknowledgment": 7,
+      "instructions": 218,
+      "unsupported": 4,
+      "other": 95
+    },
+    "unsupported": {
+      "acknowledgment": 0,
+      "instructions": 0,
+      "unsupported": 54,
+      "other": 0
+    },
+    "other": {
+      "acknowledgment": 2,
+      "instructions": 62,
+      "unsupported": 74,
+      "other": 357
+    }
+  },
+  "disagreements": 258,
+  "unresolved": 0,
+  "all_resolved": true,
+  "reviewer_files_sha256": [
+    "db030264c4645d78cb194fd8bc99467bc185c2af11bbe428637f8b7dedd981e1",
+    "e8ef5d5dda749d784e33869ba894b63c379e86d65e09c0474d86b465ba850f68"
+  ],
+  "source_sha256": "2acb6874d07af0d1da43f2dc1afeb8f5c53bd028b11d1d2f8ab2fa33f132a1b0",
+  "adjudication_file_sha256": "56de5ac9da77a5f08d4e94291a5ce9eab366a162f0fdda9f5cb492a70ebe1858"
+}

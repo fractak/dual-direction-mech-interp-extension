@@ -250,7 +250,8 @@ def _execute_plan(plan, output, adapter_path, resume, check_only):
     import torch
     from peft import PeftModel
 
-    from ddmi.editing.measured import MeasuredIntervention
+    from ddmi.editing.measured import MeasuredIntervention, TOKEN_LOCALIZATION_MODES
+    from ddmi.models.positions import POSITION_CONTROL_MODES
     from ddmi.experiments import write_atomic
     from ddmi.models.generation import TextGenerationConfig, generate_text
     from ddmi.models.loader import ModelLoadConfig, load_model_and_tokenizer
@@ -379,8 +380,14 @@ def _execute_plan(plan, output, adapter_path, resume, check_only):
                             TextGenerationConfig(
                                 max_new_tokens=config.get("max_new_tokens", 128),
                                 enable_thinking=config.get("enable_thinking"),
+                                record_token_ids=(condition["mode"] in TOKEN_LOCALIZATION_MODES
+                                                  or config.get("record_position_controls", False)),
+                                position_control_mode=(condition["mode"]
+                                    if config.get("record_position_controls", False) else None),
                             ),
                             return_metadata=True,
+                            prefill_callback=(hooks[0][1].set_prefill_position
+                                if condition["mode"] in POSITION_CONTROL_MODES else None),
                         )
                         telemetry = {source: hook.calls for source, hook in hooks}
                         if any(not calls for calls in telemetry.values()):

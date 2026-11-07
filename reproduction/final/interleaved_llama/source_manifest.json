@@ -1,0 +1,27 @@
+{
+  "reviewed_source_sha256": "92bdee5c243dbc0f7c56061781e8632963a6040c5fb95de39ad939ced2564ddb",
+  "plan_sha256": {
+    "seed42": "baf27ac931d682faa6c86a8d19930554d056f66c7bde772074edd4549a162d2d",
+    "seed42_smoke": "c6d3cc4d5b37a052be716b8222e9e9301173be1ae94698802794ffc6812961f1",
+    "seed43": "b727a2efff93781828a9fe31b7f7aa5529f817f705a84faeeee8e28d45ff9c2e",
+    "seed43_smoke": "e310efa4ad576d69c597ab54d1a2168f71afc79b0aef584a4d0491af65a6276a",
+    "seed44": "b10231e3a554b0a2f8436a5db4fb8805da68d8e488d9ec0ad92884531641ea15",
+    "seed44_smoke": "b399e96eee355a3e66711af926e3813cb8a40428dccc9cbd6a2b40711f69db82"
+  },
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "file_sha256": {
+    "RELEASE.md": "73b33daa487d2a6afa82de2f99f9e19008341cfdcfd712225a322848d1aa78c8",
+    "agreement.json": "902284d07d25aa70588bf1d254cee387f3ea82cb7b0936250b9798ce4526eeb6",
+    "build_release.py": "f3e0d019bff2329ab4043b13a1f010623fa09816be498bd92186d46987fbaa15",
+    "family_counts.csv": "ee2b50353819efe12d8e562494aad7a6db7eda435e097a3ade838320c2899a61",
+    "family_interactions.csv": "f168fe9a749574c7356740f28ab179be8d547e3c32bed0bdd9249cb4a550fd35",
+    "family_stats.py": "1b4decb53316b28c90c583f13c334b07d2daeeebf4a6063f70ba7514d4147081",
+    "interleaved_contrasts.json": "e52787601bfd9adf630f56a90c7fff33147f19193c5f3082039d27994b9f41d7",
+    "interleaved_counts.tex": "ca9e07f2912c21cc18b8c48e85373640d4b96d07ab03d5b9543bd07c99b773e3",
+    "interleaved_family_ecdf.pdf": "19a91da133460669859c8cf4f955178dd6b31e161b341b7f157f6b69b9ff7fb0",
+    "reference.json": "d9842286e91aa05cd70e9cdf99695178e8c11d983f4b98b05bdefed52f1c7ebc",
+    "requirements.txt": "407a50bb330db5cb7a639c18f7cae889ebba71722881d83340801ca1aa533197",
+    "reviewer_provenance.md": "95809679bb67f75eafc35d43d32d9130c5a62e2f25cf97de4eb3afd858b50901"
+  }
+}

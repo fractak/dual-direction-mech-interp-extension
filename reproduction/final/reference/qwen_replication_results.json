@@ -1,0 +1,606 @@
+{
+  "source_sha256": "7747cc17e03d37936f2cf6c52401d3f37cd8dd554e2dc7339fb4e397944cd359",
+  "plans": {
+    "relative": "d7192c4fc2ea567a6f2e810e7a8ef5d60e4e4cf2fdece3987a6f2b2b514b175b",
+    "absolute": "a43971ebbd6c2f0891ddc1d0f1280da5e0caf7a955e870a543789c775d40a4ad"
+  },
+  "conditions": [
+    {
+      "condition": [
+        "relative",
+        "original_instruct",
+        0,
+        "both",
+        null
+      ],
+      "counts": {
+        "instructions": 49,
+        "other": 2,
+        "acknowledgment": 9
+      },
+      "hit_cap": 31,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "relative",
+        "original_instruct",
+        0.3,
+        "safety_lora",
+        null
+      ],
+      "counts": {
+        "instructions": 43,
+        "unsupported": 9,
+        "other": 5,
+        "acknowledgment": 3
+      },
+      "hit_cap": 37,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "relative",
+        "original_instruct",
+        0.3,
+        "random",
+        2026
+      ],
+      "counts": {
+        "instructions": 46,
+        "other": 2,
+        "acknowledgment": 12
+      },
+      "hit_cap": 34,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "relative",
+        "original_instruct",
+        0.3,
+        "random",
+        2027
+      ],
+      "counts": {
+        "instructions": 45,
+        "unsupported": 1,
+        "other": 3,
+        "acknowledgment": 11
+      },
+      "hit_cap": 30,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "relative",
+        "original_instruct",
+        0.3,
+        "random",
+        2028
+      ],
+      "counts": {
+        "instructions": 42,
+        "acknowledgment": 14,
+        "other": 4
+      },
+      "hit_cap": 32,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "relative",
+        "safety_lora",
+        0,
+        "both",
+        null
+      ],
+      "counts": {
+        "acknowledgment": 28,
+        "instructions": 15,
+        "unsupported": 10,
+        "other": 7
+      },
+      "hit_cap": 0,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "relative",
+        "safety_lora",
+        0.3,
+        "safety_lora",
+        null
+      ],
+      "counts": {
+        "instructions": 20,
+        "unsupported": 34,
+        "other": 5,
+        "acknowledgment": 1
+      },
+      "hit_cap": 0,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "relative",
+        "safety_lora",
+        0.3,
+        "random",
+        2026
+      ],
+      "counts": {
+        "acknowledgment": 27,
+        "instructions": 20,
+        "unsupported": 8,
+        "other": 5
+      },
+      "hit_cap": 6,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "relative",
+        "safety_lora",
+        0.3,
+        "random",
+        2027
+      ],
+      "counts": {
+        "acknowledgment": 30,
+        "instructions": 13,
+        "unsupported": 10,
+        "other": 7
+      },
+      "hit_cap": 2,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "relative",
+        "safety_lora",
+        0.3,
+        "random",
+        2028
+      ],
+      "counts": {
+        "acknowledgment": 30,
+        "instructions": 11,
+        "unsupported": 10,
+        "other": 9
+      },
+      "hit_cap": 4,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "absolute",
+        "original_instruct",
+        0,
+        "both",
+        null
+      ],
+      "counts": {
+        "instructions": 49,
+        "other": 2,
+        "acknowledgment": 9
+      },
+      "hit_cap": 31,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "absolute",
+        "original_instruct",
+        62.6,
+        "safety_lora",
+        null
+      ],
+      "counts": {
+        "instructions": 44,
+        "unsupported": 7,
+        "other": 7,
+        "acknowledgment": 2
+      },
+      "hit_cap": 36,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "absolute",
+        "original_instruct",
+        62.6,
+        "random",
+        2026
+      ],
+      "counts": {
+        "instructions": 50,
+        "other": 1,
+        "acknowledgment": 9
+      },
+      "hit_cap": 33,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "absolute",
+        "original_instruct",
+        62.6,
+        "random",
+        2027
+      ],
+      "counts": {
+        "instructions": 50,
+        "other": 1,
+        "acknowledgment": 9
+      },
+      "hit_cap": 34,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "absolute",
+        "original_instruct",
+        62.6,
+        "random",
+        2028
+      ],
+      "counts": {
+        "instructions": 44,
+        "other": 1,
+        "acknowledgment": 14,
+        "unsupported": 1
+      },
+      "hit_cap": 33,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "absolute",
+        "safety_lora",
+        0,
+        "both",
+        null
+      ],
+      "counts": {
+        "acknowledgment": 28,
+        "instructions": 15,
+        "unsupported": 10,
+        "other": 7
+      },
+      "hit_cap": 0,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "absolute",
+        "safety_lora",
+        62.6,
+        "safety_lora",
+        null
+      ],
+      "counts": {
+        "unsupported": 21,
+        "other": 12,
+        "instructions": 21,
+        "acknowledgment": 6
+      },
+      "hit_cap": 0,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "absolute",
+        "safety_lora",
+        62.6,
+        "random",
+        2026
+      ],
+      "counts": {
+        "acknowledgment": 32,
+        "instructions": 13,
+        "other": 7,
+        "unsupported": 8
+      },
+      "hit_cap": 1,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "absolute",
+        "safety_lora",
+        62.6,
+        "random",
+        2027
+      ],
+      "counts": {
+        "acknowledgment": 27,
+        "instructions": 14,
+        "unsupported": 11,
+        "other": 8
+      },
+      "hit_cap": 0,
+      "input_truncated": 0
+    },
+    {
+      "condition": [
+        "absolute",
+        "safety_lora",
+        62.6,
+        "random",
+        2028
+      ],
+      "counts": {
+        "acknowledgment": 28,
+        "instructions": 18,
+        "other": 5,
+        "unsupported": 9
+      },
+      "hit_cap": 0,
+      "input_truncated": 0
+    }
+  ],
+  "contrasts": [
+    {
+      "block": "relative",
+      "dose": 0.3,
+      "source": "safety_lora",
+      "seed": null,
+      "acknowledgment": {
+        "counts": [
+          9,
+          3,
+          28,
+          1
+        ],
+        "contrast_pp": [
+          -35.0,
+          -50.0,
+          -20.0
+        ]
+      },
+      "unsupported": {
+        "counts": [
+          0,
+          9,
+          10,
+          34
+        ],
+        "contrast_pp": [
+          25.0,
+          8.3333,
+          40.0
+        ]
+      }
+    },
+    {
+      "block": "relative",
+      "dose": 0.3,
+      "source": "random",
+      "seed": 2026,
+      "acknowledgment": {
+        "counts": [
+          9,
+          12,
+          28,
+          27
+        ],
+        "contrast_pp": [
+          -6.6667,
+          -16.6667,
+          3.3333
+        ]
+      },
+      "unsupported": {
+        "counts": [
+          0,
+          0,
+          10,
+          8
+        ],
+        "contrast_pp": [
+          -3.3333,
+          -11.6667,
+          5.0
+        ]
+      }
+    },
+    {
+      "block": "relative",
+      "dose": 0.3,
+      "source": "random",
+      "seed": 2027,
+      "acknowledgment": {
+        "counts": [
+          9,
+          11,
+          28,
+          30
+        ],
+        "contrast_pp": [
+          0.0,
+          -8.3333,
+          8.3333
+        ]
+      },
+      "unsupported": {
+        "counts": [
+          0,
+          1,
+          10,
+          10
+        ],
+        "contrast_pp": [
+          -1.6667,
+          -10.0,
+          6.6667
+        ]
+      }
+    },
+    {
+      "block": "relative",
+      "dose": 0.3,
+      "source": "random",
+      "seed": 2028,
+      "acknowledgment": {
+        "counts": [
+          9,
+          14,
+          28,
+          30
+        ],
+        "contrast_pp": [
+          -5.0,
+          -15.0,
+          5.0
+        ]
+      },
+      "unsupported": {
+        "counts": [
+          0,
+          0,
+          10,
+          10
+        ],
+        "contrast_pp": [
+          0.0,
+          -8.3333,
+          8.3333
+        ]
+      }
+    },
+    {
+      "block": "absolute",
+      "dose": 62.6,
+      "source": "safety_lora",
+      "seed": null,
+      "acknowledgment": {
+        "counts": [
+          9,
+          2,
+          28,
+          6
+        ],
+        "contrast_pp": [
+          -25.0,
+          -38.3333,
+          -11.6667
+        ]
+      },
+      "unsupported": {
+        "counts": [
+          0,
+          7,
+          10,
+          21
+        ],
+        "contrast_pp": [
+          6.6667,
+          -6.6667,
+          20.0
+        ]
+      }
+    },
+    {
+      "block": "absolute",
+      "dose": 62.6,
+      "source": "random",
+      "seed": 2026,
+      "acknowledgment": {
+        "counts": [
+          9,
+          9,
+          28,
+          32
+        ],
+        "contrast_pp": [
+          6.6667,
+          -3.3333,
+          18.3333
+        ]
+      },
+      "unsupported": {
+        "counts": [
+          0,
+          0,
+          10,
+          8
+        ],
+        "contrast_pp": [
+          -3.3333,
+          -11.6667,
+          5.0
+        ]
+      }
+    },
+    {
+      "block": "absolute",
+      "dose": 62.6,
+      "source": "random",
+      "seed": 2027,
+      "acknowledgment": {
+        "counts": [
+          9,
+          9,
+          28,
+          27
+        ],
+        "contrast_pp": [
+          -1.6667,
+          -10.0,
+          6.6667
+        ]
+      },
+      "unsupported": {
+        "counts": [
+          0,
+          0,
+          10,
+          11
+        ],
+        "contrast_pp": [
+          1.6667,
+          -3.3333,
+          8.3333
+        ]
+      }
+    },
+    {
+      "block": "absolute",
+      "dose": 62.6,
+      "source": "random",
+      "seed": 2028,
+      "acknowledgment": {
+        "counts": [
+          9,
+          14,
+          28,
+          28
+        ],
+        "contrast_pp": [
+          -8.3333,
+          -16.6667,
+          0.0
+        ]
+      },
+      "unsupported": {
+        "counts": [
+          0,
+          1,
+          10,
+          9
+        ],
+        "contrast_pp": [
+          -3.3333,
+          -11.6667,
+          5.0
+        ]
+      }
+    }
+  ],
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 42,
+    "unit": "paired prompt"
+  }
+}

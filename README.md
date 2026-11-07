@@ -1,5 +1,7 @@
 # Equal baseline acknowledgment, different intervention sensitivity after LoRA adaptation
 
+[Reproduce the final paper's results and figures](docs/REPRODUCE_FINAL.md)
+
 This repository supports a directional-intervention study of **Llama 3.1 8B Instruct** before and after an additional safety-oriented LoRA adaptation.
 
 Both checkpoints acknowledge access limits on 58 of 60 unedited prompts. Applying the same capability-direction operator leaves acknowledgment on 49 prompts in Original Instruct and 6 in the adapted checkpoint, with unsupported assertions on 1 and 40 prompts respectively. The finding is differential response to a specified operator in this checkpoint pair; actual activation displacement is not matched.

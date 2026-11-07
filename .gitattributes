@@ -12,3 +12,7 @@ artifacts/review/qwen_replication_resolved/reviewed_source.json filter=lfs diff=
 artifacts/review/receiver_replication_resolved/reviewed_source.json filter=lfs diff=lfs merge=lfs -text
 artifacts/review/reextract_resolved/reviewed_source.json filter=lfs diff=lfs merge=lfs -text
 artifacts/runs/activation_swap/full/results.json filter=lfs diff=lfs merge=lfs -text
+artifacts/review/family_replication_resolved/reviewed_source.json filter=lfs diff=lfs merge=lfs -text
+artifacts/review/position_control_resolved/reviewed_source.json filter=lfs diff=lfs merge=lfs -text
+reproduction/final/late-reviewed-v1.zip filter=lfs diff=lfs merge=lfs -text
+reproduction/final/frozen-gpu-v1.tar.gz filter=lfs diff=lfs merge=lfs -text
